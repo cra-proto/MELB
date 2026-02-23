@@ -1,0 +1,1230 @@
+
+<!doctype html>
+
+
+<html class="no-js" dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head prefix="og: http://ogp.me/ns#">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="utf-8"/>
+<title>Enhanced reporting rules for trusts and bare trusts: Frequently asked questions - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+
+
+	<link rel="schema.dcterms" href="http://purl.org/dc/terms/"/>
+	<link rel="canonical" href="https://www.canada.ca/en/revenue-agency/services/tax/trust-administrators/t3-return/enhanced-reporting-rules-trusts-bare-trusts-faq.html"/>
+    <link rel="alternate" hreflang="en" href="https://www.canada.ca/en/revenue-agency/services/tax/trust-administrators/t3-return/enhanced-reporting-rules-trusts-bare-trusts-faq.html"/>
+	
+        <link rel="alternate" hreflang="fr" href="https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-fiducies/declaration-t3/amelioration-regles-declaration-fiducies-simples-fiducies-faq.html"/>
+	
+	
+		<meta name="description" content="Information on new reporting requirements for trusts, bare trusts, T3 returns filed tax years ending after December 30, 2023. Who is affected. Legislation on Bill C-32 on Bare trust reporting."/>
+	
+	
+		<meta name="keywords" content="bare trusts, trust reporting, reporting requirements for trust, trust reporting, trust reporting requirements, Trust;T3; T3 return; schedule 15; beneficial ownership; BenO; Bare trusts; affected trusts; listed trust; bill c-32 legislation; solicitor-client privilege; reportable entities; mandatory disclosure rules"/>
+	
+	
+		<meta name="author" content="Canada Revenue Agency"/>
+	
+	
+		<meta name="dcterms.title" content="Enhanced reporting rules for trusts and bare trusts: Frequently asked questions"/>
+	
+	
+		<meta name="dcterms.description" content="Information on new reporting requirements for trusts, bare trusts, T3 returns filed tax years ending after December 30, 2023. Who is affected. Legislation on Bill C-32 on Bare trust reporting."/>
+	
+	
+		<meta name="dcterms.creator" content="Canada Revenue Agency"/>
+	
+	
+	
+		<meta name="dcterms.language" title="ISO639-2/T" content="eng"/>
+	
+	
+		<meta name="dcterms.subject" title="gccore" content="Economics and Industry;Taxes;Income tax"/>
+	
+	
+		<meta name="dcterms.issued" title="W3CDTF" content="2023-12-01"/>
+	
+	
+		<meta name="dcterms.modified" title="W3CDTF" content="2026-02-23"/>
+	
+	
+		<meta name="dcterms.audience" content="general public"/>
+	
+	
+		<meta name="dcterms.spatial" content="Canada"/>
+	
+	
+		<meta name="dcterms.type" content="service description"/>
+	
+	
+	
+	
+	
+		<meta name="dcterms.identifier" content="Canada_Revenue_Agency"/>
+	
+	
+	
+        
+
+
+
+	<meta prefix="fb: https://www.facebook.com/2008/fbml" property="fb:pages" content="378967748836213, 160339344047502, 184605778338568, 237796269600506, 10860597051, 14498271095, 209857686718, 160504807323251, 111156792247197, 113429762015861, 502566449790031, 312292485564363, 1471831713076413, 22724568071, 17294463927, 1442463402719857, 247990812241506, 730097607131117, 1142481292546228, 1765602380419601, 131514060764735, 307780276294187, 427238637642566, 525934210910141, 1016214671785090, 192657607776229, 586856208161152, 1146080748799944, 408143085978521, 490290084411688, 163828286987751, 565688503775086, 460123390028, 318424514044, 632493333805962, 370233926766473, 173004244677, 1562729973959056, 362400293941960, 769857139754987, 167891083224996, 466882737009651, 126404198009505, 135409166525475, 664638680273646, 169011506491295, 217171551640146, 182842831756930, 1464645710444681, 218822426028, 218740415905, 123326971154939, 125058490980757, 1062292210514762, 1768389106741505, 310939332270090, 285960408117397, 985916134909087, 655533774808209, 1522633664630497, 686814348097821, 230798677012118, 320520588000085, 103201203106202, 273375356172196, 61263506236, 353102841161, 1061339807224729, 1090791104267764, 395867780593657, 1597876400459657, 388427768185631, 937815283021844, 207409132619743, 1952090675003143, 206529629372368, 218566908564369, 175257766291975, 118472908172897, 767088219985590, 478573952173735, 465264530180856, 317418191615817, 428040827230778, 222493134493922, 196833853688656, 194633827256676, 252002641498535, 398018420213195, 265626156847421, 202442683196210, 384350631577399, 385499078129720, 178433945604162, 398240836869162, 326182960762584, 354672164565195, 375081249171867, 333050716732105, 118996871563050, 240349086055056, 119579301504003, 185184131584797, 333647780005544, 306255172770146, 369589566399283, 117461228379000, 349774478396157, 201995959908210, 307017162692056, 145928592172074, 122656527842056">
+
+
+	
+
+
+    
+
+
+	
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous"/>
+<script blocking="render" src="/etc/designs/canada/wet-boew/js/gcdsloader.min.js"></script>
+<link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/theme.min.css"/>
+<link href="/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<noscript><link rel="stylesheet" href="/etc/designs/canada/wet-boew/css/noscript.min.css"/></noscript>
+
+
+
+
+
+
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage" resource="#wb-webpage" class="">
+
+    
+
+
+
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+        
+        
+        <div class="global-header"><nav><ul id="wb-tphp">
+	<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+	<li class="wb-slc"><a class="wb-sl" href="#wb-info">Skip to &#34;About government&#34;</a></li>
+	
+</ul></nav>
+
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			
+			<section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+    <h2 class="wb-inv">Language selection</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-inline mrgn-bttm-0">
+                <li>
+                    <a lang="fr" href="/fr/agence-revenu/services/impot/administrateurs-fiducies/declaration-t3/amelioration-regles-declaration-fiducies-simples-fiducies-faq.html">
+                        
+                            <span class="hidden-xs" translate="no">Fran&ccedil;ais</span>
+                            <abbr title="Fran&ccedil;ais" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase" translate="no">fr</abbr>
+                        
+                        
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</section>
+				<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" resource="#wb-publisher" typeof="GovernmentOrganization">
+					
+                    
+					
+						
+						<a href="/en.html" property="url">
+							<img src="/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" property="logo"/>
+							<span class="wb-inv"> /
+								
+								<span lang="fr">Gouvernement du Canada</span>
+							</span>
+						</a>
+					
+					<meta property="name" content="Government of Canada"/>
+					<meta property="areaServed" typeof="Country" content="Canada"/>
+					<link property="logo" href="/etc/designs/canada/wet-boew/assets/wmms-blk.svg"/>
+				</div>
+				<section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+					<h2>Search</h2>
+					
+<form action="/en/revenue-agency/search.html" method="get" name="cse-search-box" role="search">
+	<div class="form-group wb-srch-qry">
+		    
+		
+		    <label for="wb-srch-q" class="wb-inv">Search CRA</label>
+			<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search CRA"/>
+		
+
+		<datalist id="wb-srch-q-ac">
+		</datalist>
+	</div>
+	<div class="form-group submit">
+	<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+	</div>
+</form>
+
+				</section>
+		</div>
+	</div>
+	<hr/>
+	
+	<div class="container"><div class="row">
+		
+        <div class="col-md-8">
+        <nav class="gcweb-menu" typeof="SiteNavigationElement">
+		<h2 class="wb-inv">Menu</h2>
+		<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+<ul role="menu" aria-orientation="vertical" data-ajax-replace="/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/">Travel and tourism</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
+	<li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/life-events.html">Manage life events</a></li>
+</ul>
+
+		
+        </nav>   
+        </div>
+		
+		
+		<div class="col-xs-offset-6 col-xs-6 col-md-offset-0 col-md-4">
+		<section id="wb-so">
+	    <h2 class="wb-inv">Sign in</h2>
+        <a class="btn btn-primary" href="/en/revenue-agency/services/e-services/cra-login-services.html"><span class="visible-xs">Sign in</span><span class="hidden-xs">CRA sign in</span></a>
+        </section>
+        </div>
+		
+		
+    </div></div>
+	
+		<nav id="wb-bc" property="breadcrumb"><h2 class="wb-inv">You are here:</h2><div class="container"><ol class="breadcrumb">
+<li><a href='/en.html'>Canada.ca</a></li>
+<li><a href='/en/services/taxes.html'>Taxes</a></li>
+<li><a href='/en/services/taxes/income-tax.html'>Income tax</a></li>
+<li><a href='/en/services/taxes/income-tax/trust-income-tax.html'>Trust income tax</a></li>
+<li><a href='/en/revenue-agency/services/tax/trust-administrators/t3-return.html'>Trust income tax return</a></li>
+</ol></div></nav>
+
+
+	
+
+  
+</header>
+</div>
+
+    
+
+</div>
+
+    
+
+
+
+
+	
+
+
+
+    
+    
+
+    
+    
+        <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+            
+            <div class="mwstitle section">
+
+    <h1 property="name" id="wb-cont" dir="ltr">
+Enhanced reporting rules for trusts and bare trusts: Frequently asked questions</h1>
+	</div>
+<div class="mwsgeneric-base-html parbase section">
+
+
+
+    <section data-ajax-replace="/content/dam/cra-arc/includes/what-changed.txt#what-changed-en"></section>
+
+
+</div>
+<div class="mwsinpagetoc section">
+
+
+    
+    <nav aria-label="On this page">
+    <h2 class="h3">On this page</h2>
+    <ul>
+        <li><a href="#toc0">1. Trust reporting rules for T3 returns filed for taxation years ending on or after December 31, 2023</a></li>
+        <li><a href="#toc1">2. Affected trusts</a></li>
+        <li><a href="#toc2">3. Bare trusts</a></li>
+        <li><a href="#toc3">4. Legal representatives (primary trustee)</a></li>
+        <li><a href="#toc4">5. More information</a></li>
+    </ul>
+</nav>
+
+
+
+
+<script type="text/javascript">
+
+    //window.onload is needed otherwise it doesnot scan whole document but upto the component area only new version
+    window.onload = function() {
+
+        var hTags = ['H2','H2','H2','H2','H2','H2'];
+        var hText = ['1. Trust reporting rules for T3 returns filed for taxation years ending on or after December 31, 2023','2. Affected trusts','3. Bare trusts','4. Legal representatives (primary trustee)','5. Mandatory disclosure and underused housing rules','6. More information'];
+
+        if(typeof hTags != 'undefined' && hTags != null){
+            for(var i = 0; i < hTags.length; i++){
+                var tags = document.querySelectorAll(hTags[i].toLowerCase());
+                
+				if(typeof tags != 'undefined' && tags != null){
+                    for(var j = 0; j < tags.length; j++){
+                       // mws-1900 - the heading from texts contains contains text without backslash before appostraphy, where as tags returned by query selector does not contain them
+                        // hence removing backslash for creating equal comparison in order to add id reference
+                        if(tags[j].textContent.trim() === hText[i].replace(/\\/g, '')) {
+							if(!tags[j].id) {
+								tags[j].setAttribute('id', 'toc'+i);
+								break;
+							}
+                        }
+                    }
+                }
+            }
+        }
+
+    };
+
+
+</script></div>
+<div class="mwsbodytext text parbase section">
+    
+
+    
+        <p><span class="label label-info">Updated: <span class="nowrap">February 23, 2025</span></span> This webpage has been updated to provide additional information on the enhanced trust reporting rules.</p>
+<p>The rules governing which trusts must file an annual <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html" target="_blank">T3 Trust Income Tax and Information Return</a> (T3 return) were enhanced for taxation years ending on or after <span class="nowrap">December 31, 2023.</span></p>
+<p>On <span class="nowrap">November 18, 2025</span>, the Government of Canada tabled <a href="https://www.parl.ca/documentviewer/en/45-1/bill/C-15/first-reading">Bill C-15, An Act to implement certain provisions of the budget tabled in Parliament on <span class="nowrap">November 4, 2025</span></a>, with proposed amendments to the Income Tax Act that relate to trust reporting for taxation years ending on or after <span class="nowrap">December 31, 2024</span>, <span class="nowrap">December 31, 2025</span>, and <span class="nowrap">December 31, 2026</span>.</p>
+<p><strong>Important note</strong>: Any item marked with a <strong>[Proposed]</strong> flag is based on proposed legislation. To help provide certainty as we head into tax season, the CRA confirms that it will proceed with administering the changes identified with a <strong>[Proposed]</strong> flag. In some cases, this means that the CRA will not expect trusts to file a T3 return, including Schedule 15, under the current law. However, taxpayers may choose to voluntarily file under current law, pending the enactment of Bill C-15. If the proposed legislative changes are not enacted, the CRA will provide further direction.</p>
+<p>All trusts, unless specific conditions are met, must now file a T3 return including <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about each <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entity&nbsp;<span class="far fa-question-circle"></span></a> of the trust (beneficial ownership information). Many trusts that did not previously have to file are now required to file a T3 return, annually.</p>
+<p>The CRA does not expect bare trusts to file a T3 return, including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Beneficial Ownership Information of a Trust (Schedule&nbsp;15)</a>, for the 2023&nbsp;taxation year, unless the CRA makes a direct request for these filings. Based on Bill C-15, and consistent with the <a href="https://fin.canada.ca/drleg-apl/2025/nwmm-amvm-1-n-2-1125-eng.html">Explanatory Notes Relating to the Income Tax Act and Other Legislation</a> published by the Department of Finance, the CRA does not expect bare trusts to file a T3 return including Schedule&nbsp;15 for taxation years ending in <span class="nowrap">2024 or 2025</span>. Certain bare trusts will be required to file for taxation years ending on or after <span class="nowrap">December 31, 2026</span>.</p>
+<p>Changes to the trust reporting rules were made as part of Canada’s ongoing efforts to ensure the effectiveness and integrity of the Canadian tax system. The changes will help the CRA verify that trusts, their trustees, beneficiaries, and related parties have met their tax and filing obligations under the <em>Income Tax Act</em>.</p>
+<p>Unless otherwise stated, all statutory references on this webpage refer to the provisions of the&nbsp;<a href="https://laws.justice.gc.ca/eng/acts/I-3.3/index.html">Income Tax Act&nbsp;R.S.C. 1985,&nbsp;c.1 (5th&nbsp;Supp.)</a>, as amended and all references to a Regulation refer to the&nbsp;<a href="https://laws.justice.gc.ca/eng/regulations/C.R.C.,_c._945/index.html">Income Tax Regulations, C.R.C., c.&nbsp;945</a>, as amended.</p>
+<p>The word “you” throughout this page refers to the trustee, executor, administrator, liquidator, or anyone preparing the <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> for a trust. For tax purposes, estates and trusts are treated similarly. In calculating the income of an estate, references on this page to a “trust” or “trust property” include an “estate” or “estate property.”</p>
+<p>This page will be updated with additional questions and answers as they become available.</p>
+
+    
+
+
+</div>
+<div class="mwsbodytext text parbase section">
+    
+
+    
+        <div class="row"><div class="col-md-12 mrgn-tp-md"><div class="btn-group mrgn-tp-md"><button type="button" class="btn btn-default wb-toggle" data-toggle="{&quot;selector&quot;: &quot;details&quot;, &quot;parent&quot;: &quot;#details-elements&quot;, &quot;print&quot;: &quot;on&quot;, &quot;type&quot;: &quot;on&quot;}">Expand all</button> <button type="button" class="btn btn-default wb-toggle" data-toggle="{&quot;selector&quot;: &quot;details&quot;, &quot;parent&quot;: &quot;#details-elements&quot;, &quot;print&quot;: &quot;on&quot;, &quot;type&quot;: &quot;off&quot;}">Collapse all</button></div>
+<section id="details-elements"><h2 id="toc0">1. Trust reporting rules for T3 returns filed for taxation years ending on or after <span class="nowrap">December 31, 2023</span></h2>
+<details><summary id="q1-1">1.1. What is a trust?</summary><p>The following is a very general overview of the legal (non-tax) principles that apply to trusts in Canada. Determining whether a particular arrangement is a trust (and if so, what kind of trust) can be very complex because it usually requires an analysis of all the facts and circumstances under the relevant private law as well as a review of any trust documentation. Taxpayers may wish to consult a legal advisor for help in understanding all of the legal consequences of their trust or ownership arrangements, as the CRA does not advise taxpayers about the application of the relevant private law to their specific circumstances.</p>
+<p>A trust is a legal relationship connected to the ownership of property. The legal principles that apply to a particular trust relationship vary depending on the private law of the relevant province or territory.</p>
+<p><strong>Common law jurisdictions</strong></p>
+<p><strong>Separation of legal and beneficial ownership</strong></p>
+<p>Ordinarily, a person who has legal title to a property also has the ability to use, enjoy and “benefit from” the property. Under the law of equity in common law provinces and territories (i.e., outside the Province of Québec), a trust is a relationship in which the legal and beneficial ownership of property are separated, meaning that the person who holds legal title to the property is generally not the same person as the person who is or may be beneficially interested in it.</p>
+<p>This separation of legal and beneficial ownership means that in an “ordinary” (non-bare) trust such as a family trust, the trustee exercises control over the trust property and is under a fiduciary duty to act for the benefit of the beneficiaries according to the terms of the trust. The beneficiaries have rights against the trustees to enforce the terms of the trust.</p>
+<p>A trust is a relationship and not a separate legal entity. A trustee is often described as having a fiduciary relationship with the trust’s beneficiaries, meaning that the trustee has a duty of care and loyalty and must act in the beneficiaries’ best interests when making decisions in accordance with the trust terms. This power makes the beneficiary dependent on the trustee. Under a discretionary family trust, trustees have the power to make decisions about trust property and the beneficiaries’ interests. All trustees must act prudently and diligently in managing trust property. They must also follow the terms of the trust and avoid conflicts of interest.</p>
+<p>In a bare trust, the separation of legal and beneficial ownership means that although trust property is registered under the trustee’s name, the beneficial owner has the rights or attributes of ownership in the property: (a) possession, (b) use, (c) risk and (d) control. Not all of these attributes will be present in every case, and some factors will be given more weight in certain cases. For example, a beneficial owner may not always have possession of the property.</p>
+<p><strong>How is a trust established?</strong></p>
+<p>A trust is established when a person (the settlor) transfers property to another person (the trustee) for the benefit of others (the beneficiaries). A trustee can also declare themselves to hold property for a beneficiary. While trust terms may be written or only oral, the existence of a trust is usually supported by a trust document setting out the settlor’s instructions to the trustee for carrying out the terms of the trust. The trust document usually also sets out the trustee’s obligations and responsibilities and describes the nature of the beneficiaries’ rights in the trust.</p>
+<p>Whether the trust terms are written or only oral, a trust exists if legal and beneficial ownership of property are separated and the “three trust certainties” are satisfied. There must be certainty about the settlor’s intention to create a trust, certainty about the trust’s subject matter (property) and certainty about its objects (beneficiaries) or purposes. Other formal requirements may also be imposed depending on the circumstances. For example, trusts holding interests in real property and testamentary trusts (trusts arising on the death of the testator or settlor) usually have to be made in writing.</p>
+<p>A settlor may create a trust without using the word “trust” and without fully understanding the concept of trusteeship. The existence of a trust relationship may also be inferred from the surrounding circumstances and from evidence about what the parties intended, what they actually agreed and how they behaved with respect to the property.</p>
+<p>Trusts can be established for many different purposes, such as planning for the transfer of property before or after the settlor’s death, providing for the care of a child or disabled person, or for charitable purposes. Trusts may also be used instead of a power of attorney to help an elderly person manage their property.&nbsp;</p>
+<p><strong>Trust vs. agency and bare trusts</strong></p>
+<p>Trust relationships are distinct from agency relationships, even though both trustees and agents act on behalf of other persons. While a trustee administers property on behalf a beneficiary under a trust, an agent acts on behalf of a principal under an agency agreement. An agent may manage or deal with the principal’s property but does not usually acquire legal title to it. A person who is required to manage and dispose of trust property and who can exercise independent discretionary power over the property is a trustee rather than an agent. The trustee of a bare trust, in contrast, acts as an agent for the beneficiaries when dealing with trust property.</p>
+<p>Determining whether a particular arrangement between taxpayers is a trust (and if so, a bare trust) will depend on the specific facts of the situation and on the private law of the relevant province or territory. An arrangement between taxpayers about property might, for example, be an express trust, an implied trust or a trust created by law or judgment, such as a constructive trust. In some circumstances the participants might be considered joint owners or tenants in common rather than participants in a trust arrangement.</p>
+<p><strong>Civil law jurisdiction (Québec)</strong></p>
+<p>Trusts in Québec, unlike in common law jurisdictions, do not involve any separation of legal and beneficial ownership. Under civil law, property transferred in trust constitutes the trust patrimony, which is distinct from that of the settlor, trustee or beneficiary and on which none of them has ownership rights. A patrimony is generally defined as all of a person’s rights and obligations.</p>
+<p>Article 1260 of the Civil Code of Québec describes the essential elements of a trust as an act by which a person (the settlor) transfers property from his patrimony to a trust patrimony, and which a trustee undertakes to hold and administer. A trust can be established for the benefit of determinate or determinable persons (the beneficiaries) or for specific purposes.</p>
+<p>Under Article 1262 of the Civil Code of Québec, a trust can be established by contract, by will or by operation of law (i.e., under a court judgment or a statute).&nbsp;</p>
+</details> <details><summary id="q1-2">1.2. I am not sure whether I have a trust. Can the CRA provide specific guidance that will allow me to determine if my situation involves a trust?</summary><p>The CRA does not provide legal advice so it is not able to advise taxpayers about the application of the private law to their specific circumstances or to interpret trust documents. It is the responsibility of the parties involved in an arrangement to determine the true nature of their legal relationships and whether they give rise to a trust.</p>
+<p>Determining whether a particular arrangement is a trust is a question of fact and law based on an analysis of the facts specific to each situation under the applicable private law. Taxpayers may wish to consult a legal advisor for help in understanding all of the legal consequences of their trust or ownership arrangements.</p>
+<p>See <a href="#q1-1">Question 1.1</a> for a very general overview of the legal (non-tax) principles that apply to trusts in Canada.&nbsp;</p>
+</details> <details><summary id="q1-3-a">1.3.A. What are the changes to the trust reporting rules for taxation years ending on or after December 31, 2023?</summary><p>There are three main additions to the trust reporting rules for taxation years ending on or after <span class="nowrap">December 31, 2023</span>:</p>
+<ul>
+<li>All trusts, unless certain conditions are met, are required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> annually. See <a href="#q2-1">Question 2.1</a> for more information about the trusts that are required to file.</li>
+<li>Generally, all trusts that are required to file a T3 return, other than <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a>, must include specified information about each reportable entity of the trust, as outlined on&nbsp;<a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, when filing their T3 return. See <a href="#q2-3-a">Question 2.3.A</a> for the inclusions in listed trusts for taxation years ending on or after <span class="nowrap">December 31, 2023</span> and before <span class="nowrap">December 31, 2024</span>.</li>
+<li>Bare trusts are subject to the trust reporting rules. However, for the 2023 taxation year, the CRA does not expect bare trusts to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>, including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, unless the CRA makes a direct request for these filings.</li>
+</ul>
+</details> <details><summary id="q1-3-b"><span class="label label-info">New</span> 1.3.B. What are the changes to the trust reporting rules for taxation years ending on or after December 31, 2024?</summary><p><strong>[Proposed]</strong> As set out in Bill C-15, there are four main changes to the trust reporting rules for taxation years ending on or after <span class="nowrap">December 31, 2024</span>. Generally, the rules outlined in <a href="#q1-3-a">Question 1.3.A</a> otherwise continue to apply.</p>
+<ul>
+<li>Additional trusts are now included as <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a> (see <a href="#q2-3-b">Question 2.3.B</a> for the inclusions in listed trusts for taxation years ending on or after <span class="nowrap">December 31, 2024</span> and before <span class="nowrap">December 31, 2025</span>), which means more trusts are exempt from the requirements to:<ul>
+<li>File a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> annually</li>
+<li>Include <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about each <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entity&nbsp;<span class="far fa-question-circle"></span></a> of the trust, as outlined on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, when filing their T3 return, where the listed trust is required to file a T3 return because one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year</li>
+</ul>
+</li>
+<li>Bare trusts are not subject to the trust reporting rules and are therefore not required to file for taxation years ending on or after <span class="nowrap">December 31, 2024</span> and before <span class="nowrap">December 31, 2026</span>.</li>
+<li>The definition of a “settlor,” one of the <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entity&nbsp;<span class="far fa-question-circle"></span></a> that must be reported on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, is revised for trust reporting purposes. See <a href="#q1-8">Question 1.8</a> for more information.</li>
+<li>Trusts in which the trustee is a public guardian and trustee authorized under a law of Canada or a Province who, as trustee, who is acting in their capacity as public guardian and trustee, including acting as a trustee of a trust pursuant to an order of a court, that are not otherwise included as listed trusts and are required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, are not required to include information in respect of each of the beneficiaries of the trust on Schedule&nbsp;15.</li>
+</ul>
+</details> <details><summary id="q1-3-c"><span class="label label-info">New</span> 1.3.C. What are the changes to the trust reporting rules for taxation years ending on or after <span class="nowrap">December 31, 2025</span>?</summary><p><strong>[Proposed]</strong> As set out in Bill C-15, there are two main changes to the trust reporting rules for taxation years ending on or after <span class="nowrap">December 31, 2025</span>. Generally, the rules outlined in <a href="#q1-3-a">Question 1.3.A</a> and <a href="#q1-3-b">1.3.B</a> otherwise continue to apply.</p>
+<ul>
+<li>Additional trusts are now included as <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a> (see <a href="#q2-3-c">Question 2.3.C</a> for the inclusions in listed trusts for taxation years ending on or after <span class="nowrap">December 31, 2025</span>), which means more trusts are exempt from the requirements to:<ul>
+<li>File a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 Return</a> annually</li>
+<li>Include <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about each <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entity&nbsp;<span class="far fa-question-circle"></span></a> of the trust, as outlined on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, when filing their T3 return, where the listed trust is required to file a T3 return because one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year</li>
+</ul>
+</li>
+<li>For alter ego, or joint spousal or common-law partner trusts, beneficiaries who are beneficiaries of the trust solely because of a right of the person to receive any of the trust’s income or capital, if under that right the person may so receive that income or capital only on or after the death after that time of an individual, are not required to be reported on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</li>
+</ul>
+</details> <details><summary id="q1-3-d"><span class="label label-info">New</span> 1.3.D. What are the changes to the trust reporting rules for taxation years ending on or after <span class="nowrap">December 31, 2026</span>?</summary><p><strong>[Proposed]</strong> As set out in Bill C-15, there is one main change to the trust reporting rules for taxation years ending on or after <span class="nowrap">December 31, 2026</span>. Generally, the rules outlined in <a href="#q1-3-a">Question 1.3.A</a>, <a href="#q1-3-b">1.3.B</a>, and <a href="#q1-3-c">1.3.C</a> otherwise continue to apply.</p>
+<ul>
+<li>Certain bare trusts are subject to the trust reporting rules. These are described in <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">subsection 150(1.3)</a>, subject to several exceptions described in <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">subsection 150(1.31)</a>. These bare trusts are referred to as “reportable bare trusts,” herein. More information will be added in advance of the T3 return filing season for trusts with taxation years ending on <span class="nowrap">December 31, 2026</span>. <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">Bill C-15</a> can also be viewed for more information.</li>
+</ul>
+</details> <details><summary id="q1-4">1.4. What information is requested on Schedule&nbsp;15 (Beneficial Ownership Information of a Trust)?</summary><p>Generally, all trusts that are required to file a T3 return, other than <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a>, must include <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about each <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entity&nbsp;<span class="far fa-question-circle"></span></a> of the trust, as outlined on&nbsp;<a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, with their&nbsp;<a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>.</p>
+<p>Schedule&nbsp;15 requests specified information on all <a href="#trustees" aria-controls="trustees" class="wb-lbx" role="button">trustees&nbsp;<span class="far fa-question-circle"></span></a>, <a href="#settlors" aria-controls="settlors" class="wb-lbx" role="button">settlors&nbsp;<span class="far fa-question-circle"></span></a>, <a href="#beneficiaries" aria-controls="beneficiaries" class="wb-lbx" role="button">beneficiaries&nbsp;<span class="far fa-question-circle"></span></a>, and <a href="#controlling-persons" aria-controls="controlling-persons" class="wb-lbx" role="button">controlling persons&nbsp;<span class="far fa-question-circle"></span></a> of the trust (collectively referred to as “reportable entities”).</p>
+<p>The following specified information is required for each reportable entity of the trust:</p>
+<ul>
+<li>Name</li>
+<li>Address</li>
+<li>Date of birth (if an individual)</li>
+<li>Country of residence</li>
+<li>Tax identification number (i.e., social insurance number, business number, trust number, or, in the case of a <span class="nowrap">non-resident</span> trust, the identification number used in a foreign jurisdiction)</li>
+</ul>
+<p>Part B of Schedule&nbsp;15 is to be completed separately for each reportable entity and for each entity type they hold. There should only be one tax identification number for each copy of Part B that is completed.</p>
+<p>The following table shows the format required for the different types of tax identification numbers:</p>
+<div class="table-responsive"><table class="table table-bordered">
+<caption class="wb-inv">Table 1 - Identification number formats</caption>
+<thead><tr><th scope="col">Tax identification number type:</th>
+<th scope="col">Format to be used:</th>
+<th scope="col">Example:</th>
+</tr></thead><tbody><tr><td>Social insurance number (SIN)</td>
+<td>9 numerical digits</td>
+<td>123456789</td>
+</tr><tr><td>Business number (BN)</td>
+<td>15 digits</td>
+<td>123456789RC0001</td>
+</tr><tr><td>Temporary tax number (TTN)</td>
+<td>9 numerical digits</td>
+<td>123456789</td>
+</tr><tr><td>Trust number (TN)</td>
+<td>1 letter followed by 8 numerical digits</td>
+<td>T12345678</td>
+</tr><tr><td>Individual tax number (ITN)</td>
+<td>9 numerical digits</td>
+<td>123456789</td>
+</tr><tr><td>International</td>
+<td>Enter characters with no spaces or dashes</td>
+<td>Varies based on foreign jurisdiction</td>
+</tr></tbody></table>
+</div>
+</details> <details><summary>1.5. Does Schedule&nbsp;15 need to be filed if the reportable entities and specified information about them has not changed since the last reporting?</summary><p>When required, Schedule&nbsp;15 must be filed each taxation year with the <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> even if there are no changes in respect of the reportable entities. However, if you have provided the specified information about a reportable entity in a previous taxation year and there have been no changes, that information can be carried forward and does not need to be added to Schedule&nbsp;15 again. If there has been no change in the specified information about each of the reportable entities, select “No” for the second question in Part A of Schedule&nbsp;15 to allow all previously filed information to be carried forward.</p>
+<p>Part B of <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> should include information for the following situations:</p>
+<ul>
+<li>The addition or removal of reportable entities that occurred during the taxation year</li>
+<li>The addition and removal of reportable entities that both became and ceased to be a reportable entity during the taxation year (for example: a temporary trustee was appointed and replaced during the same taxation year)</li>
+<li>The addition of reportable entities that became reportable entities in a previous taxation year and continue to be reportable entities in the current taxation year, where this has not yet been reported on a previous Schedule&nbsp;15 filing</li>
+<li>The removal of reportable entities that ceased to be reportable entities in a previous taxation year, where this has not yet been reported on a previous Schedule&nbsp;15 filing</li>
+<li>Specified information about reportable entities that has changed since the last time it was reported</li>
+</ul>
+<p>To view <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> information for previously assessed taxation years of the trust, legal and authorized representatives can log into My Trust Account. For more information, visit <a href="/en/revenue-agency/services/e-services/represent-a-client/help-trust-account/about-trust-account.html">About My Trust Account</a>.</p>
+</details> <details><summary id="q1-6">1.6. Are there any specific requirements for the identification of beneficiaries on Schedule&nbsp;15?</summary><p>The person making the <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> must provide the <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about each beneficiary of the trust whose identity is known or ascertainable with reasonable effort by the person making the return at the time of filing the return. Complete Part B of <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> for each beneficiary of the trust whose identity is known or ascertainable with reasonable effort. For their own records, the trustee should document the efforts taken to collect the information.</p>
+<p>If the identity of a beneficiary is not known or ascertainable with reasonable effort (for example, unborn children and grandchildren, their spouses), then the person making the return is required to provide sufficiently detailed information to determine with certainty whether any particular person is a beneficiary of the trust. In this case, provide the information requested in Part C of Schedule&nbsp;15. For their own records, the trustee should document the efforts taken to collect the information.</p>
+<p>Where the beneficiaries of a trust are all of the members of an Indigenous group, community, or people that holds rights recognized and affirmed by section 35 of the <em>Constitution Act, 1982</em>, or an identifiable class of the members of such Indigenous group, community or people, the person making the <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> should provide a sufficiently detailed description of the class of beneficiaries to determine with certainty whether any particular person is a member of that class of beneficiaries.</p>
+<p>Where some but not all of the units of a trust are listed on a designated stock exchange, the requirement to provide information for the beneficiaries of the trust is met if the specified information is provided for the beneficiaries of those classes of units that are not listed on a designated stock exchange.</p>
+<p><strong>[Proposed]</strong> For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, trusts in which the trustee is a public guardian and trustee authorized under a law of Canada or a Province who, as trustee, who is acting in their capacity as public guardian and trustee, including acting as trustee of a trust pursuant to an order of a court, that are not otherwise included as <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a> and are required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, are not required to include information in respect of each of the beneficiaries of the trust on Schedule&nbsp;15.</p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2025</span>, for alter ego, or joint spousal or common-law partner trusts, beneficiaries who are beneficiaries of the trust solely because of a right of the person to receive any of the trust’s income or capital, if under that right the person may so receive that income or capital only on or after the death after that time of an individual, are not required to be reported on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+</details> <details><summary>1.7. How should Schedule&nbsp;15 be completed if the trustee does not know the identity of a reportable entity, other than a beneficiary?</summary><p><a href="https://laws.justice.gc.ca/eng/regulations/C.R.C.,_c._945/page-5.html#s-204.2">Subsection 204.2(1)</a> of the Income Tax Regulations generally provides that the T3 return required to be filed by a trust, other than <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a>, must include <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about each <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entity&nbsp;<span class="far fa-question-circle"></span></a> of the trust in the taxation year, as outlined on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>. The Income Tax Regulations do not include a relieving provision where the person making the return does not know the identity of a particular reportable entity, other than where the reportable entity is a beneficiary, as discussed in <a href="#q1-6">Question 1.6</a>.</p>
+</details> <details><summary id="q1-8"><span class="label label-info">New</span> 1.8. Who would be reported on Schedule&nbsp;15 as a settlor of a trust?</summary><p>For taxation years ending before <span class="nowrap">December 31, 2024</span> (for most trusts, this would be their 2023 taxation year), a settlor is defined in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-10.html#281906">subsection 17(15)</a>.</p>
+<p><strong>[Proposed]</strong> For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, for the purposes of the trust reporting rules, a settlor includes any person or partnership that has directly or indirectly, in any manner whatever, transferred property to the trust at or before that time. This does not include a transfer made by the person or partnership to the trust:</p>
+<ul>
+<li>For fair market value consideration, or</li>
+<li>Pursuant to a legal obligation to make the transfer</li>
+</ul>
+<p>If you have already filed a <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> for a taxation year ending on or after <span class="nowrap">December 31, 2024</span> in accordance with the previous definition of “settlor”, you may choose to submit an adjustment request based on the updated definition. Refer to the <a href="/en/revenue-agency/services/forms-publications/publications/t4013/t3-trust-guide.html#P451_55383">T4013 T3 Trust Guide</a> for guidance on submitting an adjustment request to update your Schedule&nbsp;15 filing.</p>
+</details> <details><summary>1.9. Can Schedule 15 information be submitted directly to the CRA?</summary><p>Where a trust is required to provide <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about each <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entity&nbsp;<span class="far fa-question-circle"></span></a> of the trust, the information must be received with the <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>. <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule 15</a> should be used and filed along with the <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>.</p>
+<p>When necessary, the fillable PDF version of&nbsp;<a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule 15</a>&nbsp;allows the user to add additional Part B sections by selecting “Add Part B” located at the end of Part B.</p>
+</details> <details><summary>1.10. What happens if a trust does not file a T3 return or provide the specified information outlined on Schedule&nbsp;15?</summary><p>The failure to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> or to include complete <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entities&nbsp;<span class="far fa-question-circle"></span></a> of the trust, as outlined on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, may result in a late-filing penalty. Missing specified information—such as tax identification numbers—means that the schedule is incomplete and the trust has not met its filing obligations under the <em>Income Tax Act</em> and the <em>Income Tax Regulations</em>.</p>
+<p>Where a trust that has failed to file has unpaid taxes on the filing deadline date, the late-filing penalty is calculated based on the unpaid taxes of the trust on the filing deadline date under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-160.html#s-162">subsection 162(1)</a> (or <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-160.html#309813">subsection 162(2)</a>). Where a trust that has failed to file has no unpaid taxes on the filing deadline date, the <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-160.html#309854">subsection 162(7)</a> penalty would be calculated at $25 a day for the period that the failure continues, from a minimum of $100 to a maximum of $2,500. If complete <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> is not received at the time of filing a T3 return, the date of the Notice of Assessment will be used to calculate the amount of the penalty. For example:</p>
+<ul>
+<li>The North Bay Trust filed a T3 return for its 2024 taxation year before the <span class="nowrap">March 31, 2025</span> due date, reporting taxable income and taxes payable of nil. The T3 return did not include the required specified information about <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entities&nbsp;<span class="far fa-question-circle"></span></a> of the trust. On <span class="nowrap">April 5, 2025</span>, a Notice of Assessment was issued, reflecting assessed penalties under subsection 162(7) of $25 per day for the period of <span class="nowrap">April 1, 2025</span> to the Notice of Assessment date ($25 per day for five days).</li>
+</ul>
+<p>If the trust is not a <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a> and a person or partnership knowingly or under circumstances amounting to gross negligence makes — or participates in, assents to or acquiesces in, the making of — a false statement or omission on a return required to be filed, or fails to file a return, the person or partnership is liable to a penalty under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-161.html#1433886">subsection 163(5)</a>. This penalty is calculated under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-161.html#1433892">subsection 163(6)</a> as the greater of $2,500 and 5% of the highest amount of the fair market value of all the property held by the trust at any time in the year.</p>
+<p>Additional information on penalties can be found in the&nbsp;<a href="/en/revenue-agency/services/forms-publications/publications/t4013.html">T4013 T3 Trust Guide</a>.</p>
+</details> <details><summary>1.11. What steps should be taken to address errors or omissions in the information filed on Schedule&nbsp;15?</summary><p>Where you have filed <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> about the <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">reportable entities&nbsp;<span class="far fa-question-circle"></span></a> of the trust, as outlined on Schedule&nbsp;15, and later identify errors or discover additional information, you should file an amended <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> or a <a href="/en/revenue-agency/services/forms-publications/forms/t3-adj.html">T3-ADJ T3 Adjustment Request</a> with the updated specified information, as requested on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, as soon as possible. See “<a href="/en/revenue-agency/services/forms-publications/publications/t4013/t3-trust-guide.html#P451_55383">Reassessments</a>” in the T4013 Trust Guide for more information about changing a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>.</p>
+<p>Errors or omissions may be identified by the CRA based on a review of the information filed. If the trust is not a listed trust and a person or partnership knowingly or under circumstances amounting to gross negligence makes, — or participates in, assents to or acquiesces in, the making of — a false statement or omission on a return required to be filed, or fails to file a return, the person or partnership is liable to a penalty under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-162.html">subsection 163(5)</a>. This penalty is calculated under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-161.html#1433892">subsection 163(6)</a> as the greater of $2,500 and 5% of the highest amount of the fair market value of all the property held by the trust at any time in the year.</p>
+<p>Additional information on penalties can be found in the&nbsp;<a href="/en/revenue-agency/services/forms-publications/publications/t4013.html">T4013 T3 Trust Guide</a>.</p>
+</details> <details><summary><span class="label label-info">New</span> 1.12. Can a reportable entity be subject to penalties for failing to provide their tax identification number to the trustee?</summary><p>Yes. Under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-160.html#309850">subsection 162(6)</a>, a person or partnership who fails to provide their social insurance number (SIN), trust account number, business number, or U.S. federal taxpayer identification number to another person required to make an information return under the <em>Income Tax Act</em> or the <em>Income Tax Regulations</em> (such as a trustee providing <a href="#specified-information" aria-controls="specified-information" class="wb-lbx" role="button">specified information&nbsp;<span class="far fa-question-circle"></span></a> in a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>) may be liable to a penalty of $100. <a href="#reportable-entity" aria-controls="reportable-entity" class="wb-lbx" role="button">Reportable entities&nbsp;<span class="far fa-question-circle"></span></a> should provide their TIN promptly to avoid penalties and ensure compliance.</p>
+<p>This obligation ensures that trustees can meet their reporting requirements under the <em>Income Tax Act</em> and the <em>Income Tax Regulations</em>, including the enhanced trust reporting rules.</p>
+</details> <details><summary>1.13. Do the trust reporting rules require information that is subject to solicitor-client privilege to be disclosed?</summary><p>No. The trust reporting rules do not require the disclosure of information that is subject to solicitor-client privilege.</p>
+</details><h2 id="toc1">2. Affected trusts</h2>
+<details><summary id="q2-1">2.1. Which trusts are now required to file a T3 return?</summary><p>A trust that is resident in Canada, including a trust deemed resident in Canada under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-69.html#293578">subsection 94(3)</a>, other than a <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trust&nbsp;<span class="far fa-question-circle"></span></a>, must file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> annually, if the trust is an express trust (or the trust is, for civil law purposes, a trust other than a trust that is established by law or by judgement). This does not include bare trusts for the 2023 taxation year, unless the CRA makes a direct request for these filings. This also does not include bare trusts for the <span class="nowrap">2024 or 2025</span> taxation years.</p>
+<p>For all other trusts (resident and non-resident), including listed trusts, a T3 return is required to be filed for taxation years in which the trust has at least one of the following situations:</p>
+<ul>
+<li>has tax payable</li>
+<li>is requested to file</li>
+<li>is a deemed resident trust&nbsp;</li>
+<li>is resident in Canada and has either disposed of, or is deemed to have disposed of, a capital property or has a taxable capital gain (for example, a principal residence, or shares in the capital stock of a corporation)</li>
+<li>is a non-resident throughout the year, and has a taxable capital gain (other than from an excluded disposition described in&nbsp;<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html#308953">subsection 150(5)</a>) or has disposed of taxable Canadian property (other than from an excluded disposition)</li>
+<li>holds property that is subject to&nbsp;<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-75.html#s-75">subsection 75(2)</a></li>
+<li>has provided a benefit of more than $100 to a beneficiary for upkeep, maintenance, or taxes for property maintained for the beneficiary’s use (for more information, see “Line 24 – Upkeep, maintenance, and taxes of a property used or occupied by a beneficiary” in the&nbsp;<a href="/en/revenue-agency/services/forms-publications/publications/t4013.html">T4013 T3 Trust Guide</a>), or</li>
+<li>receives from the trust property any income, gain, or profit that is allocated to one or more beneficiaries, and the trust has:<ul>
+<li>total income from all sources of more than $500</li>
+<li>income of more than $100 allocated to any single beneficiary</li>
+<li>made a distribution of capital to one or more beneficiaries, or</li>
+<li>allocated any portion of the income to a non-resident beneficiary</li>
+</ul>
+</li>
+</ul>
+</details> <details><summary>2.2. Which trusts are required to include Schedule&nbsp;15 with their T3 return?</summary><p>Generally, all trusts that are required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>, other than listed trusts, must include specified information about each reportable entity of the trust, as outlined on&nbsp;<a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, with their&nbsp;<a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>.</p>
+</details> <details><summary id="q2-3-a"><span class="label label-info">New</span> 2.3.A What is a listed trust for taxation years ending on or after <span class="nowrap">December 31, 2023</span>, and before <span class="nowrap">December 31, 2024</span> (typically the 2023&nbsp;taxation year)?</summary><p>Listed trusts are only required to file a T3 return for a taxation year in which one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. Listed trusts are not required to include <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> when filing a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>.</p>
+<p>“Listed trusts” are the trusts described in <a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html#1433846">paragraphs&nbsp;150(1.2)(a) to (o)</a>. For taxation years ending on or after <span class="nowrap">December 31, 2023</span> and before <span class="nowrap">December 31, 2024</span>, refer to the legislation in force for that period. This includes a trust that:</p>
+<ul class="lst-none">
+<li>(a) had been in existence for less than three months at the end of the year;<ul>
+<li>see <a href="#q2-5">Question 2.5</a> for more information</li>
+</ul>
+</li>
+<li>(b) holds assets with a total fair market value that does not exceed $50,000 throughout the year, if the only assets held by the trust throughout the year are one or more of the following:<ul class="lst-none">
+<li>(i) money (note that money does not include collectible gold or silver coins, or gold or silver bars),</li>
+<li>(ii) a debt obligation described in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-194.html#314273">paragraph (a)</a> of the definition “fully exempt interest” in subsection 212(3),</li>
+<li>(iii) a share, debt obligation, or right listed on a designated stock exchange,</li>
+<li>(iv) a share of the capital stock of a mutual fund corporation,</li>
+<li>(v) a unit of a mutual fund trust,</li>
+<li>(vi) an interest in a related segregated fund trust (within the meaning assigned by <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-129.html#304214">paragraph 138.1(1)(a)</a>), and</li>
+<li>(vii) an interest, as a beneficiary under a trust, all of the units of which are listed on a designated stock exchange;<ul>
+<li>See <a href="#q2-8">Question 2.8</a> for more information about fair market value</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(c) is required under the relevant rules of professional conduct or the laws of Canada or a province to hold funds for the purposes of the activity that is regulated under those rules or laws, provided the trust is not maintained as a separate trust for a particular client or clients (this provides an exception for a lawyer’s general trust account, but not for a specific client trust account);</li>
+<li>(d) is a registered charity;</li>
+<li>(e) is a club, society or association described in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-151.html#308322">paragraph 149(1)(l)</a>;</li>
+<li>(f) is a mutual fund trust;</li>
+<li>(g) is a related segregated fund trust (within the meaning assigned by <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-129.html#304214">paragraph 138.1(1)(a)</a>);</li>
+<li>(h) is a trust, all of the units of which are listed on a designated stock exchange;</li>
+<li>(i) is a trust prescribed to be a master trust;</li>
+<li>(j) is a graduated rate estate;</li>
+<li>(k) is a qualified disability trust;</li>
+<li>(l) is an employee life and health trust;</li>
+<li>(m) is a trust described under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-57.html#290618">paragraph 81(1)(g.3)</a>;</li>
+<li>(n) is a trust under or governed by a<ul class="lst-none">
+<li>(i) deferred profit sharing plan,<ul>
+<li>See <a href="/en/revenue-agency/services/forms-publications/publications/ic77-1/deferred-profit-sharing-plans.html">Deferred Profit Sharing Plans</a> for more information</li>
+</ul>
+</li>
+<li>(ii) pooled registered pension plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/registered-plans-administrators/pooled-registered-pension-plans-prpps.html">Pooled Registered Pension Plans</a> for more information</li>
+</ul>
+</li>
+<li>(iii) registered disability savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp.html">What is a Registered Disability Savings Plan</a> for more information</li>
+</ul>
+</li>
+<li>(iv) registered education savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps.html">Registered Education Savings Plan</a> for more information</li>
+</ul>
+</li>
+<li>(v) registered pension plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/registered-plans-administrators/about-registered-pension-plans-rpps.html">Registered Pension Plan</a> for more information</li>
+</ul>
+</li>
+<li>(vi) registered retirement income fund,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-retirement-income-fund-rrif.html">Registered Retirement Income Fund</a> for more information</li>
+</ul>
+</li>
+<li>(vii) registered retirement savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/registered-retirement-savings-plan-rrsp.html">Registered Retirement Savings Plan</a> for more information</li>
+</ul>
+</li>
+<li>(viii) tax-free savings account,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account.html">The Tax-Free Savings Account</a> for more information</li>
+</ul>
+</li>
+<li>(ix) employee profit sharing plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4ps-slip.html">Employees Profit Sharing Plan</a> for more information</li>
+</ul>
+</li>
+<li>(x) registered supplementary unemployment benefit plan, or<ul>
+<li>See <a href="/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/special-payments/supplementary-unemployment-benefit-plan-subp.html">Supplementary Unemployment Benefit Plan</a> for more information</li>
+</ul>
+</li>
+<li>(xi) first home savings account; or<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account.html">First Home Savings Account</a> for more information</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(o) is a cemetery care trust or a trust governed by an eligible funeral arrangement</li>
+</ul>
+</details> <details><summary id="q2-3-b"><span class="label label-info">New</span> 2.3.B. What is a listed trust for taxation years ending on or after <span class="nowrap">December 31, 2024</span>, and before <span class="nowrap">December 31, 2025</span> (typically the 2024&nbsp;taxation year)?</summary><p><strong>[Proposed]</strong> As set out in Bill C-15, for taxation years ending on or after <span class="nowrap">December 31, 2024</span> and before <span class="nowrap">December 31, 2025</span>, the trusts that are considered to be “listed trusts” are revised and expanded.</p>
+<p>Listed trusts are only required to file a T3 return for a taxation year in which one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. Listed trusts are not required to include <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> when filing a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>.</p>
+<p>“Listed trusts” are the trusts described in <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">paragraphs 150(1.2)(a) to (q)</a>. For taxation years ending on or after <span class="nowrap">December 31, 2024</span> and before <span class="nowrap">December 31, 2025</span>, refer to the legislation in force for that period. This includes a trust that:</p>
+<ul class="lst-none">
+<li>(a) had been in existence for less than three months;<ul>
+<li>See <a href="#q2-5">Question 2.5</a> for more information</li>
+</ul>
+</li>
+<li>(b) holds assets with a total fair market value does not exceed $50,000 throughout the year;<ul>
+<li>See <a href="#q2-8">Question 2.8</a> for more information about fair market value</li>
+</ul>
+</li>
+<li>(b.1) meets the following conditions:<ul class="lst-none">
+<li>(i) each trustee is an individual,</li>
+<li>(ii) each beneficiary is an individual and is related to each trustee, and</li>
+<li>(iii) the total fair market value of the property of the trust does not exceed $250,000 throughout the year and the only assets held by the trust throughout the year are one or more of:<ul class="lst-none">
+<li>(A) money (note that money does not include collectible gold or silver coins, or gold or silver bars),</li>
+<li>(B) a guaranteed investment certificate issued by a Canadian bank or trust company incorporated under the laws of Canada or of a province,</li>
+<li>(C) a debt obligation described in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-194.html#314273">paragraph (a)</a> of the definition &quot;fully exempt interest&quot; in subsection 212(3),</li>
+<li>(D) debt obligations issued by:<ul class="lst-none">
+<li>(I) a corporation, mutual fund trust or limited partnership the shares or units of which are listed on a designated stock exchange in Canada,</li>
+<li>(II) a corporation the shares of which are listed on a designated stock exchange outside Canada, or</li>
+<li>(III) an authorized foreign bank that are payable at a branch in Canada of the bank,</li>
+</ul>
+</li>
+<li>(E) a share, debt obligation, or right listed on a designated stock exchange,</li>
+<li>(F) a share of the capital stock of a mutual fund corporation,</li>
+<li>(G) a unit of a mutual fund trust,</li>
+<li>(H) an interest in a related segregated fund trust (within the meaning assigned by <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-129.html#304214">paragraph 138.1(1)(a)</a>),</li>
+<li>(I) an interest as a beneficiary under a trust, all of the units of which are listed on a designated stock exchange,</li>
+<li>(J) personal-use property of the trust, or<ul>
+<li>See <a href="#q2-9">Question 2.9</a> for more information about personal-use property</li>
+</ul>
+</li>
+<li>(K) a right to receive income or gains on property described in (A) to (J) above;<ul>
+<li>See <a href="#q2-8">Question 2.8</a> for more information about fair market value</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(c) is required under the relevant rules of professional conduct or the laws of Canada or a province to hold funds for the purposes of an activity that is regulated under those rules or laws, provided:<ul class="lst-none">
+<li>(i) the trust is not maintained as a separate trust for a particular client or clients, or</li>
+<li>(ii) the only assets held by the trust throughout the year are money with a value that does not exceed $250,000</li>
+</ul>
+<p>(this provides an exception for a lawyer’s general trust account, or a specific client trust account holding only money throughout the year with a value that does not exceed $250,000);</p>
+</li>
+<li>(d) is a registered charity;</li>
+<li>(e) is a club, society or association described in 149(1)(l);</li>
+<li>(f) is a mutual fund trust,</li>
+<li>(g) is a related segregated fund trust (within the meaning assigned by <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-129.html#304214">paragraph 138.1(1)(a)</a>);</li>
+<li>(h) is a trust, all of the units of which are listed on a designated stock exchange;</li>
+<li>(i) is a trust prescribed to be a master trust;</li>
+<li>(j) is a graduated rate estate, or would be a graduated rate estate in the year if the estate had properly designated itself as a graduated rate estate;</li>
+<li>(k) is a qualified disability trust;</li>
+<li>(l) is an employee life and health trust;</li>
+<li>(m) is a trust described under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-57.html#290618">paragraph 81(1)(g.3)</a>;</li>
+<li>(n) is a trust under or governed by a<ul class="lst-none">
+<li>(i) deferred profit-sharing plan,<ul>
+<li>See <a href="/en/revenue-agency/services/forms-publications/publications/ic77-1/deferred-profit-sharing-plans.html">Deferred Profit Sharing Plans</a> for more information.</li>
+</ul>
+</li>
+<li>(ii) pooled registered pension plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/registered-plans-administrators/pooled-registered-pension-plans-prpps.html">Pooled Registered Pension Plans</a> for more information.</li>
+</ul>
+</li>
+<li>(iii) registered disability savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp.html">What is a Registered Disability Savings Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(iv) registered education savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps.html">Registered Education Savings Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(v) registered pension plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/registered-plans-administrators/about-registered-pension-plans-rpps.html">Registered Pension Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(vi) registered retirement income fund,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-retirement-income-fund-rrif.html">Registered Retirement Income Fund</a> for more information.</li>
+</ul>
+</li>
+<li>(vii) registered retirement savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/registered-retirement-savings-plan-rrsp.html">Registered Retirement Savings Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(viii) tax-free savings account,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account.html">The Tax-Free Savings Account</a> for more information.</li>
+</ul>
+</li>
+<li>(ix) employee profit sharing plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/special-payments/employees-profit-sharing-plan.html">Employees Profit Sharing Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(x) registered supplementary unemployment benefit plan, or<ul>
+<li>See <a href="/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/special-payments/supplementary-unemployment-benefit-plan-subp.html">Supplementary Unemployment Benefit Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(xi) first home savings account;<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account.html">First Home Savings Account</a> for more information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(o) is a cemetery care trust or a trust governed by an eligible funeral arrangement;</li>
+<li>(p) is an eligible trust as defined in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-125.html#303384">subsection 135.2(1)</a>; or</li>
+<li>(q) is established for the purpose of complying with a statute of Canada or a province and the person or persons acting as trustee of the trust hold the property in trust for a specified purpose (this provides an exception for certain statutorily created trust relationships, such as those of bankruptcy trustees or provincial guardians)</li>
+</ul>
+</details> <details><summary id="q2-3-c"><span class="label label-info">New</span> 2.3.C. What is a listed trust for taxation years ending on or after <span class="nowrap">December 31, 2025</span> (typically the 2025&nbsp;taxation year and subsequent taxation years)?</summary><p><strong>[Proposed]</strong> As set out in Bill&nbsp;C-15, for taxation years ending on or after <span class="nowrap">December 31, 2025</span>, the trusts that are considered to be “listed trusts” are revised and expanded.</p>
+<p>Listed trusts are only required to file a T3 return for a taxation year in which one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. Listed trusts are not required to include <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> when filing a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a>.</p>
+<p>“Listed trusts” are the trusts described in <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">paragraphs 150(1.2)(a) to (r)</a>. For taxation years ending on or after <span class="nowrap">December 31, 2025</span>, refer to the legislation in force for that period. This includes a trust that:</p>
+<ul class="lst-none">
+<li>(a) had been in existence for less than three months;<ul>
+<li>See <a href="#q2-5">Question 2.5</a> for more information.</li>
+</ul>
+</li>
+<li>(b) holds assets with a total fair market value does not exceed $50,000 throughout the year;<ul>
+<li>See <a href="#q2-8">Question 2.8</a> for more information about fair market value</li>
+</ul>
+</li>
+<li>(b.1) meets the following conditions:<ul class="lst-none">
+<li>(i) each trustee is an individual,</li>
+<li>(ii) each beneficiary is:<ul class="lst-none">
+<li>(A) an individual (other than a trust) and related to each trustee, or</li>
+<li>(B) a graduated rate estate (or would be a graduated rate estate in the year if the estate had properly designated itself as a graduated rate estate) of an individual who was a beneficiary described in clause (A) in the year of the individual’s death,</li>
+</ul>
+</li>
+<li>(iii) the total fair market value of the property of the trust does not exceed $250,000 throughout the year and the only assets held by the trust throughout the year are one or more of:<ul class="lst-none">
+<li>(A) money, including deposits in a Canadian financial institution as defined in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-225.html#320162">subsection 270(1)</a> (note that money does not include collectible gold or silver coins, or gold or silver bars),</li>
+<li>(B) a guaranteed investment certificate issued by a Canadian bank, trust company or credit union incorporated under the laws of Canada or of a province,</li>
+<li>(C) a debt obligation described in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-194.html#314273">paragraph (a)</a> of the definition &quot;fully exempt interest&quot; in subsection 212(3),</li>
+<li>(D) debt obligations issued by:<ul class="lst-none">
+<li>(I) a corporation, mutual fund trust or limited partnership the shares or units of which are listed on a designated stock exchange in Canada,</li>
+<li>(II) a corporation the shares of which are listed on a designated stock exchange outside Canada, or</li>
+<li>(III) an authorized foreign bank that are payable at a branch in Canada of the bank,</li>
+</ul>
+</li>
+<li>(E) a share, debt obligation, or right listed on a designated stock exchange,</li>
+<li>(F) a share of the capital stock of a mutual fund corporation,</li>
+<li>(G) a unit of a mutual fund trust,</li>
+<li>(H) an interest in a related segregated fund trust (within the meaning assigned by <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-129.html#304214">paragraph 138.1(1)(a)</a>),</li>
+<li>(I) an interest, as a beneficiary under a trust, all of the units of which are listed on a designated stock exchange,</li>
+<li>(J) personal-use property of the trust,<ul>
+<li>See <a href="#q2-9">Question 2.9</a> for more information about personal-use property</li>
+</ul>
+</li>
+<li>(K) a right to receive income or gains on property described in (A) to (J) above, or</li>
+<li>(L) an <em>exempt policy</em> (as defined in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-6.html#280781">subsection 12.2(11)</a>) issued by a Canadian life insurer, the fair market value of which is to be determined by its cash surrender value;<ul>
+<li>See <a href="#q2-8">Question 2.8</a> for more information about fair market value</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(c) is required under the relevant rules of professional conduct or the laws of Canada or a province to hold funds for the purposes of an activity that is regulated under those rules or laws, provided:<ul class="lst-none">
+<li>(i) the trust is not maintained as a separate trust for a particular client or clients, or,</li>
+<li>(ii) the only assets held by the trust throughout the year are assets described in clause (b.1)(iii)(A) or (B) with a total fair market value that does not exceed $250,000</li>
+</ul>
+<p>(this provides an exception for a lawyer’s general trust account, or a specific client trust account holding only money, including deposits in a Canadian financial institution as defined in subsection 270(1), and guaranteed investment certificates issued by a Canadian bank, trust company or credit union incorporated under the laws of Canada or of a province throughout the year with a total fair market value that does not exceed $250,000);</p>
+</li>
+<li>(d) is a registered charity;</li>
+<li>(e) is a club, society or association described in 149(1)(l);</li>
+<li>(f) is a mutual fund trust,</li>
+<li>(g) is a related segregated fund trust (within the meaning assigned by <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-129.html#304214">paragraph 138.1(1)(a)</a>);</li>
+<li>(h) is a trust, all of the units of which are listed on a designated stock exchange;</li>
+<li>(i) is a trust prescribed to be a master trust;</li>
+<li>(j) is a graduated rate estate (or would be a graduated rate estate in the year if the estate had properly designated itself as a graduated rate estate);</li>
+<li>(k) is a qualified disability trust;</li>
+<li>(l) is an employee life and health trust;</li>
+<li>(m) is a trust described under <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-57.html#290618">paragraph 81(1)(g.3)</a>;</li>
+<li>(n) is a trust under or governed by a<ul class="lst-none">
+<li>(i) deferred profit-sharing plan,<ul>
+<li>See <a href="/en/revenue-agency/services/forms-publications/publications/ic77-1/deferred-profit-sharing-plans.html">Deferred Profit Sharing Plans</a> for more information.</li>
+</ul>
+</li>
+<li>(ii) pooled registered pension plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/registered-plans-administrators/pooled-registered-pension-plans-prpps.html">Pooled Registered Pension Plans</a> for more information.</li>
+</ul>
+</li>
+<li>(iii) registered disability savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-disability-savings-plan-rdsp.html">What is a Registered Disability Savings Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(iv) registered education savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps.html">Registered Education Savings Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(v) registered pension plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/registered-plans-administrators/about-registered-pension-plans-rpps.html">Registered Pension Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(vi) registered retirement income fund,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/registered-retirement-income-fund-rrif.html">Registered Retirement Income Fund</a> for more information.</li>
+</ul>
+</li>
+<li>(vii) registered retirement savings plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/registered-retirement-savings-plan-rrsp.html">Registered Retirement Savings Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(viii) tax-free savings account,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account.html">The Tax-Free Savings Account</a> for more information.</li>
+</ul>
+</li>
+<li>(ix) employee profit sharing plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/special-payments/employees-profit-sharing-plan.html">Employees Profit Sharing Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(x) registered supplementary unemployment benefit plan,<ul>
+<li>See <a href="/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/special-payments/supplementary-unemployment-benefit-plan-subp.html">Supplementary Unemployment Benefit Plan</a> for more information.</li>
+</ul>
+</li>
+<li>(xi) first home savings account, or<ul>
+<li>See <a href="/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account.html">First Home Savings Account</a> for more information.</li>
+</ul>
+</li>
+<li>(xii) a retirement compensation arrangement the primary purpose of which is to provide annual or more frequent periodic retirement benefits to supplement the benefits provided out of or under one or more registered pension plans, registered retirement savings plans, deferred profit sharing plans or pooled registered pension plans;<ul>
+<li>See <a href="/en/services/taxes/income-tax/trust-income-tax/retirement-compensation-arrangements-guide.html">Retirement Compensation Arrangements</a> for more information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(o) is a cemetery care trust or a trust governed by an eligible funeral arrangement;</li>
+<li>(p) is an eligible trust as defined in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-125.html#303384">subsection 135.2(1)</a>; or</li>
+<li>(q) is established for the purpose of complying with a statute of Canada or a province and the person or persons acting as trustee of the trust hold the property in trust for a specified purpose (this provides an exception for certain statutorily created trust relationships, such as those of bankruptcy trustees or provincial guardians); or</li>
+<li>(r) is an employee ownership trust</li>
+</ul>
+</details> <details><summary>2.4. What is an express trust?</summary><p>Generally, an express trust is a trust created with the settlor's express intent, usually set out in writing (as opposed to a resulting or constructive trust, or certain trusts deemed to arise under the provision of a statute). Many types of trusts are express trusts.</p>
+</details> <details><summary id="q2-5">2.5. If my trust has been in existence for less than three months, do I still need to file?</summary><p>A trust that was in existence for less than three months is a <a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a> (see <a href="#q2-3-a">Question 2.3.A</a>, <a href="#q2-3-b">2.3.B</a>, and <a href="#q2-3-c">2.3.C,</a> paragraph 150(1.2)(a) for more information). As a listed trust, it would not be required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> unless one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. Further, a listed trust is not required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p>The following trusts are considered to have been in existence for less than three months:</p>
+<ul>
+<li>Trusts that were created less than three months before the end of the particular taxation year</li>
+<li>Trusts that existed for a period of less than three months</li>
+</ul>
+</details> <details><summary>2.6. Under the trust reporting rules for taxation years ending on or after December 31, 2023, how do registered charities report an internal trust?</summary><p>Internal trusts are those created when a charity receives property as a gift that is subject to certain legally enforceable terms and conditions and holds that property as trustee of the trust.</p>
+<p>The CRA will not require registered charities to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> for internal trusts. See <a href="/en/revenue-agency/services/charities-giving/charities/operating-a-registered-charity/filing-t3010-charity-return/before-file.html">Filing requirements for charities administering internal trusts</a> for more information.</p>
+</details> <details><summary id="q2-7"><span class="label label-info">New</span> 2.7. If a trust holds assets that are valued at less than $50,000, including its settled property which is a collectible gold or silver coin, does it meet the requirements of paragraph 150(1.2)(b)?</summary><p>For taxation years ending before <span class="nowrap">December 31, 2024</span> (for most trusts, this would be their 2023 taxation year), a trust that is in possession of a collectible gold or silver coin would not satisfy the exception in <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-153.html#1433849">paragraph 150(1.2)(b)</a>.</p>
+<p><strong>[Proposed]</strong> For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, the trusts that are considered to be “<a href="#listed-trust" aria-controls="listed-trust" class="wb-lbx" role="button">listed trusts&nbsp;<span class="far fa-question-circle"></span></a>” are revised and expanded:</p>
+<ul>
+<li><a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">Paragraph 150(1.2)(b)</a> is revised to include a trust that holds assets with a total fair market value that does not exceed $50,000 throughout the year. There are no restrictions in respect of the types of assets held. Therefore, a collectible gold or silver coin held in a trust would not prevent the trust from meeting the requirements for this exception in this case.</li>
+</ul>
+</details> <details><summary id="q2-8"><span class="label label-info">New</span> 2.8. Paragraphs 150(1.2)(b) and 150(1.2)(b.1) refer to fair market value. What is fair market value?</summary><p>Fair market value (“FMV”) is the highest price, expressed in dollars, that property would bring in an open and unrestricted market, between a willing buyer and a willing seller who are both knowledgeable, informed, and prudent, and who are acting independently of each other.</p>
+<p>The FMV used to determine a trust’s reporting obligations must be supportable. If you do not have sufficient knowledge or information to reasonably determine the FMV, you may need to obtain a third-party appraisal or valuation from a qualified professional.</p>
+<p>For example, the FMV of publicly traded shares may generally be obtained from public listings of transactions on recognized stock exchanges, investment publications, or from a broker or investment dealer. For securities in a privately owned company, information may be obtained from a qualified professional who is familiar with the company, such as an accountant or business valuator. The choice of professional typically depends on the complexity of the private company.</p>
+<p>You should keep any supporting documents relied upon to determine the FMV in the event the CRA requests additional information.</p>
+</details> <details><summary id="q2-9"><span class="label label-info">New</span> 2.9. Clause 150(1.2)(b.1)(iii)(J) refers to personal-use property of the trust. What is considered “personal-use property of the trust”?</summary><p><strong>[Proposed]</strong> Clause 150(1.2)(b.1)(iii)(J), which is effective for taxation years ending on or after <span class="nowrap">December 31, 2024</span>, refers to personal-use property of the trust. This refers to items owned by the trust primarily for the personal use or enjoyment of one or more beneficiaries of the trust. “Personal-use property” includes items such as furniture, automobiles, boats, a cottage, and other similar properties.</p>
+<p>“Listed personal property” is a type of personal-use property. It includes all or any part of an interest in, or any right to, properties such as works of art, jewellery, rare folios, rare manuscripts, rare books, stamps, coins, and other similar properties.</p>
+</details> <details><summary id="q2-10">2.10. What are some examples of trusts that need to file under the trust reporting rules?</summary><p>Several examples are provided below to assist taxpayers in determining their trust reporting obligations. Please note:</p>
+<ul>
+<li>The determination of whether a particular arrangement is a trust is a question of fact and law based on an analysis of the facts specific to each situation under the private law of the relevant jurisdiction. It is the responsibility of the parties involved in an arrangement to determine the true nature of their legal relationships and whether they give rise to a trust.</li>
+<li><p>These examples do not include bare trust filing requirements. For the 2023 taxation year, the CRA will not require bare trusts to file a T3 return, unless the CRA makes a direct request for these filings.</p>
+<p><strong>[Proposed]</strong> For the 2024 and 2025 taxation years, bare trusts are not subject to the trust reporting rules and are therefore not required to file.</p>
+</li>
+<li>Examples may refer to the $50,000 asset threshold or the $250,000 asset threshold, meaning that the trust qualifies for the particular exception only if the total fair market value (“FMV”) of the trust’s assets did not exceed that particular amount during the taxation year.</li>
+</ul>
+<details><summary>Example 1</summary><p><strong>Scenario:</strong></p>
+<p>The Toronto Trust, an express trust that is resident in Canada, was established in&nbsp;2018. The trustee is not related to the beneficiaries. The trust holds assets consisting only of money and rights listed on the Canadian Securities Exchange, which is a designated stock exchange.</p>
+<p>The total FMV of the trust’s assets was consistently under $50,000 from&nbsp;2018 until early&nbsp;2023. The total FMV of the trust’s assets increased to $55,000 in <span class="nowrap">July 2023</span> and remained above $50,000 until March 2024, when it fell below $50,000 and stayed under that threshold through <span class="nowrap">December 31, 2025</span>.</p>
+<p><strong>2023&nbsp;taxation year filing requirement: T3 return including Schedule&nbsp;15</strong></p>
+<p>For taxation years ending before <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2023</span> taxation year), the $50,000 asset threshold is limited to trusts holding specific asset types (see <a href="#q2-3-a">Question 2.3.A</a>, paragraph 150(1.2)(b) for more information). The list of specific asset types includes both money and rights listed on a designated stock exchange. Given that the total FMV of the trust’s assets exceeded $50,000 at times during the taxation year, the Toronto Trust is not a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2023</span>. As an express trust resident in Canada that is not a listed trust, it is required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a> including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p><strong>2024 taxation year filing requirements: T3 return including Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-b">Question 2.3.B</a>, paragraph 150(1.2)(b) for more information). While the total FMV of the trust’s assets was less than $50,000 at <span class="nowrap">December 31, 2024</span>, it exceeded $50,000 at times during the taxation year.</p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, the asset threshold for trusts holding specific asset types is increased to $250,000 where each trustee is an individual and each beneficiary is an individual and is related to each trustee (see <a href="#q2-3-b">Question 2.3.B</a>, paragraph 150(1.2)(b.1) for more information). However, the trustee and beneficiaries of the Toronto Trust are not related individuals.</p>
+<p>Therefore, the Toronto Trust is not a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2024</span>. As an express trust resident in Canada that is not a listed trust, it is required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a> including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p><strong>2025 taxation year filing requirements: Possible T3 return without Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2025</span> taxation year), the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-c">Question 2.3.C</a>, paragraph 150(1.2)(b) for more information). Given that the total FMV of the trust assets did not exceed $50,000 throughout the year, the Toronto Trust is a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2025</span>. Therefore, the trust would only be required to file a T3 return if one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. However, the trust would not be required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+</details> <details><summary>Example 2</summary><p><strong>Scenario:</strong></p>
+<p>The Vancouver Trust is an express trust that is resident in Canada. It holds assets consisting only of money and private corporation shares. The total FMV of trust assets did not exceed $50,000 throughout its taxation years that ended on <span class="nowrap">December 31, 2023</span>, <span class="nowrap">December 31, 2024</span>, or <span class="nowrap">December 31, 2025</span>.</p>
+<p><strong>2023 taxation year filing requirement: T3 return including Schedule&nbsp;15</strong></p>
+<p>For taxation years ending before <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2023</span> taxation year), the $50,000 asset threshold is limited to trusts holding specific asset types (see <a href="#q2-3-a">Question 2.3.A</a>, paragraph 150(1.2)(b) for more information). Private corporation shares are not included on this list of specific asset types. Given that the Vancouver Trust held one or more assets that are not on the list of specific asset types, it is not a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2023</span>. As an express trust resident in Canada that is not a listed trust, it is required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a> including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p><strong>2024 taxation year filing requirement: Possible T3 return without Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-b">Question 2.3.B</a>, paragraph 150(1.2)(b) for more information). Given that the total FMV of the trust assets did not exceed $50,000 throughout the year, the Vancouver Trust is a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2024</span>. Therefore, the trust would only be required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a>if one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. However, the trust would not be required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p><strong>2025 taxation year filing requirement: Possible T3 return without Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2025</span> taxation year), the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-c">Question 2.3.C</a>, paragraph 150(1.2)(b) for more information). Given that the total FMV of the trust assets did not exceed $50,000 throughout the year, the Vancouver Trust is a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2025</span>. Therefore, the trust would only be required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a> if one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. However, the trust would not be required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+</details> <details><summary>Example 3</summary><p><strong>Scenario:</strong></p>
+<p>The Halifax Trust is an express trust that is resident in Canada. During its taxation year that ended on <span class="nowrap">December 31, 2023</span>, the trust held assets consisting only of money and shares listed on the New York Stock Exchange, which is a designated stock exchange. In February&nbsp;2023, the trust disposed of the shares, which were capital property of the trust, realizing a capital gain of approximately $8,000. All of the proceeds, including the capital gain, were distributed to the sole beneficiary. No dividends were declared or paid to the trust during the taxation year that ended on <span class="nowrap">December 31, 2023</span>. Throughout its taxation years that ended on <span class="nowrap">December 31, 2024</span> and <span class="nowrap">December 31, 2025</span>, the trust held assets consisting only of money. The total FMV of trust’s assets did not exceed $50,000 throughout its taxation years that ended on <span class="nowrap">December 31, 2023</span>, <span class="nowrap">December 31, 2024</span>, and <span class="nowrap">December 31, 2025</span>.</p>
+<p><strong>2023 taxation year filing requirement: T3 return without Schedule&nbsp;15</strong></p>
+<p>For taxation years ending before <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2023</span> taxation year), the $50,000 asset threshold is limited to trusts holding specific asset types (see <a href="#q2-3-a">Question 2.3.A</a>, paragraph 150(1.2)(b) for more information). The list of specific asset types includes both money and shares listed on a designated stock exchange. Given that the Halifax Trust only held assets that are on the list of specific asset types and the total FMV of the trust assets did not exceed $50,000 throughout the year, it is a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2023</span>. Therefore, the trust would only be required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a> if one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year.</p>
+<p>During its taxation year that ended on <span class="nowrap">December 31, 2023</span>, based on the disposition of the shares, the capital gain that was realized, and the distribution of the proceeds (including the capital gain) to the sole beneficiary:</p>
+<ul>
+<li>The trust was resident in Canada and disposed of capital property</li>
+<li>The trust was resident in Canada and had a taxable capital gain</li>
+<li>The trust received from the trust property a gain that was allocated to one or more beneficiaries, and the trust had total income (the capital gain) from all sources of more than $500</li>
+<li>The trust received from the trust property a gain that was allocated to one or more beneficiaries, and the trust allocated income (the capital gain) of more than $100 to any single beneficiary</li>
+<li>The trust received from the trust property a gain that was allocated to one or more beneficiaries, and the trust made a distribution of capital to one or more beneficiaries</li>
+</ul>
+<p>Each of these are situations outlined in <a href="#q2-1">Question 2.1</a>. Therefore, the Halifax Trust is required to file a T3 return for its taxation year that ended on <span class="nowrap">December 31, 2023</span>. As a listed trust, it is not required to include <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> with the <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a>.</p>
+<p><strong>2024 taxation year filing requirement: Possible T3&nbsp;return without Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-b">Question 2.3.B</a>, paragraph 150(1.2)(b) for more information). Given that the total FMV of the trust assets did not exceed $50,000 throughout the year, the Halifax Trust is a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2024</span>. Therefore, the trust would only be required to file a T3 return if one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. However, the trust would not be required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p><strong>2025 taxation year filing requirement: Possible T3 return without Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2025</span> taxation year), the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-c">Question 2.3.C</a>, paragraph 150(1.2)(b) for more information). Given that the total FMV of the trust assets did not exceed $50,000 throughout the year, the Halifax Trust is a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2025</span>. Therefore, the trust would only be required to file a T3 return if one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. However, the trust would not be required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+</details> <details><summary>Example 4</summary><p><strong>Scenario:</strong></p>
+<p>The Winnipeg Trust is an express trust that is resident in Canada. The trustees are the grandparents of each of the beneficiaries. At the beginning of its 2023&nbsp;taxation year, the trust held assets consisting only of money and a cottage property. The total FMV of the trust’s assets was $325,000. In <span class="nowrap">October 2023</span>, the trust disposed of the cottage, which was capital property of the trust, realizing a taxable capital gain. A portion of the proceeds, including the capital gain, was distributed to the beneficiaries. On <span class="nowrap">December 31, 2023</span>, the total FMV of the trust’s assets was $125,000. Throughout its taxation year that ended on <span class="nowrap">December 31, 2024</span>, the trust held only money, a guaranteed investment certificate (“GIC”) issued by a Canadian bank, and personal-use property of the trust with the highest total FMV throughout the year being $128,000. Throughout the taxation year that ended on <span class="nowrap">December 31, 2025</span>, the trust held only money, a GIC issued by a Canadian bank, personal-use property of the trust, and partnership units with the highest total FMV throughout the year being $134,000.</p>
+<p><strong>2023 taxation year filing requirement: T3 return including Schedule&nbsp;15</strong></p>
+<p>For taxation years ending before <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2023</span> taxation year), the $50,000 asset threshold is limited to trusts holding specific asset types (see <a href="#q2-3-a">Question 2.3.A</a>, paragraph 150(1.2)(b) for more information). Given that the total FMV of trust assets exceeded $50,000 during the taxation year and real property, such as the cottage, is not included on this list of specific asset types, the Winnipeg Trust is not a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2023</span>. As an express trust resident in Canada that is not a listed trust, it is required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a> including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p><strong>2024 taxation year filing requirement: Possible T3 return without Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span>, the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-b">Question 2.3.B</a>, paragraph 150(1.2)(b) for more information). While the total FMV of the trust’s assets was less than $50,000 at <span class="nowrap">December 31, 2024</span>, it exceeded $50,000 during the taxation year.</p>
+<p>However, for taxation years ending on or after <span class="nowrap">December 31, 2024</span>, the asset threshold for trusts holding specific asset types is increased to $250,000 where each trustee is an individual and each beneficiary is an individual and is related to each trustee (see <a href="#q2-3-b">Question 2.3.B</a>, paragraph 150(1.2)(b.1) for more information). The list of specific asset types includes money, GICs issued by a Canadian bank, and personal-use property of the trust. Given that the total FMV of the trust assets did not exceed $250,000 throughout the taxation year, the trust only held assets that are eligible for the increased $250,000 asset threshold, and each of the trustees are individuals related to each of the beneficiaries, who are individuals, the Winnipeg Trust is a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2024</span>.</p>
+<p>As a listed trust, the Winnipeg Trust would only be required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3&nbsp;return</a> if one of the situations outlined in <a href="#q2-1">Question 2.1</a> applies to the trust for the taxation year. However, the trust would not be required to file <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>.</p>
+<p><strong>2025 taxation year filing requirement: T3 return including Schedule&nbsp;15</strong></p>
+<p>For taxation years ending on or after <span class="nowrap">December 31, 2024</span> (which includes the <span class="nowrap">December 31, 2025</span> taxation year), the $50,000 asset threshold applies to trusts without any restrictions on the type of assets held (see <a href="#q2-3-c">Question 2.3.C</a>, paragraph 150(1.2)(b) for more information). The total FMV of the trust’s assets exceeded $50,000 during the taxation year.</p>
+<p>However, for taxation years ending on or after <span class="nowrap">December 31, 2025</span>, the asset threshold for trusts holding specific asset types is increased to $250,000 where each trustee is an individual and each beneficiary is an individual (other than a trust) and is related to each trustee (see <a href="#q2-3-c">Question 2.3.C</a>, paragraph 150(1.2)(b.1) for more information). The list of specific asset types includes money, GICs issued by a Canadian bank, and personal-use property of the trust, but does not include partnership units. While the total FMV of the trust assets did not exceed $250,000 throughout the taxation year and each of the trustees are individuals related to each of the beneficiaries, who are individuals (other than a trust), the trust held one or more assets that are not eligible for the increased $250,000 asset threshold.</p>
+<p>Given that the trust did not meet the listed trust criteria during the taxation year, the Winnipeg Trust is not a listed trust for its taxation year that ended on <span class="nowrap">December 31, 2025</span>. As an express trust resident in Canada that is not a listed trust, it is required to file a T3 return including Schedule&nbsp;15.</p>
+</details></details><h2 id="toc2">3. Bare trusts</h2>
+<details><summary id="q3-1">3.1. What is a bare trust?</summary><p><a href="#q1-1">Question 1.1</a> provides a general overview of the legal (non-tax) principles that apply to trusts and bare trusts in Canada.</p>
+<p>The term “bare trust” is not defined in the&nbsp;<em>Income Tax Act</em>. However, <a href="https://laws.justice.gc.ca/eng/acts/I-3.3/page-74.html#s-104">subsection 104(1)</a> provides that a bare trust for income tax purposes is a trust arrangement under which the trustee can reasonably be considered to act as agent for all the beneficiaries under the trust with respect to all dealings with all of the trust's property.</p>
+<p>A trustee can reasonably be considered to act as agent for a beneficiary when the trustee has no significant powers or responsibilities, the trustee can take no action without instructions from that beneficiary and the trustee’s only function is to hold legal title to the property. In order for the trustee to be considered to be the agent for all the beneficiaries of a trust, it would generally be necessary for the trust to consult and take instructions from each and every beneficiary with respect to all dealings with all of the trust property.</p>
+<p>A common example of a bare trust arrangement is when, for privacy reasons, a property developer establishes a bare trust to hold registered title to real property, while the developer retains beneficial ownership.</p>
+</details> <details><summary id="q3-2">3.2. Are bare trusts now required to file an annual T3 return and Schedule&nbsp;15?</summary><p><strong>2023 taxation year:</strong>&nbsp;As announced in the&nbsp;<a href="/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2024/bare-trusts-exempt-from-trust-reporting-requirements-2023.html">Tax Tip issued March&nbsp;28,&nbsp;2024</a>, in recognition that the enhanced reporting rules for bare trusts have had an unintended impact on Canadians, the CRA will not require bare trusts to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>, including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, for the 2023 taxation year, unless the CRA makes a direct request for these filings.</p>
+<p><strong>[Proposed]</strong> <strong>2024 and 2025 taxation years</strong>: Based on <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">Bill C-15</a>, and consistent with the <a href="https://fin.canada.ca/drleg-apl/2025/nwmm-amvm-1-n-2-1125-eng.html">Explanatory Notes Relating to the Income Tax Act and Other Legislation</a> published by the Department of Finance, bare trusts are not subject to the trust reporting rules and are therefore not required to file a T3 return, including Schedule&nbsp;15, for taxation years ending on or after <span class="nowrap">December 31, 2024</span> and before <span class="nowrap">December 31, 2026</span>.</p>
+<p><strong>[Proposed]</strong> <strong>2026 taxation year</strong>: Based on Bill C-15, certain bare trusts are subject to the trust reporting rules. These are described in <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">subsection 150(1.3)</a>, subject to several exceptions described in <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">subsection 150(1.31)</a>. These bare trusts are referred to as “reportable bare trusts.” More information will be added in advance of the T3 return filing season for trusts with taxation years ending on <span class="nowrap">December 31, 2026</span>. <a href="https://www.parl.ca/DocumentViewer/en/45-1/bill/C-15/first-reading">Bill C-15</a> can also be viewed for more information.</p>
+</details> <details><summary>3.3. If a bare trust is required to file a T3 return, does it have to include all of the information requested in the return?</summary><p>Due to the nature of bare trusts, not all information requested on the&nbsp;T3 return&nbsp;may be relevant. The following guidance is provided to assist you in completing each relevant section of the&nbsp;T3 return:</p>
+<ul>
+<li><a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>: Step 1 – Identification and other information<ul>
+<li>When using our online services, identify the type of trust as “bare trust” by selecting “code 307, Bare Trust” and provide the trust creation date in the appropriate field.</li>
+<li>If this is the first year of filing a trust return, send us a copy of the trust document, unless this information or document has been previously submitted.&nbsp;</li>
+<li>Where applicable, provide information about whether the trust is filing its final return (and if so, provide the date on which the trust ceased to exist).</li>
+<li>Provide a response and information related to applicable questions on page 2.</li>
+</ul>
+</li>
+<li>T3 return: Step 5 – Summary of tax and credits<ul>
+<li>Complete the last page including the parts “Name and address of person or company who prepared this return” and “Certification.”</li>
+</ul>
+</li>
+<li><a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a> – Beneficial Ownership Information of a Trust<ul>
+<li>Complete all parts of Schedule&nbsp;15. Please refer to <a href="#q1-4">Question 1.4</a> for the information to be entered on&nbsp;Schedule&nbsp;15.</li>
+</ul>
+</li>
+</ul>
+<p>For bare trusts, the remaining parts of the&nbsp;<a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a>&nbsp;can be left blank. All income, capital gains and capital losses from the trust property should be reported on the beneficial owner’s tax return.</p>
+</details> <details><summary>3.4. What name should be used for a bare trust?</summary><p>Here are some guidelines for naming a bare trust that has not been named:</p>
+<ul>
+<li>If there is a written trust deed or other agreement governing the bare trust, and the document identifies a name for the bare trust, enter this in the name field.</li>
+<li>If there is no written trust deed or other agreement governing the bare trust, or if the document does not identify a name for the bare trust, list the legal name of the beneficial owner(s). For example:<ul>
+<li>If the beneficial owner is a corporation, list the full corporate name identified in the articles of incorporation with the word “Trust” at the end.</li>
+<li>If the beneficial owner is an individual, list the first and last names of the individual with the word “Trust” at the end (for example: Jane Smith Trust). If there is more than one beneficial owner, place the names in alphabetical order based on the beneficial owners’ last names with the word “Trust” at the end of the list (for example: Davis Johnson Miller Trust).&nbsp;</li>
+</ul>
+</li>
+</ul>
+<p>As the name field in our online services is limited to 60 characters, include only the first 54 characters of the name and then the word “Trust&quot;.</p>
+</details> <details><summary id="q3-5">3.5.&nbsp;Are bare trusts permitted to voluntarily file a T3 return for the 2023, 2024 or 2025 taxation years to report information on Schedule&nbsp;15? Will the CRA accept and process these returns?</summary><p>While the <em>Income Tax Act</em> requires bare trusts to file <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 returns</a> for the 2023 taxation year, the CRA has waived this filing requirement for all bare trusts, unless the CRA makes a direct request for these filings. Given that the Act includes the requirement for bare trusts to file, the CRA will accept and process any T3 return, including <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html">Schedule&nbsp;15</a>, that it receives.</p>
+<p><strong>[Proposed]</strong> For the 2024 and 2025 taxation years, bare trusts are not subject to the trust reporting rules and are therefore not required to file.</p>
+</details> <details><summary>3.6.&nbsp;What steps must be taken to close a trust account number for a bare trust?</summary><p>In most cases, a final <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">T3 return</a> must be filed for the taxation year in which a trust ceases to exist. On page 2 of the return, indicate that the return is the final return of the trust and enter the date on which the trust ceased to exist. No further steps are required.</p>
+<p>For the 2023 taxation year, the CRA will not require bare trusts to file a T3 return, unless the CRA makes a direct request for these filings.</p>
+<p><strong>[Proposed]</strong> For the 2024 and 2025 taxation years, bare trusts are not subject to the trust reporting rules and are therefore not required to file.</p>
+<p>Where a bare trust has a trust account number and ceased to exist in the 2023, 2024, or 2025 taxation year, the following steps may be taken to close the trust account number:</p>
+<ul>
+<li>the trustee of a bare trust may voluntarily choose to file a final T3 return with the date on which the bare trust ceased to exist,</li>
+<li>the trustee of a bare trust may send a letter to either the <a href="/en/revenue-agency/corporate/contact-information/tax-centres.html#sudb">Sudbury Tax Centre</a> or the <a href="/en/revenue-agency/corporate/contact-information/tax-centres.html#winn">Winnipeg Tax Centre</a> that includes the trust account number, bare trust name, the fact that the bare trust has ceased to exist, and the date on which the bare trust ceased to exist.</li>
+</ul>
+</details><h2 id="toc3">4. Legal representatives (primary trustee)</h2>
+<details><summary>4.1. I am the primary trustee. How do I gain authorization to contact the CRA?</summary><p>As the primary trustee, you are the&nbsp;<a href="/en/revenue-agency/services/tax/representative-authorization/legal-representative.html">legal representative</a>&nbsp;of the trust and are able to make changes to the account. You can call the CRA or submit documents by mail as soon as your trust account number is issued. If you want online access to the account, you will first need to register as the Primary Trustee using the Authorization Request option in Represent a Client. Once you have registered, you will have online access as a trustee and will have full access to My Trust Account, which is accessed via Represent a Client.</p>
+<p>Once you have registered as the Primary Trustee, you can add authorized representatives to the trust in the Authorized Representatives section of the trust’s Profile in My Trust Account.</p>
+<p>For more information, visit <a href="/en/revenue-agency/services/e-services/represent-a-client/help-trust-account/about-trust-account.html">About My Trust Account</a>.</p>
+</details><h2 id="toc4">5. More information</h2>
+<p>The CRA shares the latest information and timely updates in relation to the administration of the current tax laws for the Government of Canada and for most provinces and territories on its website, Canada.ca, and via digital and social media channels.</p>
+<p>You can find on the website&nbsp;<a href="/en/revenue-agency/news/newsroom.html">news releases, tax tips,&nbsp;technical tax information, forms, guides</a>, policies, manuals, Questions and Answers, and other publications in HTML and/or PDF format, or where available, in printed form upon request.</p>
+<p>You can contact us through&nbsp;<a href="/en/revenue-agency/corporate/contact-information.html">traditional channels</a>&nbsp;for your income tax questions not addressed on the website.</p>
+</section></div>
+</div>
+
+    
+
+
+</div>
+<div class="mwsbodytext text parbase section">
+    
+
+    
+        <h2>Related links</h2>
+<ul>
+<li><a href="/en/revenue-agency/services/tax/trust-administrators/t3-return.html">Trust income tax return</a></li>
+<li><a href="/en/revenue-agency/services/tax/trust-administrators/t3-return/application-trust-account-number-overview.html">Application for a trust account number</a></li>
+<li><a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html">Form T3RET, T3 Trust Income Tax and Information Return</a></li>
+<li><a href="/en/revenue-agency/services/forms-publications/publications/t4013.html">Guide T4013, T3 Trust Guide</a></li>
+</ul>
+
+    
+
+
+</div>
+<div class="mwsgeneric-base-html parbase section">
+
+
+
+    <section id="specified-information" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+        <h3 class="modal-title">Specified information </h3>
+    </header>
+    <div class="modal-body">
+        <p>"<strong>Specified information</strong>" refers to the information requested on <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html" target="_blank">Schedule 15</a> for all reportable entities of the trust. See <a href="#q1-4">Question 1.4</a> for more information.</p>
+    </div>
+</section>
+
+<section id="reportable-entity" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+        <h3 class="modal-title">Reportable entity</h3>
+    </header>
+    <div class="modal-body">
+        <p><a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html" target="_blank">Schedule 15</a> requests specified information on all trustees, settlors, beneficiaries, and controlling persons (i.e., persons who have the ability, through the terms of the trust or a related agreement, to exert influence over trustee decisions regarding the appointment of income or capital of the trust) of the trust. These entities are collectively referred to as “<strong>reportable entities</strong>”. See <a href="#q1-4">Question 1.4</a> for more information.</p>
+    </div>
+</section>
+
+<section id="listed-trust" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+        <h3 class="modal-title">Listed trusts</h3>
+    </header>
+    <div class="modal-body">
+        <p>"Listed trusts" are only required to file a <a href="/en/revenue-agency/services/forms-publications/forms/t3ret.html" target="_blank">T3 return</a> for a taxation year in which one of the situations outlined in <a href="#q2-1">Question&nbsp;2.1</a> applies to the trust for the taxation year. Listed trusts are not required to include <a href="/en/revenue-agency/services/forms-publications/forms/t3sch15.html" target="_blank">Schedule 15</a> when filing a T3 return. Refer to the following questions for more information:</p>
+        <ul>
+            <li><a href="#q2-3-a">Question 2.3.A</a> for the listed trusts applicable for taxation years ending on or after <span class="nowrap">December 31, 2023</span>, and before <span class="nowrap">December 31, 2024</span></li>
+            <li><a href="#q2-3-b">Question 2.3.B</a> for the listed trusts applicable for taxation years ending on or after <span class="nowrap">December 31, 2024</span>, and before <span class="nowrap">December 31, 2025</span></li>
+            <li><a href="#q2-3-c">Question 2.3.C</a> for the listed trusts applicable for taxation years ending on or after <span class="nowrap">December 31, 2025</span></li>
+        </ul>
+    </div>
+</section>
+
+<section id="trustees" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+        <h3 class="modal-title">Trustees</h3>
+    </header>
+    <div class="modal-body">
+        <p>A <strong>trustee</strong> is an individual or trust institution that holds legal title to property in trust for the benefit of the trust beneficiaries. The trustee includes an executor, administrator, assignee, receiver, or liquidator who owns or controls property for some other person.</p>
+    </div>
+</section>
+
+<section id="settlors" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+        <h3 class="modal-title">Settlors</h3>
+    </header>
+    <div class="modal-body">
+        <p>See <a href="#q1-8">Question 1.8</a> for the persons that would be reported on Schedule 15 as a “settlor” of the trust.</p>
+    </div>
+</section>
+
+<section id="beneficiaries" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+        <h3 class="modal-title">Beneficiaries</h3>
+    </header>
+    <div class="modal-body">
+        <p>The term <strong>“beneficiary”</strong> for the purposes of Schedule&nbsp;15 is based on its ordinary meaning. Generally, the determination of who is a beneficiary of a particular trust requires a finding of fact based on all the relevant information, including the terms of the trust and the settlor’s intent in establishing the trust. In essence, a beneficiary of a trust is a person (other than a protector) who has a right to compel the trustee to properly enforce the terms of the trust, regardless of whether that person’s right to any of the income or capital is immediate, future, contingent, absolute or conditional on the exercise of discretion by any person. However, such a determination is ultimately dependant on the specific facts, terms of the trust as well as the relevant trust law.</p>
+    </div>
+</section>
+
+<section id="controlling-persons" class="mfp-hide modal-dialog modal-content overlay-def">
+    <header class="modal-header">
+        <h3 class="modal-title">Controlling persons</h3>
+    </header>
+    <div class="modal-body">
+        <p>For the purposes of the trust reporting requirements, the term “<strong>controlling person</strong>” means a person who has the ability (through the terms of the trust or a related agreement) to exert influence over trustee decisions regarding the appointment of income or capital of the trust. This would include, for example, a protector of the trust.</p>
+    </div>
+</section>
+
+
+</div>
+
+
+            <section class="pagedetails">
+    <h2 class="wb-inv">Page details</h2>
+
+    
+
+    <div class="row">
+        <div class="col-sm-8 col-md-9 col-lg-9">
+            <div class="wb-disable-allow" data-ajax-replace="/etc/designs/canada/wet-boew/assets/feedback/page-feedback-en.html" data-feedback-section="T3Project">
+            </div>
+        </div>
+	</div>
+    
+<gcds-date-modified>
+	2026-02-23
+</gcds-date-modified>
+
+
+</section>
+        </main>
+    
+
+
+
+    
+
+
+
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+
+</div>
+
+    
+
+
+
+
+    
+
+
+
+
+    
+        
+        
+        <div class="newpar new section">
+
+</div>
+
+    
+        
+        
+        <div class="par iparys_inherited">
+
+    
+    
+    
+    
+        
+        
+        <div class="global-footer">
+    <footer id="wb-info">
+	    <h2 class="wb-inv">About this site</h2>
+    	<div class="gc-contextual"><div class="container">
+    <nav>
+        <h3>Canada Revenue Agency (CRA)</h3>
+        <ul class="list-col-xs-1 list-col-sm-2 list-col-md-3">
+            <li><a href="/en/revenue-agency/corporate/contact-information.html">Contact the CRA</a></li>
+        
+            <li><a href="/en/revenue-agency/services/update-information-cra.html">Update your information</a></li>
+        
+            <li><a href="/en/revenue-agency/corporate/about-canada-revenue-agency-cra.html">About the CRA</a></li>
+        </ul>
+    </nav>
+</div></div>	
+        <div class="gc-main-footer">
+			<div class="container">
+	<nav>
+	<h3>Government of Canada</h3>
+	<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3">
+		<li><a href="/en/contact.html">All contacts</a></li>
+		<li><a href="/en/government/dept.html">Departments and agencies</a></li>
+		<li><a href="/en/government/system.html">About government</a></li>
+	</ul>
+	<h4><span class="wb-inv">Themes and topics</span></h4>
+	<ul class="list-unstyled colcount-sm-2 colcount-md-3">			
+		<li><a href="/en/services/jobs.html">Jobs</a></li>
+		<li><a href="/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+		<li><a href="https://travel.gc.ca/">Travel and tourism</a></li>
+		<li><a href="/en/services/business.html">Business</a></li>
+		<li><a href="/en/services/benefits.html">Benefits</a></li>
+		<li><a href="/en/services/health.html">Health</a></li>
+		<li><a href="/en/services/taxes.html">Taxes</a></li>
+		<li><a href="/en/services/environment.html">Environment and natural resources</a></li>
+		<li><a href="/en/services/defence.html">National security and defence</a></li>
+		<li><a href="/en/services/culture.html">Culture, history and sport</a></li>
+		<li><a href="/en/services/policing.html">Policing, justice and emergencies</a></li>
+		<li><a href="/en/services/transport.html">Transport and infrastructure</a></li>
+		<li><a href="https://www.international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+		<li><a href="/en/services/finance.html">Money and finances</a></li>
+		<li><a href="/en/services/science.html">Science and innovation</a></li>
+		<li><a href="/en/services/indigenous-peoples.html">Indigenous Peoples</a></li>
+		<li><a href="/en/services/veterans-military.html">Veterans and military</a></li>
+		<li><a href="/en/services/youth.html">Youth</a></li>
+		<li><a href="/en/services/life-events.html">Manage life events</a></li>		
+	</ul>
+	</nav>
+</div>
+	
+        </div>
+        <div class="gc-sub-footer">
+            <div class="container d-flex align-items-center">
+            <nav>
+                <h3 class="wb-inv">Government of Canada Corporate</h3>
+                <ul>
+                
+                    		<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+		<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+		<li><a href="https://www.canada.ca/en/government/about-canada-ca.html">About Canada.ca</a></li>
+                
+                <li><a href="/en/transparency/terms.html">Terms and conditions</a></li>
+                <li><a href="/en/revenue-agency/corporate/privacy-notice.html">Privacy</a></li>
+                </ul>
+            </nav>
+                <div class="wtrmrk align-self-end">
+                    <img src="/etc/designs/canada/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada"/>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+    
+
+</div>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="/etc/designs/canada/wet-boew/js/ep-pp.min.js"></script>
+<script src="/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
+<script src="/etc/designs/canada/wet-boew/js/theme.min.js"></script>
+
+
+
+
+</body>
+</html>
