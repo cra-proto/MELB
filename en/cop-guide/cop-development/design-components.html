@@ -1,0 +1,310 @@
+---
+layout: without-h1
+title: "Design components – How a COP is developed"
+description: "GCWeb and WET-BOEW design patterns used in COPs with code examples and guidance on when to use each"
+dateModified: 2026-05-15
+breadcrumbs:
+  - title: "COP Development Guide"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/"
+  - title: "How a COP is developed"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/cop-development.html"
+---
+
+<nav class="provisional gc-subway" data-sections-title="Sections" aria-label="How a COP is developed">
+  <h1>How a COP is developed</h1>
+  <ul>
+    <li><a href="overview.html">COP lifecycle and phases</a></li>
+    <li><a href="project-setup.html">Project setup standards</a></li>
+    <li><a href="ia-structure.html">Information architecture changes</a></li>
+    <li><a class="active" href="design-components.html">Design components</a></li>
+    <li><a href="testing.html">Testing methodology</a></li>
+    <li><a href="scoping.html">Scoping process</a></li>
+    <li><a href="patterns.html">Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Design components<span class="wb-inv"> – How a COP is developed</span></h1>
+
+<p>These are the specific Canada.ca design patterns found across all COPs. Each includes the HTML markup, which COPs used it, and guidance on when to apply it in your own project.</p>
+
+<nav role="navigation" class="gc-toc" aria-label="On this page">
+  <h2 class="h3">On this page</h2>
+  <ul>
+    <li><a href="#h_1">Subway navigation</a></li>
+    <li><a href="#h_2">Doormats</a></li>
+    <li><a href="#h_3">On This Page navigation</a></li>
+    <li><a href="#h_4">Topic page with thick line</a></li>
+    <li><a href="#h_5">Expand/hide (details/summary)</a></li>
+    <li><a href="#h_6">Comparison tables</a></li>
+    <li><a href="#h_7">Conjunction lists</a></li>
+    <li><a href="#h_8">Font Awesome icon lists</a></li>
+    <li><a href="#h_9">Contextual sign-in button</a></li>
+    <li><a href="#h_10">Other patterns</a></li>
+  </ul>
+</nav>
+
+<h2 id="h_1">Subway navigation</h2>
+
+<p><strong>Used in:</strong> GST/HST (file-return), CAP (corporate instalments), T1 (filing sub-steps)</p>
+
+<p><strong>When to use:</strong> For linear multi-step journeys with 3&ndash;6 steps. The user follows a sequence where each step is its own page. The subway nav shows where you are in the process.</p>
+
+<details>
+  <summary>Landing page markup (parent page with section descriptions)</summary>
+  <pre><code>&lt;nav class="provisional gc-subway"&gt;
+  &lt;h2&gt;Sections&lt;/h2&gt;
+  &lt;dl&gt;
+    &lt;dt&gt;&lt;a href="..."&gt;Section Title&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt;Description of this section&lt;/dd&gt;
+
+    &lt;dt&gt;&lt;a href="..."&gt;Another Section&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt;Description of this section&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/nav&gt;</code></pre>
+</details>
+
+<details>
+  <summary>Child page markup (individual step with active indicator)</summary>
+  <pre><code>&lt;nav class="provisional gc-subway" data-sections-title="Sections"
+     aria-label="Parent Section Title"&gt;
+  &lt;h1&gt;Parent Section Title&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="..."&gt;Step 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="active" href="..."&gt;Step 2 (current)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="..."&gt;Step 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h1 property="name" id="wb-cont" class="gc-thickline"&gt;
+  Step 2&lt;span class="wb-inv"&gt; &amp;ndash; Parent Section Title&lt;/span&gt;
+&lt;/h1&gt;</code></pre>
+  <p><strong>Important:</strong> Child pages must use <code>layout: without-h1</code> in the YAML front matter because the H1 is rendered in the page body after the subway nav, not in the template header.</p>
+</details>
+
+<h2 id="h_2">Doormats</h2>
+
+<p><strong>Used in:</strong> CAP (index), GST/HST (topic page), EOL</p>
+
+<p><strong>When to use:</strong> On topic or landing pages to present 6&ndash;9 major sub-sections as linked cards. Each doormat has a linked H3 title plus a one-sentence description.</p>
+
+<details>
+  <summary>Doormat markup</summary>
+  <pre><code>&lt;section class="gc-srvinfo col-md-12"&gt;
+  &lt;div class="wb-eqht row"&gt;
+    &lt;div class="col-lg-4 col-md-6"&gt;
+      &lt;h3&gt;&lt;a href="make-payment/index.html"&gt;Make a payment&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;How to make a full or partial payment to the CRA
+         online, by mail, or in person&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col-lg-4 col-md-6"&gt;
+      &lt;h3&gt;&lt;a href="..."&gt;Another Section&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;Brief description of this section&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+  <p>The <code>wb-eqht</code> class makes all cards equal height. Use <code>col-lg-4 col-md-6</code> for a 3-column desktop / 2-column tablet grid.</p>
+</details>
+
+<h2 id="h_3">On This Page navigation</h2>
+
+<p><strong>Used in:</strong> GST/HST (how-file), TFSA (extensively), EOL</p>
+
+<p><strong>When to use:</strong> On longer single pages with 3 or more H2 sections. Gives users a jump-to menu at the top of the page.</p>
+
+<details>
+  <summary>OTP navigation markup</summary>
+  <pre><code>&lt;nav role="navigation" class="gc-toc" aria-label="On this page"&gt;
+  &lt;h2 class="h3"&gt;On this page&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#h_1"&gt;First section heading&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#h_2"&gt;Second section heading&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#h_3"&gt;Third section heading&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+  <p>Each anchor must match the <code>id</code> attribute on the corresponding <code>&lt;h2&gt;</code> element in the page body.</p>
+</details>
+
+<h2 id="h_4">Topic page with thick line</h2>
+
+<p><strong>Used in:</strong> CAP, GST/HST</p>
+
+<p><strong>When to use:</strong> On the main topic page &ndash; the top-level entry point for a content area. The thick line signals "this is a major section."</p>
+
+<details>
+  <summary>Topic page heading markup</summary>
+  <pre><code>&lt;h1 property="name" id="wb-cont"
+    class="provisional gc-thickline"&gt;
+  Payments to the CRA
+&lt;/h1&gt;
+&lt;p class="pagetag"&gt;Find out how to send money to the CRA...&lt;/p&gt;</code></pre>
+  <p>The <code>pagetag</code> class provides a styled summary paragraph beneath the main heading.</p>
+</details>
+
+<h2 id="h_5">Expand/hide (details/summary)</h2>
+
+<p><strong>Used in:</strong> All COPs</p>
+
+<p><strong>When to use:</strong> To hide detailed content that not everyone needs behind a collapsible toggle. Common uses: additional examples, technical details, edge cases, definitions.</p>
+
+<details>
+  <summary>Expand/hide markup</summary>
+  <pre><code>&lt;details&gt;
+  &lt;summary&gt;Title of collapsible section&lt;/summary&gt;
+  &lt;p&gt;Content that is hidden by default and revealed
+     when the user clicks the summary.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+  <p>This is native HTML5 &ndash; no additional classes needed. You can nest other elements (lists, tables, paragraphs) inside the <code>&lt;details&gt;</code> element.</p>
+</details>
+
+<h2 id="h_6">Comparison tables</h2>
+
+<p><strong>Used in:</strong> GST/HST (how-file &ndash; filing method comparison)</p>
+
+<p><strong>When to use:</strong> When users need to choose between multiple options and need to compare capabilities side by side.</p>
+
+<details>
+  <summary>Comparison table markup</summary>
+  <pre><code>&lt;table class="table wb-zebra"&gt;
+  &lt;caption&gt;Compare filing methods&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Feature&lt;/th&gt;
+      &lt;th scope="col"&gt;Method A&lt;/th&gt;
+      &lt;th scope="col"&gt;Method B&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Feature name&lt;/td&gt;
+      &lt;td&gt;&lt;span class="fas fa-check text-success"&gt;
+          &lt;/span&gt;&lt;span class="wb-inv"&gt;Yes&lt;/span&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;span class="fas fa-times text-danger"&gt;
+          &lt;/span&gt;&lt;span class="wb-inv"&gt;No&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+  <p>The <code>wb-zebra</code> class adds alternating row colours. Use <code>wb-inv</code> for screen reader text alongside visual icons.</p>
+</details>
+
+<h2 id="h_7">Conjunction lists</h2>
+
+<p><strong>Used in:</strong> GST/HST (how-file &ndash; each filing method offers "Learn how" OR "File now")</p>
+
+<p><strong>When to use:</strong> When presenting two mutually exclusive options (learn about it vs. do it now, online vs. by mail).</p>
+
+<details>
+  <summary>Conjunction list markup (OR type)</summary>
+  <pre><code>&lt;ul class="cnjnctn-type-or cnjnctn-sm"&gt;
+  &lt;li class="cnjnctn-col"&gt;
+    &lt;h4&gt;Learn how to file&lt;/h4&gt;
+    &lt;p&gt;&lt;a href="..."&gt;Using your CRA account&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li class="cnjnctn-col"&gt;
+    &lt;h4&gt;File now&lt;/h4&gt;
+    &lt;p&gt;&lt;a href="..."&gt;Sign in to your CRA account&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  <p>The <code>cnjnctn-type-or</code> class displays a visual "or" divider between the options. Use <code>cnjnctn-type-and</code> for both/and scenarios.</p>
+</details>
+
+<h2 id="h_8">Font Awesome icon lists</h2>
+
+<p><strong>Used in:</strong> GST/HST (contact section), CAP</p>
+
+<p><strong>When to use:</strong> For contact channels or action-oriented lists where icons help users quickly identify the channel type (online, phone, mail).</p>
+
+<details>
+  <summary>Icon list markup</summary>
+  <pre><code>&lt;ul class="fa-ul"&gt;
+  &lt;li&gt;
+    &lt;span class="fa-li"&gt;&lt;span class="fas fa-desktop"&gt;
+    &lt;/span&gt;&lt;/span&gt;
+    &lt;strong&gt;Online -&lt;/strong&gt; get account info
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class="fa-li"&gt;&lt;span class="fas fa-phone-alt"&gt;
+    &lt;/span&gt;&lt;/span&gt;
+    &lt;strong&gt;By phone -&lt;/strong&gt; get answers
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span class="fa-li"&gt;&lt;span class="fas fa-envelope"&gt;
+    &lt;/span&gt;&lt;/span&gt;
+    &lt;strong&gt;By mail -&lt;/strong&gt; mail a document
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</details>
+
+<h2 id="h_9">Contextual sign-in button</h2>
+
+<p><strong>Used in:</strong> GST/HST (every page via YAML front matter)</p>
+
+<p><strong>When to use:</strong> On pages where the user may want to sign in to their CRA account to complete the task described on the page.</p>
+
+<details>
+  <summary>YAML configuration for contextual sign-in</summary>
+  <pre><code>auth:
+  type: "contextual"
+  label: "Sign in"
+  labelExtended: "CRA sign in"
+  link: "https://www.canada.ca/en/revenue-agency/services/
+        e-services/cra-login-services.html"</code></pre>
+  <p>This adds a "Sign in" button in the page header, styled according to GCWeb standards.</p>
+</details>
+
+<h2 id="h_10">Other patterns</h2>
+
+<table class="table table-bordered table-striped">
+  <caption>Additional design patterns found across COPs</caption>
+  <thead>
+    <tr>
+      <th scope="col">Pattern</th>
+      <th scope="col">Used in</th>
+      <th scope="col">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>&lt;dl&gt;</code> definition lists</td>
+      <td>TFSA, EOL</td>
+      <td>Define terms inline (TFSA explored horizontal format)</td>
+    </tr>
+    <tr>
+      <td>Alert boxes (<code>alert-warning</code>, <code>alert-info</code>)</td>
+      <td>TFSA</td>
+      <td>Highlight critical warnings or important notes</td>
+    </tr>
+    <tr>
+      <td>Date picker / due date calculator</td>
+      <td>EOL</td>
+      <td>Interactive tools for calculating deadlines</td>
+    </tr>
+    <tr>
+      <td>Feedback banner (custom JS)</td>
+      <td>EOL, T1</td>
+      <td>Alpha/beta testing banner with redirect and feedback capture</td>
+    </tr>
+    <tr>
+      <td>Exit intent page</td>
+      <td>GST/HST, T1</td>
+      <td>Intercepts links leaving the prototype to external sites</td>
+    </tr>
+    <tr>
+      <td><code>provisional gc-chckbxrdio</code></td>
+      <td>GST/HST (testing)</td>
+      <td>Large radio buttons used in usability testing task pages</td>
+    </tr>
+    <tr>
+      <td>Ordered step lists</td>
+      <td>GST/HST, EOL</td>
+      <td>Numbered procedural steps within a single page</td>
+    </tr>
+  </tbody>
+</table>
+
+<nav class="mrgn-bttm-lg mrgn-tp-lg">
+  <h3 class="wb-inv">Document navigation</h3>
+  <ul class="pager">
+    <li class="previous"><a href="ia-structure.html" rel="prev"><span class="wb-inv">Previous: </span>Information architecture changes</a></li>
+    <li class="next"><a href="testing.html" rel="next"><span class="wb-inv">Next: </span>Testing methodology</a></li>
+  </ul>
+</nav>

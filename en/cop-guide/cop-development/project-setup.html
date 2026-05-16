@@ -1,0 +1,243 @@
+---
+layout: without-h1
+title: "Project setup standards – How a COP is developed"
+description: "Repository structure, Jekyll configuration, file naming conventions, proto versioning, and required documentation for COPs"
+dateModified: 2026-05-15
+breadcrumbs:
+  - title: "COP Development Guide"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/"
+  - title: "How a COP is developed"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/cop-development.html"
+---
+
+<nav class="provisional gc-subway" data-sections-title="Sections" aria-label="How a COP is developed">
+  <h1>How a COP is developed</h1>
+  <ul>
+    <li><a href="overview.html">COP lifecycle and phases</a></li>
+    <li><a class="active" href="project-setup.html">Project setup standards</a></li>
+    <li><a href="ia-structure.html">Information architecture changes</a></li>
+    <li><a href="design-components.html">Design components</a></li>
+    <li><a href="testing.html">Testing methodology</a></li>
+    <li><a href="scoping.html">Scoping process</a></li>
+    <li><a href="patterns.html">Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Project setup standards<span class="wb-inv"> – How a COP is developed</span></h1>
+
+<p>The GST/HST Business COP is the most documented project and serves as the template a junior designer should follow. This section covers the exact repository structure, configuration, and documentation standards used.</p>
+
+<nav role="navigation" class="gc-toc" aria-label="On this page">
+  <h2 class="h3">On this page</h2>
+  <ul>
+    <li><a href="#h_1">Repository file structure</a></li>
+    <li><a href="#h_2">Jekyll configuration</a></li>
+    <li><a href="#h_3">Contributing rules</a></li>
+    <li><a href="#h_4">Proto naming convention</a></li>
+    <li><a href="#h_5">Required documentation</a></li>
+    <li><a href="#h_6">YAML front matter reference</a></li>
+  </ul>
+</nav>
+
+<h2 id="h_1">Repository file structure</h2>
+
+<p>A well-structured COP repo follows this pattern:</p>
+
+<table class="table table-bordered">
+  <caption>Standard COP repository directory layout</caption>
+  <thead>
+    <tr>
+      <th scope="col">Path</th>
+      <th scope="col">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>_config.yml</code></td><td>Jekyll configuration (site-wide settings)</td></tr>
+    <tr><td><code>README.md</code></td><td>Project overview, links, roadmap checklist</td></tr>
+    <tr><td><code>index.html</code></td><td>Scoped page inventory (the master list of all pages in scope)</td></tr>
+    <tr><td><code>exit-intent.html</code></td><td>Exit page for links leaving the prototype</td></tr>
+    <tr><td><code>404.html</code></td><td>Custom error page</td></tr>
+    <tr><td><code>sitemap.html</code></td><td>Site map page</td></tr>
+    <tr><td><code>docs/CONTRIBUTING.md</code></td><td>Proto naming rules, update procedures</td></tr>
+    <tr><td><code>docs/ROADMAP.md</code></td><td>Phase checklist and Gantt chart</td></tr>
+    <tr><td><code>docs/CHANGELOG.md</code></td><td>Added/Deleted/Modified page tracker</td></tr>
+    <tr><td><code>docs/PRIVACY.md</code></td><td>Standard CRA privacy statement</td></tr>
+    <tr><td><code>docs/SUPPORT.md</code></td><td>Technical setup guide (Jekyll, YAML, templates)</td></tr>
+    <tr><td><code>templates/</code></td><td>Page templates (Jekyll and CDTS versions), CSS, scripts</td></tr>
+    <tr><td><code>en/</code></td><td>All content pages (mirrors Canada.ca URL paths)</td></tr>
+    <tr><td><code>old/</code></td><td>Archived prototype versions</td></tr>
+  </tbody>
+</table>
+
+<h2 id="h_2">Jekyll configuration</h2>
+
+<p>Every COP repo uses the <code>gcweb-jekyll</code> remote theme. This is what a standard <code>_config.yml</code> looks like:</p>
+
+<details>
+  <summary>Example _config.yml</summary>
+  <pre><code>baseurl: /your-cop-name
+remote_theme: wet-boew/gcweb-jekyll
+title: "Your COP Title"
+description: "Project description"
+developerOptions: true
+exitPage: true
+testBanner: true</code></pre>
+
+  <p>Key settings:</p>
+  <ul>
+    <li><code>baseurl</code> &ndash; Must match the repository name for GitHub Pages to work</li>
+    <li><code>remote_theme</code> &ndash; Always <code>wet-boew/gcweb-jekyll</code> for GCWeb/WET styling</li>
+    <li><code>developerOptions</code> &ndash; Set to <code>true</code> during development, <strong>must be set to <code>false</code> before user testing</strong></li>
+    <li><code>exitPage</code> &ndash; Enables the exit intent page for external links</li>
+    <li><code>testBanner</code> &ndash; Shows a banner indicating this is a prototype, not the live site</li>
+  </ul>
+</details>
+
+<h2 id="h_3">Contributing rules</h2>
+
+<p>From the GST/HST COP's CONTRIBUTING.md, these are the rules every team member must follow:</p>
+
+<ol>
+  <li><strong>Proto naming:</strong> Prototype files get <code>_proto#</code> appended &rarr; <code>choose-filing-method_proto1.html</code></li>
+  <li><strong>Branch + PR workflow:</strong> Create a new branch, then pull request to merge (though in practice many teams commit directly to main)</li>
+  <li><strong>PR/commit naming:</strong> Must identify what was updated or changed</li>
+  <li><strong>Path structure changes:</strong> Must be communicated to all repo contributors</li>
+  <li><strong>Absolute links only:</strong> No relative links &ndash; all links must be absolute URLs</li>
+  <li><strong>File naming = final Canada.ca URL:</strong> Create files where they'll live on Canada.ca, following GC URL guidelines</li>
+  <li><strong>Developer options off for testing:</strong> Set <code>developerOptions: false</code> in _config.yml before user testing</li>
+</ol>
+
+<h2 id="h_4">Proto naming convention</h2>
+
+<p>This is one of the most important COP conventions. Instead of using git branches for versioning, COPs use file-level versioning through numbered suffixes:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Proto naming system explained</caption>
+  <thead>
+    <tr>
+      <th scope="col">Suffix</th>
+      <th scope="col">Meaning</th>
+      <th scope="col">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>_proto0</code></td>
+      <td>Baseline &ndash; the current live Canada.ca page as-is</td>
+      <td><code>how-file_proto0.html</code></td>
+    </tr>
+    <tr>
+      <td><code>_proto1</code></td>
+      <td>First proposed redesign</td>
+      <td><code>how-file_proto1.html</code></td>
+    </tr>
+    <tr>
+      <td><code>_proto2</code>, <code>_proto3</code>, etc.</td>
+      <td>Subsequent iterations</td>
+      <td><code>how-file_proto2.html</code></td>
+    </tr>
+    <tr>
+      <td>(no suffix)</td>
+      <td>The current working version / final version</td>
+      <td><code>how-file.html</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When a prototype version is no longer active, it gets moved to the <code>/old/</code> directory. This keeps the working directory clean while preserving design history.</p>
+
+<div class="alert alert-info">
+  <p><strong>Key insight:</strong> The <code>_proto0</code> file is your &ldquo;before&rdquo; snapshot. Keeping it lets the team compare old vs. new approaches throughout the project, and it becomes critical evidence when measuring improvements during validation testing.</p>
+</div>
+
+<h2 id="h_5">Required documentation</h2>
+
+<p>A mature COP repo includes these documentation files in the <code>docs/</code> directory:</p>
+
+<details>
+  <summary>ROADMAP.md &ndash; Phase checklist and timeline</summary>
+  <p>Tracks which COP phases are complete. The GST/HST COP used a Gantt chart showing actual durations:</p>
+  <ul>
+    <li><strong>Create repo + templates:</strong> 3 days</li>
+    <li><strong>Baseline user testing:</strong> 19 days</li>
+    <li><strong>Import scoped files:</strong> 9 days (overlaps with testing)</li>
+    <li><strong>Evaluate baseline testing:</strong> 14 days</li>
+    <li><strong>Content and design prototyping:</strong> 134 days</li>
+    <li><strong>Validation testing:</strong> 20 days</li>
+  </ul>
+</details>
+
+<details>
+  <summary>CHANGELOG.md &ndash; The production handoff deliverable</summary>
+  <p>Three tables tracking every page action with exact URLs. This is the deliverable the web publishing team uses to implement changes on Canada.ca:</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Table</th>
+        <th scope="col">What it tracks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Pages to be added</strong></td><td>New pages with GitHub URL + new Canada.ca URL</td></tr>
+      <tr><td><strong>Pages to be deleted</strong></td><td>Pages to remove, with current Canada.ca URL + redirect target</td></tr>
+      <tr><td><strong>Pages to be modified</strong></td><td>Changed pages with old title, old URL, new title, new URL, and whether the modified date needs updating</td></tr>
+    </tbody>
+  </table>
+</details>
+
+<details>
+  <summary>CONTRIBUTING.md &ndash; Team workflow rules</summary>
+  <p>Proto naming conventions, commit message standards, link format rules, and file naming guidelines as described above.</p>
+</details>
+
+<details>
+  <summary>SUPPORT.md &ndash; Technical reference</summary>
+  <p>Jekyll setup guide, YAML front matter reference, GCWeb template options, and troubleshooting tips for team members who are new to the tooling.</p>
+</details>
+
+<h2 id="h_6">YAML front matter reference</h2>
+
+<p>Every HTML page in a COP needs YAML front matter at the top. Here is the standard format used in subway child pages:</p>
+
+<details>
+  <summary>Complete YAML front matter example</summary>
+  <pre><code>---
+layout: without-h1
+title: "Page Title &ndash; Parent Section Title"
+description: "Brief page description"
+subject: "Economics and Industry;Taxes"
+keywords: "keyword1, keyword2"
+auth:
+  type: "contextual"
+  label: "Sign in"
+  labelExtended: "CRA sign in"
+  link: "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html"
+altLangPage: "/fr/equivalent-page.html"
+dateModified: 2025-05-13
+dateIssued: 2023-08-07
+breadcrumbs:
+  - title: "Taxes"
+    link: "https://www.canada.ca/en/services/taxes.html"
+  - title: "Parent Section"
+    link: "https://example.com/parent"
+feedbackData:
+  section: "Page Title"
+---</code></pre>
+
+  <p>Key fields:</p>
+  <ul>
+    <li><code>layout: without-h1</code> &ndash; Required for subway child pages (the H1 is rendered in the page body after the subway nav)</li>
+    <li><code>layout: default</code> &ndash; Used for non-subway pages and landing pages</li>
+    <li><code>auth</code> &ndash; Adds a contextual "Sign in" button to the page</li>
+    <li><code>breadcrumbs</code> &ndash; Defines the breadcrumb trail (must use absolute URLs)</li>
+    <li><code>feedbackData</code> &ndash; Configures the page feedback widget</li>
+  </ul>
+</details>
+
+<nav class="mrgn-bttm-lg mrgn-tp-lg">
+  <h3 class="wb-inv">Document navigation</h3>
+  <ul class="pager">
+    <li class="previous"><a href="overview.html" rel="prev"><span class="wb-inv">Previous: </span>COP lifecycle and phases</a></li>
+    <li class="next"><a href="ia-structure.html" rel="next"><span class="wb-inv">Next: </span>Information architecture changes</a></li>
+  </ul>
+</nav>

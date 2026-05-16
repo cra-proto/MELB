@@ -1,0 +1,6 @@
+baseurl: /MELB
+remote_theme: wet-boew/gcweb-jekyll
+title: "MELB Prototypes"
+developerOptions: true
+exitPage: true
+testBanner: true

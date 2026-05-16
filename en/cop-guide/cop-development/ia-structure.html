@@ -1,0 +1,414 @@
+---
+layout: without-h1
+title: "Information architecture changes – How a COP is developed"
+description: "Before-and-after page structures showing how senior designers restructured content across 6 COPs"
+dateModified: 2026-05-15
+breadcrumbs:
+  - title: "COP Development Guide"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/"
+  - title: "How a COP is developed"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/cop-development.html"
+---
+
+<nav class="provisional gc-subway" data-sections-title="Sections" aria-label="How a COP is developed">
+  <h1>How a COP is developed</h1>
+  <ul>
+    <li><a href="overview.html">COP lifecycle and phases</a></li>
+    <li><a href="project-setup.html">Project setup standards</a></li>
+    <li><a class="active" href="ia-structure.html">Information architecture changes</a></li>
+    <li><a href="design-components.html">Design components</a></li>
+    <li><a href="testing.html">Testing methodology</a></li>
+    <li><a href="scoping.html">Scoping process</a></li>
+    <li><a href="patterns.html">Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Information architecture changes<span class="wb-inv"> – How a COP is developed</span></h1>
+
+<p>This is the core of what a senior designer does in a COP. Below are the exact before-and-after page structures for 6 COPs, showing how experienced designers restructured content to improve findability and task completion.</p>
+
+<nav role="navigation" class="gc-toc" aria-label="On this page">
+  <h2 class="h3">On this page</h2>
+  <ul>
+    <li><a href="#h_1">GST/HST Business &ndash; the gold standard</a></li>
+    <li><a href="#h_2">Collections &amp; Payment (CAP) &ndash; from flat to deep</a></li>
+    <li><a href="#h_3">End of Life (EOL) &ndash; from 6 pages to 50+</a></li>
+    <li><a href="#h_4">TFSA &ndash; topic page optimization</a></li>
+    <li><a href="#h_5">T1 Personal Income Tax &ndash; broadest scope</a></li>
+    <li><a href="#h_6">Business Registration &ndash; most heavily iterated</a></li>
+    <li><a href="#h_7">IA transformation strategies</a></li>
+  </ul>
+</nav>
+
+<h2 id="h_1">GST/HST Business &ndash; the gold standard</h2>
+
+<p>This is the only COP with a formal CHANGELOG tracking every add/delete/modify with exact old and new Canada.ca URLs. <strong>66 pages in scope, net result: 36 deleted, 3 added, 22 modified.</strong></p>
+
+<details>
+  <summary>Before: Technology-organized silos (66 pages across 2 sections)</summary>
+  <p>Each filing method (NETFILE, Telefile, IFT, EDI) had its own section with identical scaffolding repeated 4 times:</p>
+  <ul>
+    <li><strong>NETFILE silo</strong> &ndash; 10 pages: About, Before you start, Eligibility, FAQ (landing), FAQ: Eligibility, FAQ: General, FAQ: Using the service, Ready to file, Adjust a return, Get access code, Feedback</li>
+    <li><strong>IFT silo</strong> &ndash; 8 pages: About, Before you start, Eligibility, FAQ (landing), FAQ: General, FAQ: Eligibility, FAQ: Using the service, Feedback</li>
+    <li><strong>Telefile silo</strong> &ndash; 7 pages: About, Before you start, Eligibility, FAQ (landing), FAQ: Eligibility, FAQ: General, FAQ: Using the service</li>
+    <li><strong>EDI silo</strong> &ndash; 3 pages: About, FAQ, Who can use</li>
+  </ul>
+  <p>All of these lived under <code>digital-services-businesses/</code>. A separate section under <code>gst-hst-businesses/</code> had the topic page and a subway structure for the filing process.</p>
+  <p><strong>The core problem:</strong> A business owner looking for "how do I file?" had to first navigate to the right technology silo, then wade through 7+ pages of method-specific content. The same questions were answered 4 times.</p>
+</details>
+
+<details>
+  <summary>After: Task-organized hierarchy (33 pages &ndash; net reduction of 33 pages)</summary>
+  <p>The restructured content is organized by what the user needs to do:</p>
+  <ul>
+    <li><strong>Calculate and prepare to report</strong> (new hub)
+      <ul>
+        <li>Which return to use</li>
+        <li>Instructions for completing a return</li>
+        <li>Records to keep</li>
+        <li>Software for IFT</li>
+      </ul>
+    </li>
+    <li><strong>File your GST/HST return</strong> (subway navigation)
+      <ul>
+        <li>Reporting requirements and deadlines
+          <ul><li>Filing penalties</li></ul>
+        </li>
+        <li>How to file (with one page per method)
+          <ul>
+            <li>In your CRA account (new)</li>
+            <li>Using NETFILE form (replaces 10-page silo)</li>
+            <li>Using third-party software (replaces 8-page silo)</li>
+            <li>By phone / TELEFILE (replaces 7-page silo)</li>
+            <li>Through financial institution (replaces 3-page silo)</li>
+            <li>By mail (new)</li>
+            <li>Get access code</li>
+          </ul>
+        </li>
+        <li>After you file</li>
+        <li>Contact us (renamed from "What if you have a complaint")</li>
+      </ul>
+    </li>
+    <li><strong>Remit/pay</strong> (consolidates 4 separate payment pages into 1)</li>
+  </ul>
+</details>
+
+<h3>What the designers did</h3>
+
+<table class="table table-bordered table-striped">
+  <caption>GST/HST transformation logic</caption>
+  <thead>
+    <tr>
+      <th scope="col">Transformation</th>
+      <th scope="col">Before</th>
+      <th scope="col">After</th>
+      <th scope="col">Why</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eliminated duplicate scaffolding</td>
+      <td>4 silos &times; (About + Before + Eligibility + FAQ&times;3 + Feedback) = 28 pages</td>
+      <td>0 pages (content absorbed)</td>
+      <td>Same questions answered 4 times</td>
+    </tr>
+    <tr>
+      <td>Consolidated filing methods</td>
+      <td>Each method was a mini-site</td>
+      <td>Each method is one page</td>
+      <td>User task is "file my return" not "learn about NETFILE"</td>
+    </tr>
+    <tr>
+      <td>Moved from digital-services to topic section</td>
+      <td>Filing methods under <code>e-services/digital-services/</code></td>
+      <td>Under <code>gst-hst-businesses/file-return/how-file/</code></td>
+      <td>Users look under "GST/HST" not "digital services"</td>
+    </tr>
+    <tr>
+      <td>Consolidated payments</td>
+      <td>4 pages: how, when, correct, check balance</td>
+      <td>1 page</td>
+      <td>All payment info on one page</td>
+    </tr>
+    <tr>
+      <td>Added pre-filing hub</td>
+      <td>Prepare info scattered</td>
+      <td>New calculate-prepare section</td>
+      <td>Separates "prepare" from "file"</td>
+    </tr>
+    <tr>
+      <td>Renamed complaint page</td>
+      <td>"What if you have a complaint"</td>
+      <td>"Contact us"</td>
+      <td>Task-based, less adversarial</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="h_2">Collections &amp; Payment (CAP) &ndash; from flat to deep</h2>
+
+<details>
+  <summary>Before: 8 flat pages</summary>
+  <ul>
+    <li>Payments to the CRA (index)</li>
+    <li>Send a payment</li>
+    <li>Find a payment</li>
+    <li>Online payment options</li>
+    <li>Mail payment options</li>
+    <li>In-person payment options</li>
+    <li>Payment arrangements</li>
+    <li>Payment collections</li>
+  </ul>
+</details>
+
+<details>
+  <summary>After: 120+ pages in 4 deep sections</summary>
+  <ul>
+    <li><strong>Make a payment</strong> (15+ pages) &ndash; One page per specific payment method: online banking, debit at CRA, ATM, Canada Post, mail, bank teller, third-party, pre-authorized debit, wire transfer, remittance voucher, plus accessibility variants</li>
+    <li><strong>Corporate instalments</strong> (12+ pages) &ndash; Built from nothing: when to pay, calculate amount, worksheets, federal/provincial, special situations, how to pay, due dates, interest &amp; penalties, claim on return, change amount, follow up</li>
+    <li><strong>Debt collections</strong> (7 pages) &ndash; Built from nothing: types of collection actions, garnishment, liens and seizures, co-liability, offsets, RTP/DTP, limitation period</li>
+    <li><strong>Unable to pay</strong> (3+ pages) &ndash; Dedicated section: how to reduce debt, call about debt</li>
+    <li><strong>Supporting pages</strong> &ndash; Confirm a payment, uncashed cheques, refunds, interest and penalties, payment arrangements, verify amount owing</li>
+  </ul>
+</details>
+
+<h3>Key IA transformations</h3>
+<ul>
+  <li><strong>8 flat pages &rarr; 4 deep sections</strong> (make-payment, corporate-instalments, debt-collections, unable-pay)</li>
+  <li><strong>Payment methods exploded:</strong> 3 generic "options" pages &rarr; 12+ specific method pages</li>
+  <li><strong>Corporate instalments built from nothing:</strong> Entire 12-page section created</li>
+  <li><strong>Landing page was the hardest problem:</strong> 8+ index variants tested</li>
+  <li><strong>Release snapshots preserved:</strong> "release1" files mark what went to production first</li>
+</ul>
+
+<h2 id="h_3">End of Life (EOL) &ndash; from 6 pages to 50+</h2>
+
+<details>
+  <summary>Before: 6-page skeleton</summary>
+  <ul>
+    <li>What to do following a death (index)</li>
+    <li>Represent someone who died</li>
+    <li>List of assets</li>
+    <li>Manage estate debt</li>
+    <li>Prepare returns for someone who died</li>
+    <li>Types and deadlines</li>
+  </ul>
+</details>
+
+<details>
+  <summary>After: 50+ page journey-based structure</summary>
+  <ul>
+    <li><strong>Notify CRA of a death</strong> (new &ndash; a major gap in the original)</li>
+    <li>Represent someone who died (expanded)</li>
+    <li>List of assets (expanded)</li>
+    <li>Manage estate debt (expanded)</li>
+    <li><strong>Prepare returns</strong> (now a gateway to sub-sections)
+      <ul>
+        <li>Types of returns and deadlines</li>
+        <li>Due date calculator (new)</li>
+        <li><strong>Report income and assets</strong> &ndash; split into 14+ pages by income type: employment, pension, investment, employment insurance, death benefits, farm/fishing, property/capital gains, RRSP, RRIF, RDSP, TFSA, rental</li>
+        <li><strong>Credits and deductions</strong> (new) &ndash; charitable donations, capital losses, CPP contributions</li>
+        <li>How to file (new)</li>
+        <li>After you file (new)</li>
+      </ul>
+    </li>
+    <li><strong>Clearance certificate</strong> (1 page &rarr; 10 pages)
+      <ul>
+        <li>How to apply, Submit, Processing time, Why you need one, Consequences of not getting one, plus entity-specific pages for corporations, GST/HST, trusts</li>
+      </ul>
+    </li>
+    <li>CPP death benefit (new)</li>
+    <li>Business death/retirement (new)</li>
+  </ul>
+</details>
+
+<h3>Key IA transformations</h3>
+<ul>
+  <li><strong>Clearance certificate: 1 &rarr; 10 pages</strong> &ndash; Split by task and entity type</li>
+  <li><strong>Report assets: 1 &rarr; 14+ pages</strong> &ndash; Split by income type</li>
+  <li><strong>Credits/deductions: 0 &rarr; 4 pages</strong> &ndash; Entirely new section</li>
+  <li><strong>Filing journey created</strong> &ndash; Linear progression: types/deadlines &rarr; due dates &rarr; report assets &rarr; credits &rarr; file &rarr; after you file</li>
+  <li><strong>Notify-death page added</strong> &ndash; There was no page about how to actually tell CRA someone died</li>
+</ul>
+
+<h2 id="h_4">TFSA &ndash; topic page optimization</h2>
+
+<details>
+  <summary>After: Deep topic structure (35+ pages including variants)</summary>
+  <ul>
+    <li>TFSA topic page (4 layout variants tested)</li>
+    <li>What is a TFSA</li>
+    <li>Opening a TFSA</li>
+    <li><strong>Contributing to a TFSA</strong> (section landing)
+      <ul>
+        <li>Before you contribute (+ variant)</li>
+        <li>Calculate your contribution room (+ variant)</li>
+        <li>How to contribute</li>
+        <li>Permitted TFSA investments (added Oct 2025)</li>
+        <li>What to do if you contribute too much</li>
+      </ul>
+    </li>
+    <li>Withdrawing from a TFSA</li>
+    <li>Requesting a transfer</li>
+    <li>If you become non-resident</li>
+    <li><strong>Owing tax on a TFSA</strong> (section landing)
+      <ul>
+        <li>If you have to pay tax</li>
+        <li>If you have excess contributions (4 split variants explored)</li>
+        <li>Non-resident contributions</li>
+        <li>Non-permitted investments</li>
+        <li>Payment options (added Jul 2025)</li>
+      </ul>
+    </li>
+    <li><strong>When a TFSA holder dies</strong> (renamed from "if")
+      <ul>
+        <li>What happens when a holder dies</li>
+        <li>If you are a successor holder (+ variant)</li>
+        <li>If you are a beneficiary</li>
+      </ul>
+    </li>
+  </ul>
+</details>
+
+<h3>Key IA transformations</h3>
+<ul>
+  <li><strong>"If" &rarr; "When":</strong> <code>if-tfsa-holder-dies</code> renamed to <code>when-a-tfsa-holder-dies</code> &ndash; more empathetic framing</li>
+  <li><strong>Excess contributions splitting:</strong> Explored breaking one dense page into up to 5 separate pages</li>
+  <li><strong>Payment options added:</strong> New page for how to actually pay TFSA taxes owed</li>
+  <li><strong>Permitted investments added late:</strong> A gap identified 13 months into the project</li>
+  <li><strong>Definitions system created:</strong> Custom definitions file for consistent terminology</li>
+</ul>
+
+<h2 id="h_5">T1 Personal Income Tax &ndash; broadest scope</h2>
+
+<details>
+  <summary>Structure overview (~120 pages in a flat directory)</summary>
+  <ul>
+    <li><strong>Get Ready</strong> &ndash; Get ready to do your taxes, Who should file, Important dates, Tax slips, Reporting income</li>
+    <li><strong>How to File</strong> (the core journey)
+      <ul>
+        <li>How to file (hub)</li>
+        <li>Certified tax software &ndash; plus <strong>16 individual software product pages</strong> (one per product)</li>
+        <li>EFILE, NETFILE overview, SimpleFile pilot, Paper return</li>
+        <li>Sub-step pages (subway navigation): Auto-fill, Complete, NETFILE, Send, Express NOA</li>
+      </ul>
+    </li>
+    <li><strong>After Filing</strong> &ndash; After you file, Notice of assessment, Refunds, Balance owing, Change your return, Review</li>
+    <li><strong>CRA Services</strong> &ndash; Login services, Digital services, E-services, Help</li>
+    <li><strong>Deductions/Credits</strong> &ndash; Claiming deductions, Credits and expenses, Child care expenses</li>
+  </ul>
+</details>
+
+<p><strong>Key observation:</strong> T1 is notable for its 16 individual software product pages &ndash; a level of detail no other COP has. This suggests the "which software should I use?" question was a major user pain point.</p>
+
+<h2 id="h_6">Business Registration &ndash; most heavily iterated</h2>
+
+<details>
+  <summary>Structure overview (89 pages, many are variants)</summary>
+  <ul>
+    <li>Register your business (landing &ndash; 5 variants)</li>
+    <li><strong>Main registration section</strong>
+      <ul>
+        <li>When you need a BN (+ tabs variant)</li>
+        <li>Who needs a BN</li>
+        <li>When you need program accounts (+ variant)</li>
+        <li><strong>How to register</strong> (12 variants!) &ndash; resident sub-steps (6 variants), non-resident sub-steps (6 variants), wizard sub-step</li>
+        <li>Information needed to register (7 variants)</li>
+        <li>Find your BN (+ variants)</li>
+        <li>After you register, Add program accounts, Update/manage (3 variants), Close an account</li>
+      </ul>
+    </li>
+    <li><strong>GST section</strong> &ndash; Main, Topic, Register, Maintain, Close</li>
+    <li><strong>Payroll section</strong> &ndash; Landing, Before you register, How to register (+ variant), Residents, Non-residents</li>
+    <li><strong>Specialized tax types</strong> &ndash; Excise tax, Luxury tax, Underused housing tax</li>
+  </ul>
+</details>
+
+<h3>Iteration intensity</h3>
+
+<table class="table table-bordered table-striped">
+  <caption>Most-iterated pages in Business Registration COP</caption>
+  <thead>
+    <tr>
+      <th scope="col">Page</th>
+      <th scope="col">Variants</th>
+      <th scope="col">What was being tested</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>how-register-bn</td><td><strong>12</strong></td><td>The most iterated page across ALL COPs &ndash; different registration flow designs</td></tr>
+    <tr><td>gather (info needed)</td><td><strong>7</strong></td><td>Different ways to present the information-gathering checklist</td></tr>
+    <tr><td>register-business (landing)</td><td><strong>5</strong></td><td>Landing page layouts</td></tr>
+    <tr><td>update-manage</td><td><strong>3</strong></td><td>Account management presentation</td></tr>
+    <tr><td>when-bn</td><td><strong>2 + tabs</strong></td><td>Tabbed vs. linear presentation</td></tr>
+  </tbody>
+</table>
+
+<h2 id="h_7">IA transformation strategies</h2>
+
+<p>Looking across all 6 COPs, senior designers consistently applied these strategies:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Cross-COP IA transformation patterns</caption>
+  <thead>
+    <tr>
+      <th scope="col">Pattern</th>
+      <th scope="col">Where applied</th>
+      <th scope="col">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Consolidate duplicate scaffolding</strong></td>
+      <td>GST/HST (28 pages &rarr; 0)</td>
+      <td>4 filing method silos each with About/FAQ/Eligibility &rarr; 1 page per method</td>
+    </tr>
+    <tr>
+      <td><strong>Split by income/entity type</strong></td>
+      <td>EOL (1 &rarr; 14 income pages, 1 &rarr; 9 clearance pages)</td>
+      <td>Single page &rarr; one page per type</td>
+    </tr>
+    <tr>
+      <td><strong>Add missing journey steps</strong></td>
+      <td>EOL (notify-death), GST/HST (mail filing, CRA account), TFSA (payment-options)</td>
+      <td>Gaps identified through user research</td>
+    </tr>
+    <tr>
+      <td><strong>Rename for empathy/clarity</strong></td>
+      <td>TFSA ("if" &rarr; "when" holder dies), GST/HST ("complaint" &rarr; "contact us")</td>
+      <td>Language that matches user mental models</td>
+    </tr>
+    <tr>
+      <td><strong>Create section landing pages</strong></td>
+      <td>All COPs</td>
+      <td>Gateway pages that orient users before diving into sub-pages</td>
+    </tr>
+    <tr>
+      <td><strong>Move from org-structured to task-structured</strong></td>
+      <td>GST/HST, CAP</td>
+      <td>Users think in tasks, not org charts</td>
+    </tr>
+    <tr>
+      <td><strong>Heavy landing page iteration</strong></td>
+      <td>CAP (8), Business Reg. (5), GST/HST (7+), TFSA (4)</td>
+      <td>The entry point is always the hardest design problem</td>
+    </tr>
+    <tr>
+      <td><strong>Numbered file variants, not branches</strong></td>
+      <td>All COPs</td>
+      <td><code>_proto0</code> = baseline, <code>_proto1</code>+ = proposed, archived to <code>/old/</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-info">
+  <p><strong>The consistent thread:</strong> Every COP moves from technology/organization-structured content to task/user-journey-structured content, and the landing page always takes the most iterations to get right.</p>
+</div>
+
+<nav class="mrgn-bttm-lg mrgn-tp-lg">
+  <h3 class="wb-inv">Document navigation</h3>
+  <ul class="pager">
+    <li class="previous"><a href="project-setup.html" rel="prev"><span class="wb-inv">Previous: </span>Project setup standards</a></li>
+    <li class="next"><a href="design-components.html" rel="next"><span class="wb-inv">Next: </span>Design components</a></li>
+  </ul>
+</nav>

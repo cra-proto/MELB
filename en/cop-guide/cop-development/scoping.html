@@ -1,0 +1,231 @@
+---
+layout: without-h1
+title: "Scoping process – How a COP is developed"
+description: "Content inventory methodology, confidence labels, CHANGELOG format, redirect planning, and how scope evolves"
+dateModified: 2026-05-15
+breadcrumbs:
+  - title: "COP Development Guide"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/"
+  - title: "How a COP is developed"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/cop-development.html"
+---
+
+<nav class="provisional gc-subway" data-sections-title="Sections" aria-label="How a COP is developed">
+  <h1>How a COP is developed</h1>
+  <ul>
+    <li><a href="overview.html">COP lifecycle and phases</a></li>
+    <li><a href="project-setup.html">Project setup standards</a></li>
+    <li><a href="ia-structure.html">Information architecture changes</a></li>
+    <li><a href="design-components.html">Design components</a></li>
+    <li><a href="testing.html">Testing methodology</a></li>
+    <li><a class="active" href="scoping.html">Scoping process</a></li>
+    <li><a href="patterns.html">Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Scoping process<span class="wb-inv"> – How a COP is developed</span></h1>
+
+<p>Scoping determines which Canada.ca pages will be optimized in your COP. The GST/HST Business COP's scoped inventory page reveals exactly how experienced designers approach this critical first step.</p>
+
+<nav role="navigation" class="gc-toc" aria-label="On this page">
+  <h2 class="h3">On this page</h2>
+  <ul>
+    <li><a href="#h_1">The scoping classification system</a></li>
+    <li><a href="#h_2">How the scoped inventory is organized</a></li>
+    <li><a href="#h_3">What the scoping decisions look like</a></li>
+    <li><a href="#h_4">How scope evolves during a COP</a></li>
+    <li><a href="#h_5">What drives scope changes</a></li>
+    <li><a href="#h_6">The CHANGELOG as a scope tracking tool</a></li>
+    <li><a href="#h_7">Redirect planning</a></li>
+  </ul>
+</nav>
+
+<h2 id="h_1">The scoping classification system</h2>
+
+<p>Every Canada.ca page in the topic area is listed in the repo's <code>index.html</code> and tagged with a confidence label:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Scoping confidence labels</caption>
+  <thead>
+    <tr>
+      <th scope="col">Label</th>
+      <th scope="col">Meaning</th>
+      <th scope="col">Visual indicator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Definitely</strong></td>
+      <td>This page is in scope &ndash; will be optimized</td>
+      <td>Blue</td>
+    </tr>
+    <tr>
+      <td><strong>Probably</strong></td>
+      <td>Likely in scope &ndash; may be optimized</td>
+      <td>Green</td>
+    </tr>
+    <tr>
+      <td><strong>Unlikely</strong></td>
+      <td>Probably out of scope &ndash; won't be changed</td>
+      <td>Yellow</td>
+    </tr>
+    <tr>
+      <td><em>(no label)</em></td>
+      <td>Out of scope &ndash; included for context only</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-info">
+  <p><strong>Why use confidence labels instead of yes/no?</strong> Experienced designers tag pages with confidence levels precisely because they know scope will shift during co-design and SME review. The three-level system communicates uncertainty honestly and sets expectations with stakeholders.</p>
+</div>
+
+<h2 id="h_2">How the scoped inventory is organized</h2>
+
+<p>The inventory mirrors the Canada.ca URL structure, organized by path. In the GST/HST COP:</p>
+
+<ol>
+  <li><strong><code>digital-services-businesses/</code></strong> &ndash; 30 pages across 4 filing method silos (mostly tagged "Definitely")</li>
+  <li><strong><code>topics/gst-hst-businesses/</code></strong> &ndash; 10 topic-level pages plus 6 sub-pages under the filing return subway</li>
+  <li><strong>Context pages without labels</strong> &ndash; Account management (register, change, close), charge/collect pages, rebates, definitions</li>
+</ol>
+
+<p>This approach ensures the team has visibility into the full content landscape, even for pages they don't plan to change. Context pages help designers understand adjacent content that may be affected by their restructuring decisions.</p>
+
+<h2 id="h_3">What the scoping decisions look like</h2>
+
+<p>In the GST/HST COP with 66 pages in scope:</p>
+
+<ul>
+  <li><strong>In scope (Definitely/Probably):</strong> All filing method pages across both sections, plus the return-filing subway, penalties, and payment timing pages</li>
+  <li><strong>Out of scope:</strong> Account management pages (register, change, close), charge/collect pages, rebates, definitions &ndash; adjacent content that doesn't need optimization in this COP</li>
+  <li><strong>Interesting edge case:</strong> The <code>need-access-code.html</code> page was tagged "Unlikely" initially but ended up being modified and moved (it became <code>get-gst-hst-access-code.html</code> under the new how-file section) &ndash; scoping evolves during the project</li>
+</ul>
+
+<h2 id="h_4">How scope evolves during a COP</h2>
+
+<p>COPs almost always grow beyond their initial scope:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Scope evolution across COPs</caption>
+  <thead>
+    <tr>
+      <th scope="col">COP</th>
+      <th scope="col">Initial scope</th>
+      <th scope="col">Final scope</th>
+      <th scope="col">What was added mid-project</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EOL</td>
+      <td>6 pages</td>
+      <td>50+ pages</td>
+      <td>Notify-death page, entire income types section, clearance certificate expansion, credits/deductions section</td>
+    </tr>
+    <tr>
+      <td>CAP</td>
+      <td>8 pages</td>
+      <td>120+ pages</td>
+      <td>Corporate instalments (12 pages), debt collections (7 pages), unable-to-pay (3 pages), CRA future IA exploration</td>
+    </tr>
+    <tr>
+      <td>GST/HST</td>
+      <td>66 pages</td>
+      <td>33 pages (net)</td>
+      <td>GST relief emergency page, calculate-prepare-report hub, accessibility test pages</td>
+    </tr>
+    <tr>
+      <td>TFSA</td>
+      <td>~15 pages</td>
+      <td>35+ pages</td>
+      <td>Payment options, permitted investments, excess contributions splits, definitions system</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-warning">
+  <p><strong>Note:</strong> The GST/HST COP is unusual in that it <em>reduced</em> the total page count (66 &rarr; 33) by consolidating redundant content. Most COPs expand as the team discovers gaps and adds missing content. Plan for scope growth in your timeline.</p>
+</div>
+
+<h2 id="h_5">What drives scope changes</h2>
+
+<p>Four consistent drivers of scope change appear across all COPs:</p>
+
+<details>
+  <summary>User testing reveals gaps</summary>
+  <p>The EOL COP's notify-death page was added because testing showed people needed a "tell CRA someone died" starting point. This page didn't exist on Canada.ca at all &ndash; the team discovered the gap when participants couldn't find it.</p>
+</details>
+
+<details>
+  <summary>SME review adds complexity</summary>
+  <p>The TFSA COP's excess contributions section split from one page into up to 4 pages after subject matter experts said the single page couldn't adequately cover the nuances of different excess contribution scenarios.</p>
+</details>
+
+<details>
+  <summary>External events force additions</summary>
+  <p>The GST/HST COP's GST relief page was an emergency insertion built in 4 days (Nov 2024), driven by a government policy announcement. COP repos sometimes absorb urgent unplanned work that falls within the content area.</p>
+</details>
+
+<details>
+  <summary>IA redesign creates new structural needs</summary>
+  <p>When the GST/HST COP consolidated 28 silo pages into method-specific pages, the team realized they needed a new "calculate and prepare" hub that didn't exist before. Restructuring the IA revealed gaps that the old structure had hidden.</p>
+</details>
+
+<h2 id="h_6">The CHANGELOG as a scope tracking tool</h2>
+
+<p>The CHANGELOG.md file is both a scope tracker during the project and the production handoff deliverable at the end. It contains three tables:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>CHANGELOG table structure</caption>
+  <thead>
+    <tr>
+      <th scope="col">Table</th>
+      <th scope="col">Columns</th>
+      <th scope="col">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Pages to be added</strong></td>
+      <td>Page title, GitHub prototype URL, New Canada.ca URL</td>
+      <td>Track brand new pages that need to be created on Canada.ca</td>
+    </tr>
+    <tr>
+      <td><strong>Pages to be deleted</strong></td>
+      <td>Page title, Current Canada.ca URL, Redirect target URL</td>
+      <td>Track pages to remove, with where their traffic should redirect</td>
+    </tr>
+    <tr>
+      <td><strong>Pages to be modified</strong></td>
+      <td>Old title, Old URL, New title, New URL, Date modified update needed?</td>
+      <td>Track pages that are changing title, URL, or content</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In the GST/HST COP, the CHANGELOG tracked: <strong>3 pages added, 36 pages deleted, 22 pages modified</strong> &ndash; with exact old and new URLs for every single page.</p>
+
+<h2 id="h_7">Redirect planning</h2>
+
+<p>Every deleted page needs a redirect target &ndash; you cannot simply remove a page from Canada.ca without telling the system where to send existing traffic and bookmarks.</p>
+
+<p>Redirect planning happens in the CHANGELOG's "Pages to be deleted" table. For each page being removed, the designer specifies which new or existing page should receive the redirect.</p>
+
+<p>Good redirect planning follows these principles:</p>
+
+<ul>
+  <li><strong>Redirect to the closest equivalent content</strong> &ndash; if a NETFILE FAQ page is deleted, redirect to the new NETFILE filing method page that absorbed the FAQ content</li>
+  <li><strong>Never redirect to a page that is also being deleted</strong> &ndash; this creates redirect chains</li>
+  <li><strong>Consider the user's intent</strong> &ndash; someone who bookmarked the "NETFILE eligibility" page wants to know if they can use NETFILE, so redirect to the page that answers that question</li>
+  <li><strong>Document every redirect</strong> &ndash; the web publishing team needs this to configure the server-side redirects</li>
+</ul>
+
+<nav class="mrgn-bttm-lg mrgn-tp-lg">
+  <h3 class="wb-inv">Document navigation</h3>
+  <ul class="pager">
+    <li class="previous"><a href="testing.html" rel="prev"><span class="wb-inv">Previous: </span>Testing methodology</a></li>
+    <li class="next"><a href="patterns.html" rel="next"><span class="wb-inv">Next: </span>Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>

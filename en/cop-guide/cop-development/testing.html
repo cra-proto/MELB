@@ -1,0 +1,208 @@
+---
+layout: without-h1
+title: "Testing methodology – How a COP is developed"
+description: "Baseline and validation testing approaches, task-based scenario design, survey infrastructure, and analytics tracking"
+dateModified: 2026-05-15
+breadcrumbs:
+  - title: "COP Development Guide"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/"
+  - title: "How a COP is developed"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/cop-development.html"
+---
+
+<nav class="provisional gc-subway" data-sections-title="Sections" aria-label="How a COP is developed">
+  <h1>How a COP is developed</h1>
+  <ul>
+    <li><a href="overview.html">COP lifecycle and phases</a></li>
+    <li><a href="project-setup.html">Project setup standards</a></li>
+    <li><a href="ia-structure.html">Information architecture changes</a></li>
+    <li><a href="design-components.html">Design components</a></li>
+    <li><a class="active" href="testing.html">Testing methodology</a></li>
+    <li><a href="scoping.html">Scoping process</a></li>
+    <li><a href="patterns.html">Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Testing methodology<span class="wb-inv"> – How a COP is developed</span></h1>
+
+<p>Every COP follows a two-phase testing approach: baseline testing on the current Canada.ca pages (before any design work), followed by validation testing on the redesigned prototype. The GST/HST Business COP has the most complete testing infrastructure and serves as the model.</p>
+
+<nav role="navigation" class="gc-toc" aria-label="On this page">
+  <h2 class="h3">On this page</h2>
+  <ul>
+    <li><a href="#h_1">Phase 1: Baseline testing</a></li>
+    <li><a href="#h_2">Phase 2: Validation testing</a></li>
+    <li><a href="#h_3">Test infrastructure structure</a></li>
+    <li><a href="#h_4">How a test session works</a></li>
+    <li><a href="#h_5">Writing effective task scenarios</a></li>
+    <li><a href="#h_6">Analytics and session tracking</a></li>
+    <li><a href="#h_7">Preparing the prototype for testing</a></li>
+    <li><a href="#h_8">When testing happens in the COP lifecycle</a></li>
+  </ul>
+</nav>
+
+<h2 id="h_1">Phase 1: Baseline testing</h2>
+
+<p>Baseline testing happens <strong>before any design work begins</strong>. The team tests the existing Canada.ca pages to understand where users struggle.</p>
+
+<p>From the GST/HST ROADMAP Gantt chart:</p>
+
+<ul>
+  <li><strong>Baseline user testing and notetaking:</strong> Sep 26 &ndash; Oct 14, 2024 (19 days)</li>
+  <li><strong>Evaluation of baseline testing:</strong> Oct 15 &ndash; Oct 28, 2024 (14 days)</li>
+</ul>
+
+<p>The import of scoped files to the repo (Oct 10&ndash;18) overlaps with testing &ndash; the team is simultaneously setting up the baseline prototype while still testing. This overlap is intentional and efficient.</p>
+
+<div class="alert alert-info">
+  <p><strong>Why baseline testing matters:</strong> Without a baseline, you cannot measure whether your redesign actually improved anything. The baseline gives you concrete task completion rates to compare against validation results.</p>
+</div>
+
+<h2 id="h_2">Phase 2: Validation testing</h2>
+
+<p>Validation testing happens <strong>after the prototype is largely complete</strong>. The same types of task-based scenarios are run against the redesigned prototype to measure improvement.</p>
+
+<p>In the GST/HST COP, validation testing infrastructure was built in July 2025 &ndash; 10 months into the project. This is typical: testing is a late-stage activity, not a design input.</p>
+
+<h2 id="h_3">Test infrastructure structure</h2>
+
+<p>The testing infrastructure lives in a dedicated directory within the COP repo:</p>
+
+<table class="table table-bordered">
+  <caption>Test directory contents</caption>
+  <thead>
+    <tr>
+      <th scope="col">File</th>
+      <th scope="col">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>instructions.html</code></td><td>Explains the test process to participants</td></tr>
+    <tr><td><code>task-page.html</code></td><td>Hub page listing all tasks (6 in the GST/HST COP)</td></tr>
+    <tr><td><code>task-1.html</code> through <code>task-6.html</code></td><td>Individual task scenario pages</td></tr>
+    <tr><td><code>post-task-survey.html</code></td><td>Follow-up questions after each task</td></tr>
+  </tbody>
+</table>
+
+<h2 id="h_4">How a test session works</h2>
+
+<p>Based on the GST/HST testing infrastructure:</p>
+
+<ol>
+  <li>A moderator presents tasks one at a time</li>
+  <li>The participant reads the task scenario on the task page</li>
+  <li>The participant clicks "Start task" which opens the prototype in a new browser tab</li>
+  <li>The participant uses the prototype to try to complete the task</li>
+  <li>The participant comes back to the task tab and selects their answer from multiple-choice options</li>
+  <li>The participant answers two follow-up questions about the experience</li>
+  <li>Throughout, the participant is asked to think aloud as they navigate</li>
+</ol>
+
+<p>This approach separates the <strong>task prompt</strong> (on the task page) from the <strong>prototype</strong> (in a new tab), so the participant's navigation behaviour in the prototype is natural and unguided.</p>
+
+<h2 id="h_5">Writing effective task scenarios</h2>
+
+<p>Tasks are presented as <strong>realistic scenarios</strong> with specific, verifiable answers. Here is an example pattern from the GST/HST COP:</p>
+
+<div class="well">
+  <p><strong>Example task scenario:</strong></p>
+  <p><em>"You need to file your GST/HST return, but you don't have a GST/HST access code for filing. Your company is registered with a CRA account and you want to try filing through there. Do you need an access code to file your return through your CRA account?"</em></p>
+</div>
+
+<p>Notice the pattern:</p>
+<ul>
+  <li><strong>Sets a realistic context</strong> &ndash; the participant has a specific situation</li>
+  <li><strong>Has a specific, verifiable question</strong> &ndash; there is one correct answer</li>
+  <li><strong>Tests navigation ability</strong> &ndash; the participant must find the right page and the right section to answer</li>
+  <li><strong>Multiple-choice answers</strong> &ndash; allows quantitative measurement of task success</li>
+</ul>
+
+<h2 id="h_6">Analytics and session tracking</h2>
+
+<p>Test pages include two forms of analytics tracking:</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Tool</th>
+      <th scope="col">What it captures</th>
+      <th scope="col">Why it matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Google Analytics</strong></td>
+      <td>Page views, navigation paths, time on page</td>
+      <td>Shows which pages participants visited and how long they spent</td>
+    </tr>
+    <tr>
+      <td><strong>Microsoft Clarity</strong></td>
+      <td>Session recordings, heatmaps, scroll depth</td>
+      <td>Lets the team watch actual participant behaviour, not just task completion rates</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Both are added via script tags in the test instruction pages. The analytics tracking is only on the testing infrastructure pages, not on the prototype content pages themselves.</p>
+
+<h2 id="h_7">Preparing the prototype for testing</h2>
+
+<p>Before running any user testing, you must prepare the prototype:</p>
+
+<ol>
+  <li><strong>Set <code>developerOptions: false</code></strong> in <code>_config.yml</code> &ndash; this hides editing buttons and GitHub links so participants see a clean Canada.ca-looking page</li>
+  <li><strong>Ensure all links work</strong> &ndash; broken links during testing invalidate results</li>
+  <li><strong>Use absolute links throughout</strong> &ndash; relative links may break when the prototype is accessed via GitHub Pages</li>
+  <li><strong>Test the test</strong> &ndash; run through each task scenario yourself to verify the correct answer is findable</li>
+</ol>
+
+<div class="alert alert-warning">
+  <p><strong>Critical:</strong> The <code>developerOptions: false</code> setting is mandatory before testing. If participants see developer tooling, it breaks the illusion that they are navigating a real Canada.ca page, and their behaviour will not be representative.</p>
+</div>
+
+<h2 id="h_8">When testing happens in the COP lifecycle</h2>
+
+<p>Testing is bookended around the design work:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Testing timeline from the GST/HST COP</caption>
+  <thead>
+    <tr>
+      <th scope="col">Phase</th>
+      <th scope="col">When</th>
+      <th scope="col">Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline user testing</td>
+      <td>Before any content changes (Sep &ndash; Oct 2024)</td>
+      <td>19 days</td>
+    </tr>
+    <tr>
+      <td>Evaluate baseline results</td>
+      <td>Immediately after baseline testing</td>
+      <td>14 days</td>
+    </tr>
+    <tr>
+      <td>Content and design prototyping</td>
+      <td>After baseline evaluation</td>
+      <td>134 days</td>
+    </tr>
+    <tr>
+      <td>Validation testing</td>
+      <td>After prototyping is substantially complete (Jul 2025)</td>
+      <td>20 days</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Across all COPs, accessibility testing and usability testing are late-stage validation activities. Testing validates the design &ndash; it does not drive it. Co-design sessions and SME review drive the design during the build sprint.</p>
+
+<nav class="mrgn-bttm-lg mrgn-tp-lg">
+  <h3 class="wb-inv">Document navigation</h3>
+  <ul class="pager">
+    <li class="previous"><a href="design-components.html" rel="prev"><span class="wb-inv">Previous: </span>Design components</a></li>
+    <li class="next"><a href="scoping.html" rel="next"><span class="wb-inv">Next: </span>Scoping process</a></li>
+  </ul>
+</nav>

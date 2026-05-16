@@ -1,0 +1,195 @@
+---
+layout: without-h1
+title: "Cross-COP patterns and lessons – How a COP is developed"
+description: "Recurring strategies, common insights, and key takeaways observed across all 8 Content Optimization Projects"
+dateModified: 2026-05-15
+breadcrumbs:
+  - title: "COP Development Guide"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/"
+  - title: "How a COP is developed"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/cop-development.html"
+---
+
+<nav class="provisional gc-subway" data-sections-title="Sections" aria-label="How a COP is developed">
+  <h1>How a COP is developed</h1>
+  <ul>
+    <li><a href="overview.html">COP lifecycle and phases</a></li>
+    <li><a href="project-setup.html">Project setup standards</a></li>
+    <li><a href="ia-structure.html">Information architecture changes</a></li>
+    <li><a href="design-components.html">Design components</a></li>
+    <li><a href="testing.html">Testing methodology</a></li>
+    <li><a href="scoping.html">Scoping process</a></li>
+    <li><a class="active" href="patterns.html">Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Cross-COP patterns and lessons<span class="wb-inv"> – How a COP is developed</span></h1>
+
+<p>These patterns emerged from analyzing all 8 COPs. They represent the collective experience of senior content designers and IA leads working across multiple projects over several years.</p>
+
+<nav role="navigation" class="gc-toc" aria-label="On this page">
+  <h2 class="h3">On this page</h2>
+  <ul>
+    <li><a href="#h_1">The landing page is always the hardest problem</a></li>
+    <li><a href="#h_2">COPs get faster over time</a></li>
+    <li><a href="#h_3">Emergency work gets sandwiched in</a></li>
+    <li><a href="#h_4">The proto0 convention marks the before state</a></li>
+    <li><a href="#h_5">SME review is a distinct named phase</a></li>
+    <li><a href="#h_6">Release milestones are marked with snapshot files</a></li>
+    <li><a href="#h_7">Accessibility testing is late-stage</a></li>
+    <li><a href="#h_8">Translation preparation is a distinct concern</a></li>
+    <li><a href="#h_9">Content is hidden rather than deleted</a></li>
+    <li><a href="#h_10">Plain language standardization patterns</a></li>
+    <li><a href="#h_11">Key takeaways for junior designers</a></li>
+  </ul>
+</nav>
+
+<h2 id="h_1">The landing page is always the hardest problem</h2>
+
+<p>Every COP spent disproportionate effort on the entry point &ndash; the page users arrive at first:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Landing page iteration counts across COPs</caption>
+  <thead>
+    <tr>
+      <th scope="col">COP</th>
+      <th scope="col">Landing page variants</th>
+      <th scope="col">What was being explored</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>CAP</td><td><strong>8</strong> index variants</td><td>Different entry point layouts and content groupings</td></tr>
+    <tr><td>GST/HST</td><td><strong>7+</strong> filing method chooser versions</td><td>Different ways to help users select a filing method</td></tr>
+    <tr><td>Business Reg.</td><td><strong>5</strong> register-business variants</td><td>Landing page layouts and registration entry points</td></tr>
+    <tr><td>TFSA</td><td><strong>4</strong> topic page variants</td><td>Different doormat configurations and content ordering</td></tr>
+  </tbody>
+</table>
+
+<p>Plan to spend significant time on your landing page. Don't try to get it right on the first attempt &ndash; create numbered variants and compare them in co-design sessions.</p>
+
+<h2 id="h_2">COPs get faster over time</h2>
+
+<p>The COP methodology has matured across projects:</p>
+
+<ul>
+  <li><strong>EOL (2021):</strong> 19 months &ndash; the first COP, pioneering the process</li>
+  <li><strong>CAP (2023):</strong> 27 months &ndash; much larger scope, but still learning</li>
+  <li><strong>GST/HST (2024):</strong> Had a documented methodology and Gantt chart from day one</li>
+  <li><strong>Business Registration and TFSA (2025):</strong> Appear more efficient, suggesting institutional learning</li>
+</ul>
+
+<p>Each successive COP benefits from templates, conventions, and lessons established by earlier projects. The documentation in the GST/HST COP (CONTRIBUTING.md, ROADMAP.md, CHANGELOG.md, SUPPORT.md) represents the most complete set of standards and should be used as your starting template.</p>
+
+<h2 id="h_3">Emergency work gets sandwiched in</h2>
+
+<p>COP repos sometimes absorb urgent unplanned work. The GST relief page was built in 4 days (November 2024) inside the GST/HST COP, driven by a government policy announcement.</p>
+
+<p>This happens because the COP team has the most expertise with the content area and the prototype infrastructure is already in place. Be prepared for this &ndash; build buffer into your timeline.</p>
+
+<h2 id="h_4">The proto0 convention marks the before state</h2>
+
+<p>In the GST/HST COP, <code>_proto0</code> means "this is what the current live page looks like" and <code>_proto1</code>+ means "this is what we're proposing."</p>
+
+<p>This before/after discipline is how COPs measure their improvements. The proto0 file is your baseline snapshot &ndash; keep it intact throughout the project so you can always compare where you started with where you are.</p>
+
+<h2 id="h_5">SME review is a distinct named phase</h2>
+
+<p>Commits explicitly reference reviewers by role, and there are often concentrated periods where multiple SMEs provide feedback in rapid succession.</p>
+
+<p>In the CAP COP, there was a February 2024 review cycle with 5+ SME reviewers providing feedback in 3 weeks. Each reviewer gets their own named commit, creating traceability for every content change.</p>
+
+<p>This approach has advantages:</p>
+<ul>
+  <li>You can trace which SME requested each change</li>
+  <li>If a change is later questioned, you know who to ask</li>
+  <li>It creates accountability in the review process</li>
+</ul>
+
+<h2 id="h_6">Release milestones are marked with snapshot files</h2>
+
+<p>The CAP COP created files like <code>refunds-release1.html</code> and <code>cra-release1.html</code> to preserve the state at production release, while continuing to iterate on future versions.</p>
+
+<p>This is useful when your COP launches in phases &ndash; you can mark what went live in each release without losing track of ongoing development.</p>
+
+<h2 id="h_7">Accessibility testing is late-stage</h2>
+
+<p>Across all COPs, accessibility testing and screen reader improvements come during the polish phase, not during initial design.</p>
+
+<ul>
+  <li><strong>GST/HST:</strong> Testing infrastructure built in July 2025 &ndash; 10 months into the project</li>
+  <li><strong>EOL:</strong> Screen reader improvements added in its polish phase</li>
+</ul>
+
+<p>Accessibility is treated as a validation activity, not a design input. The design is driven by co-design sessions and SME review during the build sprint.</p>
+
+<h2 id="h_8">Translation preparation is a distinct concern</h2>
+
+<p>The Business Registration COP had explicit commits noting "updates based on discussions for translation." Content must work in both English and French, which constrains terminology choices.</p>
+
+<p>Consider translation implications when choosing terminology. Plain language changes that work well in English may not have clean French equivalents &ndash; coordinate with the translation team early.</p>
+
+<h2 id="h_9">Content is hidden rather than deleted</h2>
+
+<p>A distinctive pattern across all COPs: old content is commented out or hidden rather than removed. This allows side-by-side comparison throughout the project.</p>
+
+<p>TFSA commits show patterns like "Hid H2 section", "Hid old content", "Hid mermaid flow chart". The team can compare old vs. new approaches at any point during development by uncommenting the old content.</p>
+
+<p>This is especially valuable during co-design sessions where the team may want to see the original content alongside the proposed replacement.</p>
+
+<h2 id="h_10">Plain language standardization patterns</h2>
+
+<p>Every COP includes plain language improvements. Common patterns observed:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Plain language changes across COPs</caption>
+  <thead>
+    <tr>
+      <th scope="col">COP</th>
+      <th scope="col">Before</th>
+      <th scope="col">After</th>
+      <th scope="col">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>EOL</td><td>"deceased"</td><td>"person who died"</td><td>Plain language, less clinical</td></tr>
+    <tr><td>EOL</td><td>"preceding"</td><td>"before"</td><td>Simpler word</td></tr>
+    <tr><td>GST/HST</td><td>"Filing"</td><td>"Reporting" (in some contexts)</td><td>More intuitive term for business owners</td></tr>
+    <tr><td>Business Reg.</td><td>"supplies"</td><td>"sales"</td><td>Business-friendly term for GST/HST context</td></tr>
+    <tr><td>CAP</td><td>"can not"</td><td>"cannot"</td><td>Standardized spelling across all pages</td></tr>
+    <tr><td>TFSA</td><td>"If a TFSA holder dies"</td><td>"When a TFSA holder dies"</td><td>More empathetic, acknowledges inevitability</td></tr>
+    <tr><td>GST/HST</td><td>"What if you have a complaint"</td><td>"Contact us"</td><td>Task-based, less adversarial</td></tr>
+  </tbody>
+</table>
+
+<h2 id="h_11">Key takeaways for junior designers</h2>
+
+<p>Based on all 8 COPs analyzed, here are the most important lessons:</p>
+
+<ol>
+  <li><strong>Always start with the baseline.</strong> Import current Canada.ca pages as <code>_proto0</code> files before making any changes. You need the "before" to measure your "after."</li>
+
+  <li><strong>Think in tasks, not topics.</strong> The single most consistent IA transformation across all COPs is moving from organization-structured content to task-structured content. Ask: "What is the user trying to do?" not "What topic does this belong to?"</li>
+
+  <li><strong>Expect the landing page to take the most iteration.</strong> Budget extra time and plan multiple variants. The entry point is where users decide whether the content will help them.</li>
+
+  <li><strong>Use the file-level versioning system.</strong> Create numbered <code>_proto</code> variants instead of git branches. Archive old versions to <code>/old/</code>. This keeps design history visible and accessible.</li>
+
+  <li><strong>Document as you go.</strong> Keep the CHANGELOG updated with every page add, delete, or modify. It's tempting to defer documentation, but the CHANGELOG is your production handoff deliverable.</li>
+
+  <li><strong>Plan for scope growth.</strong> Your initial inventory is a starting point, not a hard boundary. Use the confidence label system (Definitely/Probably/Unlikely) to communicate uncertainty.</li>
+
+  <li><strong>Hide, don't delete.</strong> Comment out old content rather than removing it. You'll want to refer back to it during co-design sessions and when explaining changes to SMEs.</li>
+
+  <li><strong>Name commits after what changed and who requested it.</strong> Future team members (including yourself) will need to trace why a specific change was made.</li>
+
+  <li><strong>Set up the docs/ directory early.</strong> CONTRIBUTING.md, ROADMAP.md, CHANGELOG.md, and SUPPORT.md should exist from day one, even if they're mostly empty. They create the structure for good project management.</li>
+
+  <li><strong>Use the GST/HST COP as your template.</strong> It has the most complete documentation, the most structured methodology, and the clearest before/after trail. When in doubt about how to handle something, check how the GST/HST team did it.</li>
+</ol>
+
+<nav class="mrgn-bttm-lg mrgn-tp-lg">
+  <h3 class="wb-inv">Document navigation</h3>
+  <ul class="pager">
+    <li class="previous"><a href="scoping.html" rel="prev"><span class="wb-inv">Previous: </span>Scoping process</a></li>
+  </ul>
+</nav>

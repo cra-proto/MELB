@@ -1,0 +1,293 @@
+---
+layout: without-h1
+title: "COP lifecycle and phases – How a COP is developed"
+description: "The 6-phase development pattern, team roles, maturity rankings, and development workflow used across all COPs"
+dateModified: 2026-05-15
+breadcrumbs:
+  - title: "COP Development Guide"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/"
+  - title: "How a COP is developed"
+    link: "https://cra-test-arc.canada.ca/MELB/en/cop-guide/cop-development.html"
+---
+
+<nav class="provisional gc-subway" data-sections-title="Sections" aria-label="How a COP is developed">
+  <h1>How a COP is developed</h1>
+  <ul>
+    <li><a class="active" href="overview.html">COP lifecycle and phases</a></li>
+    <li><a href="project-setup.html">Project setup standards</a></li>
+    <li><a href="ia-structure.html">Information architecture changes</a></li>
+    <li><a href="design-components.html">Design components</a></li>
+    <li><a href="testing.html">Testing methodology</a></li>
+    <li><a href="scoping.html">Scoping process</a></li>
+    <li><a href="patterns.html">Cross-COP patterns and lessons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">COP lifecycle and phases<span class="wb-inv"> – How a COP is developed</span></h1>
+
+<nav role="navigation" class="gc-toc" aria-label="On this page">
+  <h2 class="h3">On this page</h2>
+  <ul>
+    <li><a href="#h_1">The universal COP lifecycle</a></li>
+    <li><a href="#h_2">The 8 COPs ranked by maturity</a></li>
+    <li><a href="#h_3">Phase 1: How a COP starts</a></li>
+    <li><a href="#h_4">Phase 2: The intensive build sprint</a></li>
+    <li><a href="#h_5">Team roles and structure</a></li>
+    <li><a href="#h_6">The development workflow</a></li>
+    <li><a href="#h_7">The org relationship</a></li>
+  </ul>
+</nav>
+
+<h2 id="h_1">The universal COP lifecycle</h2>
+
+<p>Every COP followed the same macro pattern, though with varying levels of formality:</p>
+
+<ol>
+  <li><strong>Baseline/Scaffolding</strong> &ndash; Import current Canada.ca pages, set up repo structure</li>
+  <li><strong>Intensive Build Sprint</strong> &ndash; IA restructuring, iterative prototyping, co-design sessions</li>
+  <li><strong>SME Review</strong> &ndash; Subject matter experts review content for accuracy</li>
+  <li><strong>Validation Testing</strong> &ndash; Task-based usability testing with real participants</li>
+  <li><strong>Refinement</strong> &ndash; Incorporate test findings, polish content</li>
+  <li><strong>Long-tail Maintenance</strong> &ndash; Ongoing updates post-launch</li>
+</ol>
+
+<p>The GST/HST Business COP documented this most explicitly in its ROADMAP.md with a Gantt chart, but the pattern is visible in commit history across all projects.</p>
+
+<h2 id="h_2">The 8 COPs ranked by maturity</h2>
+
+<table class="table table-bordered table-striped">
+  <caption>COP maturity rankings based on commit history, documentation, and methodology</caption>
+  <thead>
+    <tr>
+      <th scope="col">COP</th>
+      <th scope="col">Commits</th>
+      <th scope="col">Active period</th>
+      <th scope="col">Contributors</th>
+      <th scope="col">Maturity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GST/HST Business</td>
+      <td>~2,993</td>
+      <td>Sep 2024 &ndash; Oct 2025 (13 mo)</td>
+      <td>5</td>
+      <td><strong>Most mature</strong> &ndash; documented methodology, formal testing</td>
+    </tr>
+    <tr>
+      <td>Collections &amp; Payment (CAP)</td>
+      <td>~2,477</td>
+      <td>Jun 2023 &ndash; Sep 2025 (27 mo)</td>
+      <td>7</td>
+      <td><strong>Most mature</strong> &ndash; longest running, release milestones</td>
+    </tr>
+    <tr>
+      <td>Business Registration</td>
+      <td>~1,573</td>
+      <td>Jan &ndash; Aug 2025 (8 mo)</td>
+      <td>3</td>
+      <td>Mid-stage &ndash; intensive content build, approval phase</td>
+    </tr>
+    <tr>
+      <td>End of Life (EOL)</td>
+      <td>~1,563</td>
+      <td>Nov 2021 &ndash; Jun 2023 (19 mo)</td>
+      <td>4</td>
+      <td>Complete &ndash; earliest COP, full lifecycle visible</td>
+    </tr>
+    <tr>
+      <td>TFSA</td>
+      <td>~1,503</td>
+      <td>Mar 2025 &ndash; Apr 2026 (13 mo)</td>
+      <td>4</td>
+      <td>Active &ndash; migrated between orgs</td>
+    </tr>
+    <tr>
+      <td>Personal Income Tax (T1)</td>
+      <td>~1,080</td>
+      <td>Jan &ndash; Nov 2025 (10 mo)</td>
+      <td>3</td>
+      <td>Mid-stage &ndash; solo-developer driven</td>
+    </tr>
+    <tr>
+      <td>EOL-2</td>
+      <td>25</td>
+      <td>Mar &ndash; May 2022 (7 wk)</td>
+      <td>2</td>
+      <td>Dead &ndash; short-lived parallel test copy</td>
+    </tr>
+    <tr>
+      <td>CAP Reduce Payments Update</td>
+      <td>7</td>
+      <td>Jun 2025 (2 days)</td>
+      <td>1</td>
+      <td>Micro-spinoff &ndash; single page update post-launch</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="h_3">Phase 1: How a COP starts</h2>
+
+<p><strong>Who starts it:</strong> A technical or IA lead creates the repository, sets up templates, and builds the initial page skeleton.</p>
+
+<p>What the first days look like across different COPs:</p>
+
+<ul>
+  <li><strong>EOL COP:</strong> 11 commits on day one &ndash; "Basic page set" with 6 pages (index, represent-someone-died, list-assets, manage-estate-debt, prepare-returns, types-deadlines)</li>
+  <li><strong>TFSA COP:</strong> 97 commits in the first 2 days &ndash; IA/Tech Lead 2 created the entire IA structure (15+ pages) in a single burst</li>
+  <li><strong>GST/HST COP:</strong> 30 commits of README/infrastructure first, then baseline content import over the next 3 weeks</li>
+  <li><strong>CAP COP:</strong> Platform Developer 1 uploaded initial files &ndash; index, send-payment, payment-arrangements, find-payment, options pages</li>
+</ul>
+
+<p><strong>The baseline typically captures the current Canada.ca page structure before any optimization begins.</strong> The GST/HST project explicitly imported scoped files from the live site (Oct 8&ndash;18, 2024), giving them a "before" snapshot to work from.</p>
+
+<h2 id="h_4">Phase 2: The intensive build sprint</h2>
+
+<p>Every COP has a clear spike where 60&ndash;80% of all commits happen in a compressed window:</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Build sprint intensity across COPs</caption>
+  <thead>
+    <tr>
+      <th scope="col">COP</th>
+      <th scope="col">Sprint period</th>
+      <th scope="col">Commits in sprint</th>
+      <th scope="col">% of total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>EOL</td><td>Feb &ndash; Mar 2022</td><td>954</td><td>61%</td></tr>
+    <tr><td>CAP</td><td>Sep 2023 &ndash; Mar 2024</td><td>~2,100</td><td>85%</td></tr>
+    <tr><td>GST/HST</td><td>Jan &ndash; Feb 2025</td><td>1,415</td><td>47%</td></tr>
+    <tr><td>TFSA</td><td>May &ndash; Aug 2025</td><td>1,131</td><td>76%</td></tr>
+    <tr><td>Business Registration</td><td>Feb &ndash; Jun 2025</td><td>1,403</td><td>89%</td></tr>
+    <tr><td>T1 Personal Income Tax</td><td>Jan &ndash; Feb 2025</td><td>~800</td><td>74%</td></tr>
+  </tbody>
+</table>
+
+<p>What happens during the sprint:</p>
+
+<details>
+  <summary>IA restructuring</summary>
+  <p>Pages get split, merged, renamed, and reorganized. The EOL project split its clearance certificate from 1 page into 9 sub-pages. The GST/HST project deleted 36 redundant pages and consolidated filing methods from siloed sections into a task-based hub.</p>
+</details>
+
+<details>
+  <summary>Iterative prototyping via numbered file variants</summary>
+  <p>Instead of git branches, teams create <code>_proto1</code>, <code>_proto2</code>, <code>_proto3</code> etc. of key pages. The GST/HST "choose your filing method" page went through <strong>7+ named versions</strong>. Business Registration had 12 variants of <code>how-register-bn</code>. TFSA had 4 variants of the topic page and 4 variants of the excess contributions page.</p>
+</details>
+
+<details>
+  <summary>Co-design sessions feed directly into commits</summary>
+  <p>GST/HST commit messages reference "Updates from codesign 1", "Text updates from COP meeting", "Feb 4 COP meeting updates", "Friday meeting edits" &ndash; showing regular collaborative sessions driving changes.</p>
+</details>
+
+<details>
+  <summary>Content hiding rather than deleting</summary>
+  <p>A distinctive pattern across all COPs &ndash; old content is commented out or hidden rather than removed, allowing side-by-side comparison. TFSA commits show "Hid H2 section", "Hid old content", "Hid mermaid flow chart". This lets the team compare old vs. new approaches.</p>
+</details>
+
+<h2 id="h_5">Team roles and structure</h2>
+
+<p><strong>The typical COP team is 3&ndash;4 people</strong> with one technical/IA person and 1&ndash;2 content designers, plus external SME reviewers whose feedback gets incorporated through named commits.</p>
+
+<table class="table table-bordered table-striped">
+  <caption>Team composition across 6 active COPs</caption>
+  <thead>
+    <tr>
+      <th scope="col">Role</th>
+      <th scope="col">EOL</th>
+      <th scope="col">CAP</th>
+      <th scope="col">GST/HST</th>
+      <th scope="col">TFSA</th>
+      <th scope="col">Business Reg.</th>
+      <th scope="col">T1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>IA/Tech Lead</strong></td>
+      <td>IA/Tech Lead 1</td>
+      <td>IA/Tech Lead 1 &rarr; IA Lead 3</td>
+      <td>Platform Developer 2</td>
+      <td>IA/Tech Lead 2</td>
+      <td>Content Designer 4</td>
+      <td>SME/Content Specialist 1 (setup)</td>
+    </tr>
+    <tr>
+      <td><strong>Lead Content Designer</strong></td>
+      <td>Content Writer 1</td>
+      <td>Lead Content Designer 1</td>
+      <td>Content Designer 2 + Lead Content Designer 1</td>
+      <td>Content Writer 2</td>
+      <td>Content Developer 1</td>
+      <td>Content Designer 3</td>
+    </tr>
+    <tr>
+      <td><strong>Platform/Infra</strong></td>
+      <td>Platform Developer 1</td>
+      <td>Platform Developer 1</td>
+      <td>Platform Developer 2</td>
+      <td>Platform Developer 2</td>
+      <td>&ndash;</td>
+      <td>Platform Developer 1</td>
+    </tr>
+    <tr>
+      <td><strong>SME/Specialist</strong></td>
+      <td>SME/Content Specialist 1</td>
+      <td>SME/Content Specialist 1</td>
+      <td>&ndash;</td>
+      <td>&ndash;</td>
+      <td>SME Reviewer 1</td>
+      <td>&ndash;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Platform Developer 1 and Platform Developer 2 appear to be <strong>shared platform resources</strong> across multiple COPs, handling JavaScript (feedback banners, alpha banners), CSS, template management, and repository infrastructure.</p>
+
+<h2 id="h_6">The development workflow</h2>
+
+<p><strong>No COP uses git branching for content versioning.</strong> Every single repo has only <code>main</code> (plus occasional stale patch branches from GitHub's web editor). Instead:</p>
+
+<ul>
+  <li><strong>File-level versioning:</strong> Numbered variants (<code>_proto0</code> through <code>_proto6</code>, or <code>-v2</code>, <code>-v3</code>, or <code>-2</code>, <code>-3</code>)</li>
+  <li><strong>Archive directories:</strong> Old versions moved to <code>/old/</code> or <code>/archive/</code> folders</li>
+  <li><strong>Parallel repos instead of branches:</strong> EOL created EOL-2 as a separate testing copy. TFSA created separate test repos as forks. GST/HST uses a dual-org fork pair.</li>
+  <li><strong>Direct commits to main via GitHub's web editor:</strong> The dominant workflow across all COPs. Content designers edit HTML directly in the browser.</li>
+</ul>
+
+<p>PR usage varies dramatically:</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">COP</th>
+      <th scope="col">Pull requests</th>
+      <th scope="col">Workflow style</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>GST/HST</td><td>629 PRs (design org)</td><td>Heavy PR culture, one per edit</td></tr>
+    <tr><td>CAP</td><td>477 PRs</td><td>Lead Content Designer 1's patch-branch workflow</td></tr>
+    <tr><td>EOL</td><td>76 PRs</td><td>Platform Developer 1's batch infrastructure updates</td></tr>
+    <tr><td>TFSA, T1, Business Reg.</td><td>0&ndash;1 PRs</td><td>Direct commit culture</td></tr>
+  </tbody>
+</table>
+
+<h2 id="h_7">The org relationship</h2>
+
+<ul>
+  <li><strong>cra-proto</strong> is the prototyping org &ndash; repos are created here first, and GitHub Pages serves the prototypes</li>
+  <li><strong>cra-design</strong> is the design workspace &ndash; some COPs fork here for active daily work (GST/HST, TFSA)</li>
+  <li><strong>proto-cra</strong> appears to be an older/legacy org with less COP activity</li>
+</ul>
+
+<p>The migration pattern is: <strong>start in cra-design &rarr; fork/migrate to cra-proto</strong> when the prototype needs to be "official". The TFSA COP explicitly shows this with commit messages referencing the repo migration.</p>
+
+<nav class="mrgn-bttm-lg mrgn-tp-lg">
+  <h3 class="wb-inv">Document navigation</h3>
+  <ul class="pager">
+    <li class="next"><a href="cop-development/overview.html" rel="next"><span class="wb-inv">Next: </span>COP lifecycle and phases</a></li>
+  </ul>
+</nav>
