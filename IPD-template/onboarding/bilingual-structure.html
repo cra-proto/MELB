@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>How the bilingual structure works - Onboarding guide - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="How the bilingual structure works">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{
+    lang: "fr",
+    href: "#",
+    text: "Fran\u00e7ais"
+  }],
+  breadcrumbs: [{
+    title: "Canada.ca",
+    href: "https://www.canada.ca/en.html"
+  },{
+    title: "CRA design system",
+    href: "https://design.cra-arc.alpha.canada.ca/en/index.html"
+  },{
+    title: "Onboarding guide",
+    href: "index.html"
+  }],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">First two weeks: onboarding guide</h1>
+  <ul>
+    <li><a href="repo-architecture.html">Repository architecture</a></li>
+    <li><a href="four-files.html">The four files everyone must know</a></li>
+    <li><a href="creating-a-page.html">How to create a new page</a></li>
+    <li><a href="menu-and-footer.html">How the menu and footer work</a></li>
+    <li><a href="css-and-styling.html">How CSS and styling work</a></li>
+    <li><a class="active" aria-current="page">How the bilingual structure works</a></li>
+    <li><a href="component-catalogue.html">How the component catalogue works</a></li>
+    <li><a href="changelog-system.html">How the changelog system works</a></li>
+    <li><a href="interactive-features.html">How interactive features work</a></li>
+    <li><a href="images-and-banners.html">How images and banners work</a></li>
+    <li><a href="naming-conventions.html">Naming conventions and patterns</a></li>
+    <li><a href="external-dependencies.html">External dependencies and CDNs</a></li>
+    <li><a href="common-tasks.html">Common tasks cheat sheet</a></li>
+    <li><a href="known-issues.html">Known issues and watch-outs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">How the bilingual structure works</h1>
+
+
+<p>Every page exists in both English and French. The two languages are maintained as completely separate HTML files with hardcoded cross-links.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#how-toggle">How the language toggle works</a></li>
+  <li><a href="#directory-mapping">Directory mapping</a></li>
+  <li><a href="#gaps">Known gaps</a></li>
+  <li><a href="#rules-bilingual">Rules to follow</a></li>
+</ul>
+
+<h2 id="how-toggle">How the language toggle works</h2>
+
+<p>Each page has a language toggle in the header. It is a simple <code>&lt;a&gt;</code> link pointing to the other-language counterpart via a relative path. There is no JavaScript-based language switching.</p>
+
+<p>The <code>ucdg.js</code> script uses the <code>&lt;html lang="en"&gt;</code> attribute to load the correct menu and footer includes. If the <code>lang</code> attribute is wrong, the page will load the wrong language&rsquo;s navigation.</p>
+
+<h2 id="directory-mapping">Directory mapping</h2>
+
+<table class="table table-bordered table-condensed">
+  <caption class="wb-inv">English to French directory mapping</caption>
+  <thead><tr class="active"><th scope="col">English</th><th scope="col">French</th></tr></thead>
+  <tbody>
+    <tr><td><code>/en/writing/</code></td><td><code>/fr/redaction/</code></td></tr>
+    <tr><td><code>/en/writing/plain-language/</code></td><td><code>/fr/redaction/langage-clair-simple/</code></td></tr>
+    <tr><td><code>/en/writing/cra-audiences-user-needs/</code></td><td><code>/fr/redaction/auditoires-arc-besoins-utilisateurs/</code></td></tr>
+    <tr><td><code>/en/design-systems/</code></td><td><code>/fr/systemes-conception/</code></td></tr>
+    <tr><td><code>/en/design-systems/gcweb/</code></td><td><code>/fr/systemes-conception/gcweb/</code></td></tr>
+    <tr><td><code>/en/process/content-optimization/</code></td><td><code>/fr/processus/optimisation-contenu/</code></td></tr>
+    <tr><td><code>/en/activities/</code></td><td><code>/fr/activites/</code></td></tr>
+    <tr><td><code>/en/blog/</code></td><td><code>/fr/blogue/</code></td></tr>
+    <tr><td><code>/en/changes/</code></td><td><code>/fr/changements/</code></td></tr>
+  </tbody>
+</table>
+
+<h2 id="gaps">Known gaps</h2>
+
+<p>English has 71 pages; French has 67. The missing French pages are:</p>
+<ul>
+  <li>4 subway sub-pattern demo pages (<code>gc-subway-index.html</code>, <code>gc-subway-sub-content.html</code>, <code>gc-subway-sub-doormats.html</code>, <code>gc-subway-sub-mix.html</code>)</li>
+  <li>The entire <code>/downloads/</code> directory (3 downloadable template files)</li>
+</ul>
+
+<h2 id="rules-bilingual">Rules to follow</h2>
+
+<ul>
+  <li>Always create the French counterpart when you create a new English page</li>
+  <li>Always update language toggle links in <strong>both</strong> directions</li>
+  <li>Use French directory names that match the topic in French, not transliterated English</li>
+  <li>The <code>&lt;html lang&gt;</code> attribute must be correct &mdash; <code>ucdg.js</code> depends on it</li>
+  <li>Shared data files (JSON) must include both <code>_en</code> and <code>_fr</code> fields</li>
+</ul>
+
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="next"><a href="component-catalogue.html" rel="next"><span class="wb-inv">Next: </span>How the component catalogue works</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2025-05-11",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({
+  showFooter: true,
+  showFeatures: false
+});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}))</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

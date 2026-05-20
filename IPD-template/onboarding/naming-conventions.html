@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Naming conventions and patterns - Onboarding guide - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Naming conventions and patterns">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{
+    lang: "fr",
+    href: "#",
+    text: "Fran\u00e7ais"
+  }],
+  breadcrumbs: [{
+    title: "Canada.ca",
+    href: "https://www.canada.ca/en.html"
+  },{
+    title: "CRA design system",
+    href: "https://design.cra-arc.alpha.canada.ca/en/index.html"
+  },{
+    title: "Onboarding guide",
+    href: "index.html"
+  }],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">First two weeks: onboarding guide</h1>
+  <ul>
+    <li><a href="repo-architecture.html">Repository architecture</a></li>
+    <li><a href="four-files.html">The four files everyone must know</a></li>
+    <li><a href="creating-a-page.html">How to create a new page</a></li>
+    <li><a href="menu-and-footer.html">How the menu and footer work</a></li>
+    <li><a href="css-and-styling.html">How CSS and styling work</a></li>
+    <li><a href="bilingual-structure.html">How the bilingual structure works</a></li>
+    <li><a href="component-catalogue.html">How the component catalogue works</a></li>
+    <li><a href="changelog-system.html">How the changelog system works</a></li>
+    <li><a href="interactive-features.html">How interactive features work</a></li>
+    <li><a href="images-and-banners.html">How images and banners work</a></li>
+    <li><a class="active" aria-current="page">Naming conventions and patterns</a></li>
+    <li><a href="external-dependencies.html">External dependencies and CDNs</a></li>
+    <li><a href="common-tasks.html">Common tasks cheat sheet</a></li>
+    <li><a href="known-issues.html">Known issues and watch-outs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Naming conventions and patterns</h1>
+
+
+<p>Consistency in naming makes the repo navigable. These are the conventions used across the codebase.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#files">File names</a></li>
+  <li><a href="#ids">HTML IDs</a></li>
+  <li><a href="#classes">CSS classes</a></li>
+  <li><a href="#breadcrumbs-conv">Breadcrumbs</a></li>
+</ul>
+
+<h2 id="files">File names</h2>
+
+<table class="table table-bordered">
+  <caption class="wb-inv">File naming conventions</caption>
+  <thead><tr class="active"><th scope="col">Type</th><th scope="col">Convention</th><th scope="col">Example</th></tr></thead>
+  <tbody>
+    <tr><td>Multi-word page names</td><td>kebab-case</td><td><code>content-inventory.html</code>, <code>text-editing-effects/</code></td></tr>
+    <tr><td>Section landing pages</td><td>Always <code>index.html</code> inside a directory</td><td><code>/en/writing/index.html</code></td></tr>
+    <tr><td>French pages</td><td>French kebab-case equivalents</td><td><code>langage-clair-simple/</code>, <code>effets-de-modification-du-texte/</code></td></tr>
+    <tr><td>Blog posts</td><td><code>YYYY-MM-slug.html</code></td><td><code>2024-05-accessible-content.html</code></td></tr>
+    <tr><td>Banner images</td><td><code>[section]-[breakpoint].png</code></td><td><code>writing-1400.png</code></td></tr>
+    <tr><td>Component thumbnails</td><td><code>[component]-[lang].jpg</code></td><td><code>alerts-en.jpg</code></td></tr>
+  </tbody>
+</table>
+
+<h2 id="ids">HTML IDs</h2>
+
+<div class="alert alert-warning">
+  <p><strong>Inconsistency:</strong> Content heading IDs use both underscore and hyphen conventions across different pages. Some pages use <code>h_1</code>, <code>h_2</code>, <code>h_3</code>; others use <code>h-1</code>, <code>h-2</code>. When creating new pages, use hyphens (<code>h-1</code>) for consistency.</p>
+</div>
+
+<p>Standard WET IDs are pre-defined: <code>wb-sm</code> (site menu), <code>mb-pnl</code> (mobile panel), <code>wb-bc</code> (breadcrumbs), <code>wb-info</code> (footer).</p>
+
+<h2 id="classes">CSS classes</h2>
+
+<p>The site uses three layers of CSS classes:</p>
+<ol>
+  <li><strong>Bootstrap 3 utilities</strong> (from WET-BOEW): <code>col-md-6</code>, <code>mrgn-tp-md</code>, <code>brdr-rds-0</code>, <code>btn-default</code>, <code>pull-left</code></li>
+  <li><strong>GCWeb theme classes</strong>: <code>gc-thickline</code>, <code>gc-subway</code>, <code>gc-font-2019</code></li>
+  <li><strong>Custom UCDG classes</strong>: <code>menu-inverse</code>, <code>lst-stps</code>, <code>ld-zr</code>, <code>stps-strpd</code>, <code>copyarea</code>, <code>ds-example</code>, <code>list-grid-hover</code>, <code>cnjnctn-*</code></li>
+</ol>
+
+<h2 id="breadcrumbs-conv">Breadcrumbs</h2>
+
+<p>Breadcrumbs are built manually in every page using <code>&lt;nav id="wb-bc"&gt;</code> with an ordered list. They always start with &ldquo;User-Centred Design Guide&rdquo; linking to the home page, then each parent level.</p>
+
+<p>All breadcrumb links use <strong>relative paths</strong> (unlike the menu, which uses absolute paths). This means breadcrumbs must be manually adjusted when a page moves to a different directory level.</p>
+
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="next"><a href="external-dependencies.html" rel="next"><span class="wb-inv">Next: </span>External dependencies and CDNs</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2025-05-11",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({
+  showFooter: true,
+  showFeatures: false
+});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}))</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

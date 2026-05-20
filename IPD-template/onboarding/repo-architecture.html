@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Repository architecture - Onboarding guide - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Repository architecture">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{
+    lang: "fr",
+    href: "#",
+    text: "Fran\u00e7ais"
+  }],
+  breadcrumbs: [{
+    title: "Canada.ca",
+    href: "https://www.canada.ca/en.html"
+  },{
+    title: "CRA design system",
+    href: "https://design.cra-arc.alpha.canada.ca/en/index.html"
+  },{
+    title: "Onboarding guide",
+    href: "index.html"
+  }],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">First two weeks: onboarding guide</h1>
+  <ul>
+    <li><a class="active" aria-current="page">Repository architecture</a></li>
+    <li><a href="four-files.html">The four files everyone must know</a></li>
+    <li><a href="creating-a-page.html">How to create a new page</a></li>
+    <li><a href="menu-and-footer.html">How the menu and footer work</a></li>
+    <li><a href="css-and-styling.html">How CSS and styling work</a></li>
+    <li><a href="bilingual-structure.html">How the bilingual structure works</a></li>
+    <li><a href="component-catalogue.html">How the component catalogue works</a></li>
+    <li><a href="changelog-system.html">How the changelog system works</a></li>
+    <li><a href="interactive-features.html">How interactive features work</a></li>
+    <li><a href="images-and-banners.html">How images and banners work</a></li>
+    <li><a href="naming-conventions.html">Naming conventions and patterns</a></li>
+    <li><a href="external-dependencies.html">External dependencies and CDNs</a></li>
+    <li><a href="common-tasks.html">Common tasks cheat sheet</a></li>
+    <li><a href="known-issues.html">Known issues and watch-outs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Repository architecture</h1>
+
+
+<p>The UCDG is a static HTML site with no build system, no static site generator, and no server-side processing. Every page is hand-coded HTML served directly by GitHub Pages.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#no-build">There is no build step</a></li>
+  <li><a href="#deployment">How deployment works</a></li>
+  <li><a href="#directory">Directory map</a></li>
+  <li><a href="#page-count">Page count</a></li>
+</ul>
+
+<h2 id="no-build">There is no build step</h2>
+
+<p>There is no <code>package.json</code>, no <code>Gemfile</code>, no <code>_config.yml</code>, no Webpack, no Jekyll, no Hugo. You edit HTML files directly, commit, push, and the site updates. This means:</p>
+
+<ul>
+  <li>There is no automated linting, link checking, or HTML validation</li>
+  <li>Shared elements (menu, footer) are injected at runtime by JavaScript, not at build time</li>
+  <li>Every page manages its own relative paths to CSS, JS, and images</li>
+  <li>Changes to shared assets (CSS, JS, includes) take effect on all pages immediately</li>
+</ul>
+
+<h2 id="deployment">How deployment works</h2>
+
+<p>The site is deployed via <strong>GitHub Pages</strong> from the <code>main</code> branch. The custom domain is <code>design.cra-arc.alpha.canada.ca</code>. There is also a <code>design-test</code> branch for staging.</p>
+
+<p>The site is served from the path <code>/design/</code> (the repo name). This is important because <code>ucdg.js</code> uses absolute paths starting with <code>/design/</code> to fetch the menu and footer includes. If the site were moved to a different path, the menu and footer injection would break.</p>
+
+<div class="alert alert-info">
+  <p>All pages include <code>&lt;meta name="robots" content="noindex, nofollow"&gt;</code>, telling search engines not to index the site. This is intentional &mdash; the UCDG is an internal resource.</p>
+</div>
+
+<h2 id="directory">Directory map</h2>
+
+<p>The repo has four top-level areas:</p>
+
+<table class="table table-bordered">
+  <caption class="wb-inv">Top-level directory structure</caption>
+  <thead><tr class="active"><th scope="col">Path</th><th scope="col">What it contains</th></tr></thead>
+  <tbody>
+    <tr><th scope="row"><code>/assets/</code></th><td>All shared static assets: CSS, JS, HTML includes, images, data files, and templates. This is the &ldquo;engine room&rdquo; of the site.</td></tr>
+    <tr><th scope="row"><code>/en/</code></th><td>All English content pages, organized by topic: writing, design-systems, process, activities, blog, changes, downloads.</td></tr>
+    <tr><th scope="row"><code>/fr/</code></th><td>All French content pages, mirroring the English structure with French directory names.</td></tr>
+    <tr><th scope="row"><code>/</code> (root)</th><td>The bilingual splash page (<code>index.html</code>), the 404 page, and <code>README.md</code>.</td></tr>
+  </tbody>
+</table>
+
+<details>
+  <summary>Full directory tree</summary>
+  <div class="mrgn-tp-md">
+<pre><code>/assets/
+  /css/          ucdg-theme.css, and-or.css, clipboard.css, wsm.css
+  /js/           ucdg.js, components.js, clipboard.js
+  /includes/     menu-include-en.html, menu-include-fr.html,
+                 footer-include-en.html, footer-include-fr.html
+  /files/        /changes/whats_new_ucdg.json
+  /images/       /banners/ (hero images, 4 sizes each)
+                 /banners/gcweb/ (component thumbnails)
+  /templates/    content-1.html (activity page template)
+
+/en/
+  index.html                        Home page
+  /writing/                         13 pages: tone, emphasis, punctuation, etc.
+    /plain-language/                 7 pages
+    /cra-audiences-user-needs/       4 pages
+  /design-systems/
+    /gcweb/                          Component catalogue + 16 component pages
+      /subway/                       7 pages (pattern + examples)
+    /intranet-design/                InfoZone design landing
+  /process/content-optimization/     6 pages (overview + 5 phases)
+  /activities/                       13 pages (catalogue + 12 activities)
+  /blog/                             3 pages
+  /changes/                          Changelog (data-driven from JSON)
+  /downloads/                        3 downloadable template files
+
+/fr/                                 Mirrors /en/ with French names</code></pre>
+  </div>
+</details>
+
+<h2 id="page-count">Page count</h2>
+
+<table class="table table-bordered table-condensed">
+  <caption class="wb-inv">Page counts by language</caption>
+  <thead><tr class="active"><th scope="col">Language</th><th scope="col">Pages</th><th scope="col">Notes</th></tr></thead>
+  <tbody>
+    <tr><td>English</td><td>71 HTML pages</td><td>Complete</td></tr>
+    <tr><td>French</td><td>67 HTML pages</td><td>4 pages behind English (subway examples, downloads)</td></tr>
+    <tr><td>Shared assets</td><td>4 CSS, 3 JS, 4 HTML includes, 1 JSON data file, 1 HTML template</td><td>&nbsp;</td></tr>
+  </tbody>
+</table>
+
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="next"><a href="four-files.html" rel="next"><span class="wb-inv">Next: </span>The four files everyone must know</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2025-05-11",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({
+  showFooter: true,
+  showFeatures: false
+});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}))</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

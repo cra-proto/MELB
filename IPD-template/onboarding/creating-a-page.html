@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>How to create a new page - Onboarding guide - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="How to create a new page">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{
+    lang: "fr",
+    href: "#",
+    text: "Fran\u00e7ais"
+  }],
+  breadcrumbs: [{
+    title: "Canada.ca",
+    href: "https://www.canada.ca/en.html"
+  },{
+    title: "CRA design system",
+    href: "https://design.cra-arc.alpha.canada.ca/en/index.html"
+  },{
+    title: "Onboarding guide",
+    href: "index.html"
+  }],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">First two weeks: onboarding guide</h1>
+  <ul>
+    <li><a href="repo-architecture.html">Repository architecture</a></li>
+    <li><a href="four-files.html">The four files everyone must know</a></li>
+    <li><a class="active" aria-current="page">How to create a new page</a></li>
+    <li><a href="menu-and-footer.html">How the menu and footer work</a></li>
+    <li><a href="css-and-styling.html">How CSS and styling work</a></li>
+    <li><a href="bilingual-structure.html">How the bilingual structure works</a></li>
+    <li><a href="component-catalogue.html">How the component catalogue works</a></li>
+    <li><a href="changelog-system.html">How the changelog system works</a></li>
+    <li><a href="interactive-features.html">How interactive features work</a></li>
+    <li><a href="images-and-banners.html">How images and banners work</a></li>
+    <li><a href="naming-conventions.html">Naming conventions and patterns</a></li>
+    <li><a href="external-dependencies.html">External dependencies and CDNs</a></li>
+    <li><a href="common-tasks.html">Common tasks cheat sheet</a></li>
+    <li><a href="known-issues.html">Known issues and watch-outs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">How to create a new page</h1>
+
+
+<p>There is no template engine. Creating a new page means copying an existing page at the same directory depth and updating everything by hand. Follow these steps exactly.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose your starting point</a></li>
+  <li><a href="#steps">Step-by-step process</a></li>
+  <li><a href="#checklist">New page checklist</a></li>
+</ul>
+
+<h2 id="choose">Choose your starting point</h2>
+
+<p>Copy a page that is at the <strong>same directory depth</strong> as where your new page will live. This ensures the relative paths to CSS, JS, and images are correct.</p>
+
+<table class="table table-bordered table-condensed">
+  <caption class="wb-inv">Which page to copy based on target location</caption>
+  <thead><tr class="active"><th scope="col">Your new page lives in</th><th scope="col">Copy this page</th><th scope="col">Why</th></tr></thead>
+  <tbody>
+    <tr><td><code>/en/writing/</code></td><td><code>en/writing/tone.html</code></td><td>Same depth, same section, has &ldquo;On this page&rdquo; nav and sidebar</td></tr>
+    <tr><td><code>/en/activities/</code></td><td><code>en/activities/usability-testing.html</code></td><td>Uses the activity page template with all standard sections</td></tr>
+    <tr><td><code>/en/design-systems/gcweb/[component]/</code></td><td><code>en/design-systems/gcweb/alerts/index.html</code></td><td>Component page with example tabs and clipboard</td></tr>
+    <tr><td><code>/en/blog/</code></td><td><code>en/blog/2024-05-accessible-content.html</code></td><td>Blog post format</td></tr>
+  </tbody>
+</table>
+
+<div class="alert alert-warning">
+  <p><strong>Do not copy a page from a different depth.</strong> A page at <code>/en/writing/tone.html</code> uses <code>../../assets/</code> for asset paths. A page at <code>/en/design-systems/gcweb/alerts/index.html</code> uses <code>../../../../assets/</code>. Getting this wrong breaks CSS, JS, and images silently.</p>
+</div>
+
+<h2 id="steps">Step-by-step process</h2>
+
+<ol class="lst-stps ld-zr">
+  <li>
+    <h3>Copy the source page</h3>
+    <p>Duplicate the HTML file and rename it using kebab-case (for example, <code>my-new-topic.html</code>).</p>
+  </li>
+  <li>
+    <h3>Update the <code>&lt;html lang&gt;</code> attribute</h3>
+    <p>Set to <code>en</code> or <code>fr</code>. This controls which menu and footer <code>ucdg.js</code> loads.</p>
+  </li>
+  <li>
+    <h3>Update the <code>&lt;title&gt;</code> tag</h3>
+    <p>Follow the pattern: <code>[Page title] - [Section] - User-Centred Design Guide - Canada.ca</code>.</p>
+  </li>
+  <li>
+    <h3>Update <code>dcterms</code> metadata</h3>
+    <p>Set <code>dcterms.title</code>, <code>dcterms.description</code>, <code>dcterms.issued</code>, and <code>dcterms.modified</code>.</p>
+  </li>
+  <li>
+    <h3>Update the language toggle link</h3>
+    <p>Point the <code>&lt;a lang="fr"&gt;</code> (or <code>&lt;a lang="en"&gt;</code>) to the corresponding page in the other language. This is a relative path.</p>
+  </li>
+  <li>
+    <h3>Update breadcrumbs</h3>
+    <p>Manually edit the <code>&lt;ol class="breadcrumb"&gt;</code> to reflect the page&rsquo;s location in the site hierarchy. Each level is a manual <code>&lt;li&gt;</code> entry.</p>
+  </li>
+  <li>
+    <h3>Verify all relative paths</h3>
+    <p>Check every <code>src</code> and <code>href</code> that points to <code>/assets/</code>. Count the <code>../</code> segments. They must match the directory depth of your new page.</p>
+  </li>
+  <li>
+    <h3>Replace the content</h3>
+    <p>Write your page content following the section&rsquo;s content pattern (see the page type guidance in the <a href="../how-to-create-a-page.html">How to create a page</a> guide).</p>
+  </li>
+  <li>
+    <h3>Update the date modified</h3>
+    <p>Set the <code>dateModified</code> value at the bottom of the page.</p>
+  </li>
+  <li>
+    <h3>Create the French counterpart</h3>
+    <p>Copy the new English page into the corresponding French directory, translate the content, and update the language toggle links in both directions.</p>
+  </li>
+</ol>
+
+<h2 id="checklist">New page checklist</h2>
+
+<ul class="list-unstyled">
+  <li class="checkbox"><label><input type="checkbox"> <code>&lt;html lang&gt;</code> is correct</label></li>
+  <li class="checkbox"><label><input type="checkbox"> <code>&lt;title&gt;</code> follows the naming convention</label></li>
+  <li class="checkbox"><label><input type="checkbox"> <code>dcterms</code> metadata is filled in</label></li>
+  <li class="checkbox"><label><input type="checkbox"> Language toggle points to the correct counterpart</label></li>
+  <li class="checkbox"><label><input type="checkbox"> Breadcrumbs reflect the correct hierarchy</label></li>
+  <li class="checkbox"><label><input type="checkbox"> All relative paths to <code>/assets/</code> are correct for this depth</label></li>
+  <li class="checkbox"><label><input type="checkbox"> <code>&lt;div id="menu-include"&gt;</code> and <code>&lt;div id="footer-include"&gt;</code> are present</label></li>
+  <li class="checkbox"><label><input type="checkbox"> <code>ucdg.js</code> is loaded in the <code>&lt;head&gt;</code></label></li>
+  <li class="checkbox"><label><input type="checkbox"> Google Tag Manager snippet is included</label></li>
+  <li class="checkbox"><label><input type="checkbox"> <code>robots noindex</code> meta tag is present</label></li>
+  <li class="checkbox"><label><input type="checkbox"> Date modified is set</label></li>
+  <li class="checkbox"><label><input type="checkbox"> French counterpart exists and cross-links correctly</label></li>
+</ul>
+
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="next"><a href="menu-and-footer.html" rel="next"><span class="wb-inv">Next: </span>How the menu and footer work</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2025-05-11",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({
+  showFooter: true,
+  showFeatures: false
+});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}))</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

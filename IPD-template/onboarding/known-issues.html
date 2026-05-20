@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Known issues and watch-outs - Onboarding guide - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Known issues and watch-outs">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{
+    lang: "fr",
+    href: "#",
+    text: "Fran\u00e7ais"
+  }],
+  breadcrumbs: [{
+    title: "Canada.ca",
+    href: "https://www.canada.ca/en.html"
+  },{
+    title: "CRA design system",
+    href: "https://design.cra-arc.alpha.canada.ca/en/index.html"
+  },{
+    title: "Onboarding guide",
+    href: "index.html"
+  }],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">First two weeks: onboarding guide</h1>
+  <ul>
+    <li><a href="repo-architecture.html">Repository architecture</a></li>
+    <li><a href="four-files.html">The four files everyone must know</a></li>
+    <li><a href="creating-a-page.html">How to create a new page</a></li>
+    <li><a href="menu-and-footer.html">How the menu and footer work</a></li>
+    <li><a href="css-and-styling.html">How CSS and styling work</a></li>
+    <li><a href="bilingual-structure.html">How the bilingual structure works</a></li>
+    <li><a href="component-catalogue.html">How the component catalogue works</a></li>
+    <li><a href="changelog-system.html">How the changelog system works</a></li>
+    <li><a href="interactive-features.html">How interactive features work</a></li>
+    <li><a href="images-and-banners.html">How images and banners work</a></li>
+    <li><a href="naming-conventions.html">Naming conventions and patterns</a></li>
+    <li><a href="external-dependencies.html">External dependencies and CDNs</a></li>
+    <li><a href="common-tasks.html">Common tasks cheat sheet</a></li>
+    <li><a class="active" aria-current="page">Known issues and watch-outs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Known issues and watch-outs</h1>
+
+
+<p>Gotchas, inconsistencies, and improvement opportunities identified from auditing the repo.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#gotchas">Gotchas for new contributors</a></li>
+  <li><a href="#inconsistencies">Known inconsistencies</a></li>
+  <li><a href="#suggestions">Suggestions for improvement</a></li>
+</ul>
+
+<h2 id="gotchas">Gotchas for new contributors</h2>
+
+<table class="table table-bordered">
+  <caption class="wb-inv">Common gotchas</caption>
+  <thead><tr class="active"><th scope="col">Issue</th><th scope="col">What happens</th><th scope="col">How to avoid</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Wrong relative path depth</td>
+      <td>CSS, JS, and images fail to load. The page renders as unstyled HTML with no menu or footer.</td>
+      <td>Always copy a page from the same directory depth. Count the <code>../</code> segments carefully.</td>
+    </tr>
+    <tr>
+      <td>Wrong <code>&lt;html lang&gt;</code> attribute</td>
+      <td>The page loads the wrong language&rsquo;s menu and footer.</td>
+      <td>Double-check the <code>lang</code> attribute matches the page content.</td>
+    </tr>
+    <tr>
+      <td>Missing placeholder <code>&lt;div&gt;</code></td>
+      <td>Menu or footer does not appear on the page.</td>
+      <td>Ensure both <code>&lt;div id="menu-include"&gt;</code> and <code>&lt;div id="footer-include"&gt;</code> exist.</td>
+    </tr>
+    <tr>
+      <td>Broken language toggle</td>
+      <td>Clicking &ldquo;Fran&ccedil;ais&rdquo; leads to a 404.</td>
+      <td>Always create the French page first, then set the toggle links in both directions.</td>
+    </tr>
+    <tr>
+      <td>Editing menu includes</td>
+      <td>Changes affect every page on the site instantly.</td>
+      <td>Test menu changes locally before pushing. Edit both EN and FR files together.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="inconsistencies">Known inconsistencies</h2>
+
+<ul>
+  <li><strong>Font Awesome versions:</strong> Three different versions are loaded across pages (5.5.0, 5.8.1, 5.15.4). Use v5.15.4 for new pages.</li>
+  <li><strong>Heading ID format:</strong> Some pages use <code>h_1</code> (underscore), others use <code>h-1</code> (hyphen). Use hyphens going forward.</li>
+  <li><strong>French content gap:</strong> French is 4 pages behind English (subway examples and downloads directory).</li>
+  <li><strong>GCWeb catalogue data source:</strong> A <code>gcwebsysdata.json</code> file exists but is unused. The catalogue currently uses inline HTML table rows.</li>
+  <li><strong>Missing template:</strong> The templates README references a <code>topic-1.html</code> template that does not exist in the repo.</li>
+  <li><strong>Commit messages:</strong> Many commits use generic messages like &ldquo;Update index.html&rdquo; with no description of what changed.</li>
+</ul>
+
+<h2 id="suggestions">Suggestions for improvement</h2>
+
+<dl class="dl-horizontal">
+  <dt>Add a <code>.gitignore</code></dt>
+  <dd>The repo has no <code>.gitignore</code>. Add one to exclude <code>.DS_Store</code>, editor swap files, and other artifacts.</dd>
+  <dt>Pin WET-BOEW versions</dt>
+  <dd>JS and CSS are loaded from unpinned CDN URLs. A breaking change in WET-BOEW could affect the site without warning. Pin to a specific release.</dd>
+  <dt>Standardize Font Awesome</dt>
+  <dd>Pick one version (v5.15.4) and update all pages. Consider migrating to Font Awesome 6.</dd>
+  <dt>Add link checking</dt>
+  <dd>With no build system, broken links are only caught by manual testing. A simple CI workflow with a link checker (for example, <code>htmlproofer</code> or <code>lychee</code>) would catch broken links on every push.</dd>
+  <dt>Add a CONTRIBUTING.md</dt>
+  <dd>Document the page creation process, naming conventions, and review expectations so new contributors know what to do.</dd>
+  <dt>Write descriptive commit messages</dt>
+  <dd>Describe <strong>what</strong> changed and <strong>why</strong>, not just which file was touched.</dd>
+  <dt>Close the French gap</dt>
+  <dd>Translate the 4 missing French pages (subway examples) and add a <code>/fr/telechargements/</code> directory with French template files.</dd>
+  <dt>Consider a static site generator</dt>
+  <dd>The manual boilerplate management is error-prone. A lightweight SSG (Eleventy, Hugo) could automate includes, breadcrumbs, and path resolution while keeping the hand-coded feel.</dd>
+</dl>
+
+
+
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2025-05-11",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({
+  showFooter: true,
+  showFeatures: false
+});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}))</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

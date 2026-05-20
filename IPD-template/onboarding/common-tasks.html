@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Common tasks cheat sheet - Onboarding guide - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Common tasks cheat sheet">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{
+    lang: "fr",
+    href: "#",
+    text: "Fran\u00e7ais"
+  }],
+  breadcrumbs: [{
+    title: "Canada.ca",
+    href: "https://www.canada.ca/en.html"
+  },{
+    title: "CRA design system",
+    href: "https://design.cra-arc.alpha.canada.ca/en/index.html"
+  },{
+    title: "Onboarding guide",
+    href: "index.html"
+  }],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">First two weeks: onboarding guide</h1>
+  <ul>
+    <li><a href="repo-architecture.html">Repository architecture</a></li>
+    <li><a href="four-files.html">The four files everyone must know</a></li>
+    <li><a href="creating-a-page.html">How to create a new page</a></li>
+    <li><a href="menu-and-footer.html">How the menu and footer work</a></li>
+    <li><a href="css-and-styling.html">How CSS and styling work</a></li>
+    <li><a href="bilingual-structure.html">How the bilingual structure works</a></li>
+    <li><a href="component-catalogue.html">How the component catalogue works</a></li>
+    <li><a href="changelog-system.html">How the changelog system works</a></li>
+    <li><a href="interactive-features.html">How interactive features work</a></li>
+    <li><a href="images-and-banners.html">How images and banners work</a></li>
+    <li><a href="naming-conventions.html">Naming conventions and patterns</a></li>
+    <li><a href="external-dependencies.html">External dependencies and CDNs</a></li>
+    <li><a class="active" aria-current="page">Common tasks cheat sheet</a></li>
+    <li><a href="known-issues.html">Known issues and watch-outs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Common tasks cheat sheet</h1>
+
+
+<p>Quick-reference instructions for the tasks you will do most often.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#task-page">Add a new content page</a></li>
+  <li><a href="#task-nav">Add a top-level nav item</a></li>
+  <li><a href="#task-changelog">Add a changelog entry</a></li>
+  <li><a href="#task-component">Add a GCWeb component page</a></li>
+  <li><a href="#task-activity">Add a new activity</a></li>
+  <li><a href="#task-banner">Create a new banner image</a></li>
+</ul>
+
+<h2 id="task-page">Add a new content page</h2>
+<ol>
+  <li>Copy an existing page at the <strong>same directory depth</strong></li>
+  <li>Rename using kebab-case</li>
+  <li>Update: <code>lang</code>, <code>title</code>, <code>dcterms</code>, language toggle, breadcrumbs, all relative paths, content, date modified</li>
+  <li>Create the French counterpart</li>
+  <li>Cross-link the language toggles in both files</li>
+</ol>
+
+<h2 id="task-nav">Add a top-level nav item</h2>
+<ol>
+  <li>Edit <code>assets/includes/menu-include-en.html</code></li>
+  <li>Add <code>&lt;li&gt;</code> to the desktop <code>&lt;ul class="list-inline menu"&gt;</code></li>
+  <li>Add the same link to the mobile overlay section (<code>#mb-pnl</code>)</li>
+  <li>Repeat in <code>menu-include-fr.html</code></li>
+</ol>
+
+<h2 id="task-changelog">Add a changelog entry</h2>
+<ol>
+  <li>Open <code>assets/files/changes/whats_new_ucdg.json</code></li>
+  <li>Add a new object at the <strong>beginning</strong> of the array</li>
+  <li>Fill in all bilingual fields (<code>_en</code> and <code>_fr</code>)</li>
+  <li>Commit &mdash; the changes page and home page update automatically</li>
+</ol>
+
+<h2 id="task-component">Add a GCWeb component page</h2>
+<ol>
+  <li>Create thumbnail pair: <code>assets/images/banners/gcweb/[name]-en.jpg</code> and <code>[name]-fr.jpg</code></li>
+  <li>Add a <code>&lt;tr&gt;</code> row to <code>&lt;tbody&gt;</code> in <code>en/design-systems/gcweb/index.html</code> and the French equivalent</li>
+  <li>Create the detail page at <code>en/design-systems/gcweb/[name]/index.html</code></li>
+  <li>Follow the standard component page structure: banner, intro, &ldquo;On this page&rdquo;, when to use, how to implement, design options, accessibility</li>
+  <li>Add a changelog entry</li>
+</ol>
+
+<h2 id="task-activity">Add a new activity</h2>
+<ol>
+  <li>Copy <code>en/activities/usability-testing.html</code> (the best example of a complete activity page)</li>
+  <li>Follow the standard sections: When to use, Who is involved, How to do it (steps), Deliverables, Tools, References</li>
+  <li>Add a row to the filterable table in <code>en/activities/index.html</code></li>
+  <li>Link the activity from the appropriate process phase page</li>
+</ol>
+
+<h2 id="task-banner">Create a new banner image</h2>
+<ol>
+  <li>Create 4 PNG files with transparent backgrounds:
+    <ul>
+      <li><code>[name]-991.png</code> (990 &times; 800, image area 990 &times; 250)</li>
+      <li><code>[name]-1400.png</code> (1400 &times; 800, image area 1400 &times; 300)</li>
+      <li><code>[name]-1700.png</code> (1700 &times; 800, image area 1700 &times; 300)</li>
+      <li><code>[name]-1900.png</code> (1900 &times; 800, image area 1900 &times; 200)</li>
+    </ul>
+  </li>
+  <li>Save to <code>assets/images/banners/</code></li>
+  <li>Reference them in the page using <code>data-bgimg-srcset</code></li>
+</ol>
+
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="next"><a href="known-issues.html" rel="next"><span class="wb-inv">Next: </span>Known issues and watch-outs</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2025-05-11",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({
+  showFooter: true,
+  showFeatures: false
+});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}))</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>
