@@ -32,6 +32,12 @@ Fetches HTML from both a live page and its prototype, extracts all structured co
 - Wrong hyperlinks on unchanged text (uses prototype segments for equal paragraphs)
 - Empty bullets from missing numbering definitions (manual bullet character + indent)
 - Indistinct heading sizes (explicit XML font sizing, not style-based)
+- Word-level diffs silently dropping all hyperlinks (67.5% of diffs affected in testing)
+- Ordered lists rendered with bullet dots instead of numbers
+- Alert/notice `<section>` content silently vanishing from output
+- GitHub API 100KB file size limit causing silent failures on large pages
+- Content reordering appearing as confusing delete + insert pairs
+- Hardcoded tracked-change dates making batch comparisons indistinguishable
 
 ## Files
 

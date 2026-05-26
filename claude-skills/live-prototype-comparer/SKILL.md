@@ -409,6 +409,8 @@ Run these checks **before** delivering documents to the user:
 - [ ] Verify section headings from "On this page" TOC also appear as headings later
 - [ ] Check that bullet items have non-zero depth values
 - [ ] Confirm no content items have empty text
+- [ ] Verify `<ol>` items are tagged as ordered (not rendered with bullet dots)
+- [ ] Verify alert/notice `<section>` content is captured (not silently dropped)
 
 ### After document generation
 - [ ] Verify hyperlink field codes are present (check for `w:fldChar` and `w:instrText`)
@@ -416,11 +418,13 @@ Run these checks **before** delivering documents to the user:
 - [ ] Verify bullet items have indentation (`w:ind` elements)
 - [ ] Confirm the document can be opened without errors
 - [ ] Spot-check that "equal" paragraphs use prototype link segments
+- [ ] Check word-level diff paragraphs for link presence (links are often lost)
 
 ### Cross-document checks
 - [ ] All expected documents were generated (none skipped silently)
 - [ ] File naming follows the +1 row convention
 - [ ] No documents contain only empty bullet points (indicates extraction failure)
+- [ ] GitHub API did not silently truncate large files (check file sizes > 100KB)
 
 ## Known edge cases
 
@@ -442,6 +446,160 @@ Run these checks **before** delivering documents to the user:
 6. **Missing prototype pages**: If a prototype URL returns 404, skip
    that row and report it in the summary. Never generate a document with
    only one source.
+
+## Additional pitfalls discovered through testing
+
+### Word-level diffs drop all hyperlinks (HIGH severity)
+
+When two paragraphs have similar but not identical text (similarity > 0.3),
+the script uses word-level diffing via `add_word_diff_paragraph()`. This
+function only handles plain text — all hyperlink information from both the
+live and prototype segments is lost. In real-world testing, **67.5% of
+word-level diff paragraphs contained hyperlinks** that were silently dropped.
+
+**Solution**: Implement segment-aware word-level diffing. When both the old
+and new paragraph have segments, align the word diff output back to the
+segment boundaries to preserve link annotations. Alternatively, for
+paragraphs where links changed, fall back to full delete + insert (which
+preserves links) rather than word-level diff:
+
+```python
+# Before doing word-level diff, check if links differ
+live_links = [s for s in live_segs if s['type'] == 'link']
+proto_links = [s for s in proto_segs if s['type'] == 'link']
+if live_links != proto_links:
+    # Links changed — use full delete + insert to preserve link info
+    add_paragraph_with_segments(doc, live_segs, 'delete', info)
+    add_paragraph_with_segments(doc, proto_segs, 'insert', next_info)
+else:
+    # Only text changed — word-level diff is safe
+    add_word_diff_paragraph(doc, word_diffs, next_info)
+```
+
+### Ordered lists rendered as unordered bullets (MEDIUM severity)
+
+`<ol>` list items are extracted with type `bullet` and rendered with a `•`
+prefix, losing their numbered sequence. Users see bullet dots instead of
+"1. 2. 3." for procedural steps.
+
+**Solution**: Distinguish `<ol>` from `<ul>` during extraction:
+
+```python
+elif elem.name == 'li':
+    parent_list = elem.find_parent(['ul', 'ol'])
+    if parent_list and parent_list.name == 'ol':
+        item['type'] = 'ordered'
+        # Calculate position among siblings
+        position = len(list(elem.previous_siblings)) // 2 + 1  # rough
+        item['position'] = position
+    else:
+        item['type'] = 'bullet'
+    item['depth'] = get_list_depth(elem)
+```
+
+Render ordered items with `{position}.\t` prefix instead of `•\t`.
+
+### Alert/notice sections silently dropped (HIGH severity)
+
+Canada.ca uses `<section class="alert alert-info|warning|danger|success">`
+for important notices. These sections are not in the extraction tag list
+(`<section>` is not `<p>`, `<li>`, etc.), and their child `<p>` elements may
+be filtered by the block-child check. Result: entire alert boxes vanish.
+
+**Solution**: Before extracting, unwrap alert sections by replacing them with
+their content plus a synthetic heading:
+
+```python
+for section in main.find_all('section', class_=re.compile(r'alert')):
+    classes = ' '.join(section.get('class', []))
+    alert_type = 'Info'
+    if 'alert-warning' in classes: alert_type = 'Warning'
+    elif 'alert-danger' in classes: alert_type = 'Danger'
+    elif 'alert-success' in classes: alert_type = 'Success'
+    # Insert a visible marker before the section's content
+    marker = soup.new_tag('p')
+    marker.string = f'[{alert_type} notice]'
+    marker['class'] = ['alert-marker']
+    section.insert(0, marker)
+    section.unwrap()  # Remove <section> wrapper, keep children
+```
+
+Or add `section` to the extracted tags and treat alert sections as a
+distinct content type with visual styling (coloured background or prefix).
+
+### GitHub API 100KB file size limit (MEDIUM severity)
+
+The GitHub contents API (`repos/{owner}/{repo}/contents/{path}`) only returns
+inline base64 content for files under ~100KB. Larger files return a `git_url`
+instead, requiring a separate blob API call. In testing, one prototype page
+was 96.1KB — close to the limit. Larger pages would silently return no
+content.
+
+**Solution**: Check the API response for a `content` field. If absent, use
+the blob endpoint:
+
+```python
+def fetch_from_github_api(repo, file_path):
+    cmd = ['gh', 'api', f'repos/{repo}/contents/{file_path}']
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+    if result.returncode != 0:
+        return None
+    import json
+    data = json.loads(result.stdout)
+    if 'content' in data:
+        return base64.b64decode(data['content']).decode('utf-8', errors='replace')
+    elif 'git_url' in data:
+        # File too large, use blob API
+        blob_cmd = ['gh', 'api', data['git_url'], '--jq', '.content']
+        blob_result = subprocess.run(blob_cmd, capture_output=True, text=True, timeout=30)
+        if blob_result.returncode == 0:
+            return base64.b64decode(blob_result.stdout.strip()).decode('utf-8', errors='replace')
+    return None
+```
+
+### Content reordering appears as delete + insert (LOW severity)
+
+When the prototype moves a section to a different position without changing
+its text, `SequenceMatcher` cannot detect the move. It shows the section as
+deleted from its original position and inserted at the new position. This is
+technically correct for tracked changes, but reviewers may find it confusing.
+
+**Mitigation**: There is no simple fix since Word tracked changes have no
+"move" operation. Document this behavior for reviewers. Optionally, add a
+comment or note at the top of the document explaining that moved sections
+appear as a paired deletion and insertion.
+
+### French/bilingual page encoding (LOW severity)
+
+Some Canada.ca pages serve French content or bilingual text with accented
+characters (e.g., `e with accent`, `c with cedilla`). If the encoding is not handled
+properly, these characters may appear garbled. The `requests` library usually
+auto-detects encoding, but GitHub API responses are always UTF-8 base64.
+
+**Solution**: Always decode with `errors='replace'` to prevent crashes:
+
+```python
+base64.b64decode(content).decode('utf-8', errors='replace')
+```
+
+And ensure the HTML parser uses `lxml` which handles encoding declarations
+in `<meta>` tags automatically.
+
+### Hardcoded tracked-change metadata (LOW severity)
+
+The script hardcodes `w:author="Prototype Review"` and a static date. When
+comparing multiple batches over time, all changes appear to have the same
+author and timestamp, making it impossible to distinguish when comparisons
+were generated.
+
+**Solution**: Use the current date and allow the author name to be
+configurable:
+
+```python
+from datetime import datetime
+REVIEW_DATE = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+REVIEW_AUTHOR = 'Prototype Review'  # Make configurable
+```
 
 ## Validation script
 
