@@ -126,18 +126,18 @@
   <!-- ============================================================
        Top-of-page summary
        ============================================================ -->
-  <p class="mrgn-tp-md">This edition shows personal income tax data for the 2024 tax year, by city, region, and postal area in Canada. Data covers tax returns assessed up to <span class="nowrap">November 30, 2025</span>.</p>
-
-  <p>Tables are available in two formats: <strong>PDF</strong> (formatted for reading) and <strong>CSV</strong> (raw data for analysis).</p>
+  <p class="mrgn-tp-md">This edition provides 2024 tax year personal income tax data assessed up to <span class="nowrap">November 30, 2025</span>. It covers tax filer counts, total income and tax payable across Canadian cities and regions. Data is downloadable as raw CSV (for analysis in Excel, Python or R) and formatted PDF. For postal-code-level data, see the <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/individual-tax-statistics-fsa.html">Individual Tax Statistics by Forward Sortation Area (FSA)</a> report.</p>
 
   <!-- ============================================================
-       FIX #6: "On this page" TOC moved up to immediately after H1
-       and intro, before substantive content. Per TOC guidance.
+       On-this-page TOC (design-system placement: after H1 + intro,
+       before substantive content). Added Key numbers entry and
+       synced the "Information these tables provide" label.
        ============================================================ -->
   <aside class="mrgn-tp-md">
     <h2 class="h3">On this page</h2>
     <ul>
-      <li><a href="#tasks">Tasks these tables support</a></li>
+      <li><a href="#key-numbers">Key numbers</a></li>
+      <li><a href="#tasks">Information these tables provide</a></li>
       <li><a href="#download">Download the 2024 tax year tables</a></li>
       <li><a href="#data-dictionary">Data dictionary: what each CSV column means</a></li>
       <li><a href="#geography">Geographic areas explained</a></li>
@@ -146,6 +146,31 @@
       <li><a href="#comparing-editions">Comparing this edition to previous ones</a></li>
     </ul>
   </aside>
+
+  <!-- ============================================================
+       Key numbers (headline stats extracted from Table 1 CSV,
+       tbl1all2024.csv row "NATIONAL TOTAL")
+       ============================================================ -->
+  <h2 id="key-numbers">Key numbers</h2>
+
+  <p>Top-line data from Table 1 (All returns filed) for the 2024 tax year.</p>
+
+  <dl class="dl-horizontal">
+    <dt>Tax filers</dt>
+    <dd><strong>31,474,740</strong> across Canada</dd>
+
+    <dt>Total income assessed</dt>
+    <dd><strong>$2.02 trillion</strong> reported</dd>
+
+    <dt>Average per filer</dt>
+    <dd><strong>$64,140</strong> in total income</dd>
+
+    <dt>High-income filers</dt>
+    <dd><strong>620,980</strong> filers reported $250,000 or more (2.0% of the total)</dd>
+
+    <dt>Geographic coverage</dt>
+    <dd><strong>42</strong> Census Metropolitan Areas and <strong>114</strong> Census Agglomerations, plus provincial and territorial totals</dd>
+  </dl>
 
   <!-- ============================================================
        FIX #2: Reframed from FAQ-style questions to statement
