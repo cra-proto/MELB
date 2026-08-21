@@ -254,7 +254,7 @@
        ============================================================ -->
   <h2 id="data-dictionary">Data dictionary: what each CSV column means</h2>
 
-  <p>Use this dictionary to interpret the CSV files without opening them. The same columns appear in Tables 1, 2, and 3. Table 4 adds source-of-income columns.</p>
+  <p>Use this dictionary to interpret the CSV files without opening them. The same columns appear in Tables 1, 2, and 3. Table 4 uses a different set of columns for the source-of-income breakdown.</p>
 
   <h3 id="csv-format">Columns common to Tables 1, 2, and 3</h3>
 
@@ -270,54 +270,39 @@
       </thead>
       <tbody>
         <tr>
-          <td><strong>Province</strong></td>
-          <td>Two-letter province or territory code (see codes below)</td>
-          <td>Text (for example, ON, QC, BC)</td>
+          <td><strong>Prov/Terr</strong></td>
+          <td>Province or territory code (see codes below)</td>
+          <td>2-digit number (for example, 35 = Ontario, 99 = Canada)</td>
         </tr>
         <tr>
-          <td><strong>Area</strong></td>
-          <td>Name of the Census Metropolitan Area, Census Agglomeration, census subdivision, or Forward Sortation Area</td>
-          <td>Text</td>
+          <td><strong>CMA-CA/RMR-AR</strong></td>
+          <td>Identifier for the Census Metropolitan Area or Census Agglomeration; blank on province and Canada totals</td>
+          <td>3-digit number</td>
         </tr>
         <tr>
-          <td><strong>Geography type</strong></td>
-          <td>Indicates whether the row is a CMA, CA, census division, census subdivision, FSA, province, or all Canada</td>
+          <td><strong>Classification</strong></td>
+          <td>Whether the row is a CMA (CMA/RMR), a CA (CA/AR), or a total (TOTAL)</td>
           <td>Text code</td>
         </tr>
         <tr>
-          <td><strong>Income class</strong></td>
-          <td>Range of total income assessed (line 15000 of the T1 return), for example "$25,000 to $34,999"</td>
-          <td>Text range</td>
+          <td><strong>Description</strong></td>
+          <td>Name of the geography</td>
+          <td>Text</td>
         </tr>
         <tr>
-          <td><strong>Number of taxfilers</strong></td>
-          <td>Count of tax filers in this geography and income class</td>
+          <td><strong>Total - All Returns</strong></td>
+          <td>Number of tax filers in this geography</td>
           <td>Integer (rounded to nearest 10)</td>
         </tr>
         <tr>
-          <td><strong>Total income</strong></td>
-          <td>Total income reported on line 15000</td>
+          <td><strong>Total Income</strong></td>
+          <td>Total income assessed for this geography</td>
           <td>Dollars (rounded to nearest $1,000)</td>
         </tr>
         <tr>
-          <td><strong>Employment income</strong></td>
-          <td>Income from line 10100 of the T1 return</td>
-          <td>Dollars (rounded to nearest $1,000)</td>
-        </tr>
-        <tr>
-          <td><strong>Net federal tax</strong></td>
-          <td>Federal tax payable after credits</td>
-          <td>Dollars (rounded to nearest $1,000)</td>
-        </tr>
-        <tr>
-          <td><strong>Net provincial tax</strong></td>
-          <td>Provincial or territorial tax payable after credits (except in Quebec, which administers its own)</td>
-          <td>Dollars (rounded to nearest $1,000)</td>
-        </tr>
-        <tr>
-          <td><strong>Total income tax</strong></td>
-          <td>Federal and provincial or territorial tax payable</td>
-          <td>Dollars (rounded to nearest $1,000)</td>
+          <td><strong>Income bracket columns</strong> (Under $5,000 through $250,000 and over)</td>
+          <td>19 columns, each the number of filers whose total income falls in that bracket</td>
+          <td>Integer (rounded to nearest 10)</td>
         </tr>
       </tbody>
     </table>
