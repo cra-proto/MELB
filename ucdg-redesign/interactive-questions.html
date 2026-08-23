@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Interactive questions - Interaction & feedback - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Interactive questions">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Interaction & feedback", href: "interaction-feedback.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Interaction &amp; feedback</h1>
+  <ul>
+    <li><a href="interaction-feedback.html">Family overview</a></li>
+    <li><a href="alerts.html">Alerts</a></li>
+    <li><a class="active" aria-current="page">Interactive questions</a></li>
+    <li><a href="and-or.html">And / Or</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Interactive questions</h1>
+
+<p>An interactive question asks the user something on the page and then reveals only the content that applies to their answer. Use it to shrink long "if… then…" paragraphs into a short question the user can actually answer.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#headings">Recommended question patterns</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Interactive questions are one of three ways to handle "it depends" content. Pick based on the user's task.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Interactive question</h3>
+      <p class="mrgn-bttm-0">Use when the answer changes what the user sees, and each branch is short (a paragraph or two).</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Static list of conditions</h3>
+      <p class="mrgn-bttm-0">Use when the user is likely to read several branches to compare — for example, eligibility rules a couple compares side by side.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Separate page per situation</h3>
+      <p class="mrgn-bttm-0">Use when each branch is long enough to be a page of its own, or the branches diverge in more than one dimension.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>Does the user need to see all branches to decide? → <strong>Static list</strong></li>
+  <li>Does each branch need its own page-worth of guidance? → <strong>Separate pages</strong></li>
+  <li>Would the user's answer collapse the page to one or two paragraphs? → <strong>Interactive question</strong></li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>One question, worded so any user can answer it without reading anything else</li>
+  <li>Between 2 and 5 mutually exclusive answer options — never overlapping</li>
+  <li>A visible result panel for every answer, revealed as soon as the user picks</li>
+  <li>A "reset" affordance if the user changes their mind, unless the question is trivially re-answerable</li>
+  <li>Fallback content that reads sensibly if JavaScript is off — usually the same information as a static list</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Ask one question at a time. If a second question depends on the first, reveal it only after the first is answered.</li>
+  <li>Write the question in plain, second-person language. "Are you a resident of Canada?" not "Residency status of the applicant."</li>
+  <li>Answer options must not overlap. "1 to 5 employees" and "5 to 10 employees" both include 5 — rewrite to "1 to 4" and "5 to 10."</li>
+  <li>Never bury the answer inside another accordion. The result must appear directly under the question.</li>
+  <li>Do not use an interactive question to hide content the user should always see, like fees or deadlines.</li>
+  <li>Cap the depth. If you would need more than 3 nested questions, the content belongs on separate pages.</li>
+</ul>
+
+<h2 id="headings">Recommended question patterns</h2>
+<ul>
+  <li>Are you [role]? — Yes / No</li>
+  <li>Which of these describes your situation? — 2 to 5 named situations</li>
+  <li>How would you like to [action]? — 2 to 4 channels (online, by mail, in person)</li>
+  <li>Which year are you filing for? — a small list of years</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Every answer option is a real form control (radio or button), reachable and operable by keyboard.</li>
+  <li>The result panel uses <code>aria-live="polite"</code> so screen readers announce the reveal without stealing focus.</li>
+  <li>Do not rely on colour to distinguish the currently selected option — the state must be visible in the control itself.</li>
+  <li>Provide a "start over" button when the user has drilled several levels in, so they can escape without page reload.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare question patterns side by side</h3>
+
+  <details open>
+    <summary>Good interactive question examples</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        <strong>Are you filing on behalf of someone else?</strong> — Yes / No.
+        Selecting <em>Yes</em> reveals a short paragraph about Represent a Client with one link. Selecting <em>No</em> reveals the standard filing steps.
+        <br><em class="text-muted">Why it works: one clear question, mutually exclusive answers, each branch is short enough to read on the page.</em>
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        <strong>Which best describes your business?</strong> — Sole proprietor / Partnership / Corporation.
+        Each answer reveals the two or three sections the user needs and hides the rest.
+        <br><em class="text-muted">Why it works: named situations, no overlap, dramatically shorter than showing every business type on one page.</em>
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        <strong>How would you like to submit?</strong> — Online (My Account) / By mail.
+        Reveals the correct set of steps for the chosen channel. Includes a "Change channel" button on the result.
+        <br><em class="text-muted">Why it works: channel choice is a natural fork, and the reset button acknowledges people change their minds.</em>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Interactive questions to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>Which of the following best describes the nature of your inquiry from the perspective of the taxpayer?</strong> — 12 options.
+        <br><em class="text-muted">Why it is wrong: unanswerable without reading the whole page, and 12 options is a menu, not a question. Split into a hub page with 12 links.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>How many employees do you have?</strong> — 1–5 / 5–10 / 10+.
+        <br><em class="text-muted">Why it is wrong: the ranges overlap at 5 and 10. Someone with 5 employees does not know which to pick.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>Are you eligible for the credit?</strong> — Yes / No / I do not know.
+        <br><em class="text-muted">Why it is wrong: eligibility is what the page is supposed to tell them. Asking the user to self-assess before you help them is backwards.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>Question 1 of 5:</strong> a five-question wizard with each answer revealing the next question, ending in a very long result panel.
+        <br><em class="text-muted">Why it is wrong: five nested questions with a heavy end-state means the branches are long enough to be their own pages — use the subway pattern instead.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="alerts.html" rel="prev"><span class="wb-inv">Previous: </span>Alerts</a></li>
+    <li class="next"><a href="and-or.html" rel="next"><span class="wb-inv">Next: </span>And / Or</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

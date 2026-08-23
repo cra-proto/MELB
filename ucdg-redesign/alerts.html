@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Alerts - Interaction & feedback - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Alerts">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Interaction & feedback", href: "interaction-feedback.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Interaction &amp; feedback</h1>
+  <ul>
+    <li><a href="interaction-feedback.html">Family overview</a></li>
+    <li><a class="active" aria-current="page">Alerts</a></li>
+    <li><a href="interactive-questions.html">Interactive questions</a></li>
+    <li><a href="and-or.html">And / Or</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Alerts</h1>
+
+<p>An alert is a short, temporary notice at the top of a page or section. It tells the user something has changed, gone wrong, or needs their attention right now — before they keep going with their task.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#headings">Recommended titles</a></li>
+  <li><a href="#placement">Placement</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Before you write an alert, decide whether an alert is what the user actually needs.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-6">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Use an alert</h3>
+      <p>Use when the situation is <strong>short, urgent, and page-specific</strong>.</p>
+      <p class="mrgn-bttm-0"><strong>Best for:</strong> service outages, submission errors, confirmation of a completed action, time-sensitive deadlines, a single change the user needs to see once.</p>
+    </section>
+  </div>
+  <div class="col-md-6">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Use a central information page</h3>
+      <p>Use when the change is <strong>large, ongoing, or affects many pages</strong>.</p>
+      <p class="mrgn-bttm-0"><strong>Best for:</strong> a theme-wide disruption, a multi-week rollout, a change with rules and dates that keep evolving. Link to the central page from the affected topic pages.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>Will this notice still be relevant in a month? → <strong>Central page</strong></li>
+  <li>Does it need more than 2 sentences to explain? → <strong>Central page</strong></li>
+  <li>Does it apply to only one page or task flow? → <strong>Alert</strong></li>
+  <li>Is the user's current task blocked or affected right now? → <strong>Alert</strong></li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>A descriptive title that names the specific situation (not "Note" or "Important")</li>
+  <li>One or two sentences describing the impact on the user</li>
+  <li>What the user should do, if there is an action they can take</li>
+  <li>At most one link, only if the user needs more detail to act</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Write the title so a reader can decide whether to keep reading based on the title alone</li>
+  <li>Lead with the impact on the user, not the internal reason for the change</li>
+  <li>Use plain, second-person language: "You may see a delay" — not "Users may experience latency"</li>
+  <li>Do not use an alert to add emphasis to normal content. If it is not urgent, it is not an alert</li>
+  <li>Do not use an alert to announce that something is new — use a label instead</li>
+  <li>If the alert has more than one link, split it or move it to a central page</li>
+</ul>
+
+<h2 id="headings">Recommended titles</h2>
+<p>Titles pulled from real CRA situations. Copy the pattern, not the exact wording.</p>
+<ul>
+  <li>Service disruption</li>
+  <li>Payment delayed</li>
+  <li>Application received</li>
+  <li>Deadline approaching</li>
+  <li>We need more information</li>
+  <li>Action required to keep your benefit</li>
+</ul>
+
+<h2 id="placement">Placement</h2>
+<ul>
+  <li><strong>Whole site:</strong> at the very top of every page. Reserve for site-wide outages.</li>
+  <li><strong>Whole page:</strong> immediately below the H1, above the intro paragraph.</li>
+  <li><strong>Section-specific:</strong> directly above the section it applies to, not somewhere else on the page.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Colour is never the only signal. Every alert type also has an icon and a text label.</li>
+  <li>Use <code>role="alert"</code> for time-sensitive messages so screen readers announce them immediately.</li>
+  <li>Do not put an alert inside a collapsible or hidden container — it must be visible on page load.</li>
+  <li>Icons carry <code>aria-hidden="true"</code>; the meaning is in the visible label, not the icon.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare alerts side by side</h3>
+
+  <details open>
+    <summary>Good alert examples</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        <strong>Payment delayed.</strong> Your July payment will arrive 3 business days late because of a processing error. No action is needed. Payments will resume on schedule in August.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        <strong>Application received.</strong> We received your Canada Dental Benefit application on July 14, 2025. You will hear back within 6 weeks.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        <strong>We need more information.</strong> We cannot process your return until we receive your T4 slip. <a href="#">Upload the missing document.</a>
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        <strong>Deadline approaching.</strong> The last day to file your 2024 T1 return without a late-filing penalty is April 30, 2025.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Alerts to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>Important.</strong> The Canada Revenue Agency (CRA) has recently implemented several updates to the systems that support the processing of individual income tax and benefit returns for the 2024 tax year, which may result in variations to standard processing timelines. Users are encouraged to consult the appropriate documentation for further information regarding these updates, including but not limited to the following: <a href="#">link 1</a>, <a href="#">link 2</a>, <a href="#">link 3</a>.
+        <br><em class="text-muted">Why it is wrong: vague title, jargon, no impact statement, multiple links, way too long — this belongs on a central page.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>Note.</strong> New feature available.
+        <br><em class="text-muted">Why it is wrong: generic title, no context, no action, and "new" is not urgent — use a label, not an alert.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>Warning.</strong> Latency may be experienced.
+        <br><em class="text-muted">Why it is wrong: passive voice, jargon ("latency"), no impact on the user, no timeframe, no next step.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        <strong>Update.</strong> Please be advised that as per policy XYZ, the processing timeframes have been amended effective immediately.
+        <br><em class="text-muted">Why it is wrong: "please be advised" and "as per" are bureaucratese; "amended" hides the actual change; no timeframe named.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="interaction-feedback.html" rel="prev"><span class="wb-inv">Previous: </span>Interaction &amp; feedback</a></li>
+    <li class="next"><a href="interactive-questions.html" rel="next"><span class="wb-inv">Next: </span>Interactive questions</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>
