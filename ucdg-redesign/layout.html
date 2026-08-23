@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Layout - Page structure - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Layout">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Page structure", href: "page-structure.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Page structure</h1>
+  <ul>
+    <li><a href="page-structure.html">Family overview</a></li>
+    <li><a class="active" aria-current="page">Layout</a></li>
+    <li><a href="toc.html">Table of contents</a></li>
+    <li><a href="headings-titles.html">Headings and titles</a></li>
+    <li><a href="subway.html">Subway pattern</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Layout</h1>
+
+<p>Layout is the fixed frame every CRA page sits in — the Government of Canada banner at the top, the footer at the bottom, and the grid that decides how wide your content is at each screen size. You do not build these parts. Your job is to know what they do so you place your content inside them correctly.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#include">What the frame includes</a></li>
+  <li><a href="#width">Width and breakpoints</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="include">What the frame includes</h2>
+
+<p>The banner and footer are delivered by the Centrally Deployed Templates (CDTS) and are identical on every Government of Canada page. You configure them; you do not redraw them.</p>
+
+<h3>Banner (top of every page)</h3>
+<ul>
+  <li>Government of Canada signature and the Canada wordmark</li>
+  <li>Language toggle (English / français)</li>
+  <li>Site search box</li>
+  <li>Theme and topic menu ("Menu")</li>
+  <li>Breadcrumb trail</li>
+</ul>
+<p>For the full specification, refer to the <a href="https://design.canada.ca/common-design-patterns/global-header.html">Global header — Canada.ca design pattern</a>.</p>
+
+<h3>Footer (bottom of every page)</h3>
+<ul>
+  <li>"Report a problem" and "Share this page" tools</li>
+  <li>Date modified</li>
+  <li>Footer links and sub-footer links</li>
+  <li>Canada wordmark</li>
+</ul>
+<p>For the full specification, refer to the <a href="https://design.canada.ca/common-design-patterns/site-footer.html">Site footer — Canada.ca design pattern</a>.</p>
+
+<h2 id="width">Width and breakpoints</h2>
+
+<p>The content area uses the Bootstrap 3 grid: a 12-column layout inside a container whose width steps up at three breakpoints. Design for the smallest screen first, then let the grid widen.</p>
+
+<div class="wb-tables-scrn">
+<table class="wb-simple provisional">
+  <caption class="wb-inv">Bootstrap 3 container width and columns at each breakpoint</caption>
+  <thead>
+    <tr>
+      <th scope="col">Device</th>
+      <th scope="col">Screen size</th>
+      <th scope="col">Container width</th>
+      <th scope="col">Columns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Extra small — phones</th>
+      <td>Less than 768&nbsp;px</td>
+      <td>None (auto, full width)</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th scope="row">Small — tablets</th>
+      <td>768&nbsp;px and up</td>
+      <td>750&nbsp;px</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th scope="row">Medium — desktops</th>
+      <td>992&nbsp;px and up</td>
+      <td>970&nbsp;px</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th scope="row">Large — desktops</th>
+      <td>1200&nbsp;px and up</td>
+      <td>1170&nbsp;px</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>For the full grid documentation, refer to <a href="https://getbootstrap.com/docs/3.4/css/#grid">Bootstrap 3 grids</a>.</p>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Do not rebuild, restyle, or remove the banner or footer. They are shared across Canada.ca and must stay consistent.</li>
+  <li>Keep your content inside the grid container. Do not force full-bleed elements that break the page width.</li>
+  <li>Design mobile first. Most CRA visitors arrive on a phone — check the phone view before the desktop view.</li>
+  <li>Reading measure matters: on wide screens, do not let a single paragraph run the full 1170&nbsp;px. Constrain body text so lines stay comfortable to read.</li>
+  <li>Set the date modified honestly — it tells the user how current the information is.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>The banner provides the "Skip to main content" link. Keep your first real content reachable right after it — do not push heavy navigation ahead of the H1.</li>
+  <li>The grid reflows to a single column on phones. Check that your content order still makes sense when the columns stack.</li>
+  <li>Do not disable zoom or set a fixed pixel width that stops the page from reflowing at 400% zoom.</li>
+  <li>The breadcrumb trail is part of the frame — do not duplicate it inside your content.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Working within the frame</h3>
+
+  <details open>
+    <summary>Good use of the layout</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A "My Account" landing page keeps the standard banner and footer, places its H1 directly after the skip link, and lays its sign-in options out in the 12-column grid so they stack cleanly on a phone.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A GST/HST guide constrains its body paragraphs to a readable width on desktop instead of stretching every line across the full 1170&nbsp;px container.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A benefit page sets an accurate date modified in the footer so the reader can see the eligibility rules were reviewed this month.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Layout mistakes to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A team rebuilds the header with its own CRA-branded banner instead of the standard Government of Canada signature.
+        <br><em class="text-muted">Why it is wrong: the banner is shared across Canada.ca. A custom header breaks consistency and the global search and menu.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A page hard-codes a fixed 1000&nbsp;px width so it will not reflow on a phone.
+        <br><em class="text-muted">Why it is wrong: it breaks the responsive grid and fails accessibility — content must reflow down to small screens and at high zoom.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Body text runs the full container width on a large desktop, giving 150-character lines.
+        <br><em class="text-muted">Why it is wrong: lines that long are hard to track. Constrain the reading measure even when the container is wide.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A second breadcrumb is added inside the page content because "the top one is easy to miss."
+        <br><em class="text-muted">Why it is wrong: the breadcrumb is part of the fixed frame. Duplicating it confuses wayfinding and assistive technology.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="page-structure.html" rel="prev"><span class="wb-inv">Previous: </span>Page structure</a></li>
+    <li class="next"><a href="toc.html" rel="next"><span class="wb-inv">Next: </span>Table of contents</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>
