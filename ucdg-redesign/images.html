@@ -14,6 +14,7 @@
 <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<link rel="stylesheet" href="ucdg-and-or.css">
 <script type="text/javascript">document.write(wet.builder.refTop({}));</script>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -73,28 +74,20 @@ defTop.outerHTML = wet.builder.top({
 
 <p>Decide what the image is for before you add it. If it doesn't help the reader do their task, it probably doesn't belong.</p>
 
-<div class="wb-eqht row mrgn-tp-lg">
-  <div class="col-md-4">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Informative image</h3>
+<ul class="list-unstyled cnjnctn-type-or cnjnctn-sm mrgn-tp-lg">
+  <li class="cnjnctn-col">
+<h3 class="h4 mrgn-tp-0">Informative image</h3>
       <p class="mrgn-bttm-0">Shows something the reader needs to see — a screenshot of where to click, a diagram of a process. Needs alt text.</p>
-    </section>
-  </div>
-  <div class="col-md-4">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Decorative image</h3>
+  </li>
+  <li class="cnjnctn-col">
+<h3 class="h4 mrgn-tp-0">Decorative image</h3>
       <p class="mrgn-bttm-0">Adds visual interest but no information. Use sparingly, and hide it from assistive technology (empty <code>alt</code>).</p>
-    </section>
-  </div>
-  <div class="col-md-4">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Text instead</h3>
+  </li>
+  <li class="cnjnctn-col">
+<h3 class="h4 mrgn-tp-0">Text instead</h3>
       <p class="mrgn-bttm-0">Often the best answer. If the "image" is really words — a table screenshot, text on a graphic — use real text.</p>
-    </section>
-  </div>
-</div>
-
-<h3>Quick decision guide</h3>
+  </li>
+</ul><h3>Quick decision guide</h3>
 <ul>
   <li>Does the reader need to see it to do the task? → <strong>Informative image</strong> with alt text</li>
   <li>Is it just visual interest? → <strong>Decorative</strong>, hidden from assistive tech (or cut it)</li>

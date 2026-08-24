@@ -14,6 +14,7 @@
 <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<link rel="stylesheet" href="ucdg-and-or.css">
 <script type="text/javascript">document.write(wet.builder.refTop({}));</script>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -68,31 +69,23 @@ defTop.outerHTML = wet.builder.top({
 
 <p>There are two kinds of table of contents, and one case where you should use neither. Decide based on where the content the reader wants actually lives.</p>
 
-<div class="wb-eqht row mrgn-tp-lg">
-  <div class="col-md-4">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">"On this page" list</h3>
+<ul class="list-unstyled cnjnctn-type-or cnjnctn-sm mrgn-tp-lg">
+  <li class="cnjnctn-col">
+<h3 class="h4 mrgn-tp-0">"On this page" list</h3>
       <p>Links to headings <strong>further down the same page</strong>.</p>
       <p class="mrgn-bttm-0"><strong>Best for:</strong> a long single page divided into sections, where a reader would otherwise scroll two or three times to find what they need.</p>
-    </section>
-  </div>
-  <div class="col-md-4">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Index-page directory</h3>
+  </li>
+  <li class="cnjnctn-col">
+<h3 class="h4 mrgn-tp-0">Index-page directory</h3>
       <p>Links out to <strong>other pages</strong> within a product.</p>
       <p class="mrgn-bttm-0"><strong>Best for:</strong> a landing page whose only job is to route the reader to the right subpage.</p>
-    </section>
-  </div>
-  <div class="col-md-4">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">No table of contents</h3>
+  </li>
+  <li class="cnjnctn-col">
+<h3 class="h4 mrgn-tp-0">No table of contents</h3>
       <p>Skip it entirely.</p>
       <p class="mrgn-bttm-0"><strong>Best for:</strong> short pages the reader can see without scrolling, and pages that are mostly tables or images with no headings to link to.</p>
-    </section>
-  </div>
-</div>
-
-<h3>Quick decision guide</h3>
+  </li>
+</ul><h3>Quick decision guide</h3>
 <ul>
   <li>Does the reader scroll more than two or three times to see everything? → <strong>"On this page" list</strong></li>
   <li>Is the whole page just a menu to other pages? → <strong>Index-page directory</strong></li>
