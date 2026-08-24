@@ -2,10 +2,10 @@
 <html class="no-js" lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Page structure - GCWeb design system - Canada.ca</title>
+<title>Content elements - GCWeb design system - Canada.ca</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <meta name="dcterms.language" title="ISO639-2/T" content="eng">
-<meta name="dcterms.title" content="Page structure">
+<meta name="dcterms.title" content="Content elements">
 <meta name="robots" content="noindex">
 <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
 <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
@@ -38,39 +38,47 @@ defTop.outerHTML = wet.builder.top({
   <h1 id="gc-document-nav">GCWeb design system</h1>
   <ul>
     <li><a href="gcweb-overview.html">Overview</a></li>
-    <li><a class="active" aria-current="page">Page structure</a>
+    <li><a href="page-structure.html">Page structure</a></li>
+    <li><a class="active" aria-current="page">Content elements</a>
       <ul class="noline">
-        <li><a href="layout.html">Layout</a></li>
-        <li><a href="toc.html">Table of contents</a></li>
-        <li><a href="headings-titles.html">Headings and titles</a></li>
-        <li><a href="subway.html">Subway pattern</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="text-formatting.html">Text formatting</a></li>
+        <li><a href="text-editing-effects.html">Text editing effects</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
       </ul>
     </li>
-    <li><a href="content-elements.html">Content elements</a></li>
     <li><a href="#">Wayfinding</a></li>
     <li><a href="interaction-feedback.html">Interaction &amp; feedback</a></li>
   </ul>
 </nav>
 
-<h1 property="name" id="wb-cont" class="gc-thickline">Page structure</h1>
+<h1 property="name" id="wb-cont" class="gc-thickline">Content elements</h1>
 
-<p>Components that give a page its spine. Use these when you are deciding how a whole page is laid out, how a reader moves through it, how its headings are named and nested, and whether a long task should live on one page or be split across a guided series of pages.</p>
+<p>The building blocks readers see inside a section — the text itself, the way it is emphasized, the links that lead onward, and the lists and tables that organize information. These are the components you reach for most, so getting them right is what makes a page easy to read and act on.</p>
 
 <nav class="gc-subway provisional">
 <h2>Components in this family</h2>
 <dl>
 
-  <dt><a href="layout.html">Layout</a></dt>
-  <dd>The fixed frame every CRA page sits in — the Government of Canada banner, the footer, and the grid that sets page width at each screen size</dd>
+  <dt><a href="typography.html">Typography</a></dt>
+  <dd>The fonts, sizes, and line length the design system sets for you — what you inherit, and the one rule (reading measure) you control</dd>
 
-  <dt><a href="toc.html">Table of contents</a></dt>
-  <dd>An "On this page" list that lets a reader jump to a section of a long page, or a directory that links out to the subpages of a product</dd>
+  <dt><a href="text-formatting.html">Text formatting</a></dt>
+  <dd>How to emphasize text with bold, italic, alignment, size, and colour — sparingly, and never as the only signal</dd>
 
-  <dt><a href="headings-titles.html">Headings and titles</a></dt>
-  <dd>How to write and nest the page title (H1) and the headings below it so readers can scan, and screen readers can navigate</dd>
+  <dt><a href="text-editing-effects.html">Text editing effects</a></dt>
+  <dd>Reveal-on-demand effects that show or hide text — used rarely, and only when the hidden content is genuinely secondary</dd>
 
-  <dt><a href="subway.html">Subway pattern</a></dt>
-  <dd>A multi-page pattern that breaks a complex product into a series of related steps with persistent navigation — used for eligibility and application journeys</dd>
+  <dt><a href="links.html">Links</a></dt>
+  <dd>How to write link text, where to place links, and how to handle new tabs, buttons, email, and vanity URLs accessibly</dd>
+
+  <dt><a href="lists.html">Lists</a></dt>
+  <dd>Bulleted, numbered, and description lists — including icon lists, columns, menus, and interactive checklists</dd>
+
+  <dt><a href="tables.html">Tables</a></dt>
+  <dd>When a table is the right tool, when a list or plain text serves better, and how to build a table that works on a phone and with a screen reader</dd>
 
 </dl>
 </nav>
@@ -80,28 +88,14 @@ defTop.outerHTML = wet.builder.top({
 <div class="wb-eqht row mrgn-tp-lg">
   <div class="col-md-6">
     <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Start with <a href="layout.html">Layout</a></h3>
-      <p class="mrgn-bttm-0">The banner, footer, and grid are fixed for every page. Read this first so you know what you do <strong>not</strong> control before you design the parts you do.</p>
+      <h3 class="h4 mrgn-tp-0">Presenting a set of items?</h3>
+      <p class="mrgn-bttm-0">Reach for <a href="lists.html">Lists</a> first. Use a <a href="tables.html">Table</a> only when each item has the <em>same</em> two or more attributes that the reader needs to compare across rows.</p>
     </section>
   </div>
   <div class="col-md-6">
     <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Then <a href="headings-titles.html">Headings and titles</a></h3>
-      <p class="mrgn-bttm-0">Name the page and its sections. Good headings are what let a reader — and a screen reader — scan the page and find their task.</p>
-    </section>
-  </div>
-</div>
-<div class="wb-eqht row mrgn-tp-md">
-  <div class="col-md-6">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Add a <a href="toc.html">Table of contents</a> when the page is long</h3>
-      <p class="mrgn-bttm-0">If a reader has to scroll more than two or three times to see everything, give them an "On this page" list to jump with.</p>
-    </section>
-  </div>
-  <div class="col-md-6">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
-      <h3 class="h4 mrgn-tp-0">Reach for the <a href="subway.html">Subway pattern</a> only for a task journey</h3>
-      <p class="mrgn-bttm-0">When one page cannot hold a whole product — understand, check eligibility, apply, follow up — split it into subway steps. Never use it for unrelated pages.</p>
+      <h3 class="h4 mrgn-tp-0">Emphasizing or linking text?</h3>
+      <p class="mrgn-bttm-0">Use <a href="text-formatting.html">Text formatting</a> to stress a word, and <a href="links.html">Links</a> to send the reader onward — both sparingly, so the emphasis and the links keep their meaning.</p>
     </section>
   </div>
 </div>
@@ -110,7 +104,7 @@ defTop.outerHTML = wet.builder.top({
   <h2 class="wb-inv">Document navigation</h2>
   <ul class="pager">
     <li class="previous"><a href="gcweb-overview.html" rel="prev"><span class="wb-inv">Previous: </span>GCWeb overview</a></li>
-    <li class="next"><a href="layout.html" rel="next"><span class="wb-inv">Next: </span>Layout</a></li>
+    <li class="next"><a href="typography.html" rel="next"><span class="wb-inv">Next: </span>Typography</a></li>
   </ul>
 </nav>
 

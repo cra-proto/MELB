@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Tables - Content elements - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Tables">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Content elements", href: "content-elements.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Content elements</h1>
+  <ul>
+    <li><a href="content-elements.html">Family overview</a></li>
+    <li><a href="typography.html">Typography</a></li>
+    <li><a href="text-formatting.html">Text formatting</a></li>
+    <li><a href="text-editing-effects.html">Text editing effects</a></li>
+    <li><a href="links.html">Links</a></li>
+    <li><a href="lists.html">Lists</a></li>
+    <li><a class="active" aria-current="page">Tables</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Tables</h1>
+
+<p>A table is for data that has to be compared across two dimensions — rows of items that each share the same set of columns. That is a narrow job. Most things put in tables are really lists or plain text, and they read better that way, especially on a phone. Reach for a table only when the reader genuinely needs to compare values across rows.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Before you build a table, ask what the reader is doing with the information. A table earns its place only when they compare the same attributes across several items.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Table</h3>
+      <p class="mrgn-bttm-0">Use when each item has the <strong>same two or more attributes</strong> the reader compares across rows — rates by year, amounts by category.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">List</h3>
+      <p class="mrgn-bttm-0">Use when items have one attribute, or the reader reads down rather than across — a set of documents, options, or steps.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Plain text</h3>
+      <p class="mrgn-bttm-0">Use when there are only a few values, or the relationship is simple enough to say in a sentence or two.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>Does the reader compare the same attributes across several items? → <strong>Table</strong></li>
+  <li>Is it a set of items with one attribute each? → <a href="lists.html"><strong>List</strong></a></li>
+  <li>Are there only two or three values? → <strong>Plain text</strong></li>
+  <li>Would the table need more than a couple of columns to make sense? → split it, or rethink whether it's a table at all</li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>A caption that says what the table shows</li>
+  <li>Clear, concise column and row headers — the labels that let a reader (and a screen reader) locate a cell</li>
+  <li>The simplest structure that works — prefer two simple tables over one merged, multi-level table</li>
+  <li>Data aligned consistently: text left, numbers right so digits line up, headers matching their column's alignment</li>
+  <li>Columns and rows ordered by importance to the reader, not by how the data happened to arrive</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li><strong>Consider alternatives first.</strong> If a "table" has one column of items, it's a list. If it's a couple of facts, it's a sentence.</li>
+  <li><strong>Simplify structure.</strong> Avoid merged cells and stacked header rows. Break one complex table into two simple ones.</li>
+  <li><strong>Align for scanning.</strong> Right-align numbers so place values line up; left-align text.</li>
+  <li><strong>Order by importance.</strong> Put the column and rows the reader cares about most first.</li>
+  <li><strong>Large tables:</strong> add a search filter and pagination so the reader can find and reorder rows.</li>
+  <li><strong>Avoid blank cells.</strong> An empty cell is ambiguous — use "0", "Not applicable", or "—" with a consistent meaning.</li>
+  <li><strong>Make it responsive.</strong> A table must reflow or scroll cleanly on a phone, not force the whole page sideways.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Use real table markup with a <code>&lt;caption&gt;</code> and proper <code>&lt;th&gt;</code> headers with <code>scope</code>, so screen readers can announce which row and column a cell belongs to.</li>
+  <li>Do not use a table for layout — only for genuine tabular data.</li>
+  <li>Keep the structure simple; complex merged headers are very hard to navigate with a screen reader.</li>
+  <li>Ensure the table reflows or scrolls within its own container at small sizes and high zoom, without breaking the page layout.</li>
+  <li>Don't rely on zebra striping alone to separate rows — it helps sighted users but must not be the only cue.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare tables side by side</h3>
+
+  <details open>
+    <summary>Good table use</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A tax-bracket table: rows are income ranges, columns are the rate and the tax owing — the reader compares the same attributes across rows. Numbers right-aligned, a clear caption.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A "payment dates" table with two columns — benefit and payment date — kept simple, with no merged cells.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A complex eligibility table is replaced by two simple tables, one per situation, each easy to read on a phone.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Tables to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A single-column "table" listing accepted documents.
+        <br><em class="text-muted">Why it is wrong: one column is a list, not a table. Use a bulleted list.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A table with merged cells and two stacked header rows to fit every scenario.
+        <br><em class="text-muted">Why it is wrong: merged, multi-level headers are nearly impossible to navigate with a screen reader. Split into simple tables.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Numbers left-aligned so 9, 45, and 1,200 don't line up, with several blank cells.
+        <br><em class="text-muted">Why it is wrong: misaligned numbers are hard to compare, and blank cells are ambiguous. Right-align numbers; fill cells with a clear value.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A wide data table that forces the whole page to scroll sideways on a phone.
+        <br><em class="text-muted">Why it is wrong: it breaks the responsive layout. Let the table scroll inside its own container.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="lists.html" rel="prev"><span class="wb-inv">Previous: </span>Lists</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>
