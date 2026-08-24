@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Icons - Content elements - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Icons">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Content elements", href: "content-elements.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Content elements</h1>
+  <ul>
+    <li><a href="content-elements.html">Family overview</a></li>
+    <li><a href="typography.html">Typography</a></li>
+    <li><a href="text-formatting.html">Text formatting</a></li>
+    <li><a href="text-editing-effects.html">Text editing effects</a></li>
+    <li><a href="links.html">Links</a></li>
+    <li><a href="lists.html">Lists</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a href="keyboard-keys.html">Keyboard keys</a></li>
+    <li><a href="quotations.html">Quotations</a></li>
+    <li><a href="footnotes.html">Footnotes</a></li>
+    <li><a href="badges.html">Badges</a></li>
+    <li><a href="labels.html">Labels</a></li>
+    <li><a class="active" aria-current="page">Icons</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="charts-graphs.html">Charts and graphs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Icons</h1>
+
+<p>An icon is a small symbol that supports nearby text — a checkmark beside "included", a phone beside a number. GCWeb provides two icon sets, Glyphicons and Font Awesome. Icons help scanning, but they are decoration on top of words: the meaning must live in the text, and the icon must never be the only way to understand it.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Decide what the icon is doing — decorating text, or standing in for it. The second is almost always the wrong choice.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-6">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Decorative icon (with text)</h3>
+      <p class="mrgn-bttm-0">The right use. An icon reinforces a visible label — a green check beside "Included". Mark it <code>aria-hidden</code>; the text carries the meaning.</p>
+    </section>
+  </div>
+  <div class="col-md-6">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Icon alone (no text)</h3>
+      <p class="mrgn-bttm-0">Avoid. An icon with no label is a guess for the reader. If you must, give it accessible text so its meaning is available.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>Is there a visible text label next to the icon? → <strong>Decorative</strong>, hide it from assistive tech</li>
+  <li>Is the icon the only thing conveying meaning? → <strong>Add a text label</strong>, or give the icon accessible text</li>
+  <li>Are you adding an icon just to fill space? → <strong>Don't</strong></li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>An icon from one of the two supported sets (Glyphicons or Font Awesome), used consistently</li>
+  <li>A visible text label the icon supports</li>
+  <li>The same icon for the same meaning everywhere it appears</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Use icons to support text, not replace it. A checkmark reinforces "Included"; it doesn't stand in for the word.</li>
+  <li>Be consistent — one icon, one meaning. Don't use a check for "done" in one place and "correct" in another with a different look.</li>
+  <li>Don't decorate doormats or headings with icons for emphasis (see <a href="doormats.html">Doormats</a>).</li>
+  <li>Choose common, well-understood symbols. An obscure icon needs a label anyway, so lead with the label.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Decorative icons (those next to a visible label) must be hidden from assistive technology with <code>aria-hidden="true"</code>, so they aren't announced as noise.</li>
+  <li>An icon that carries meaning on its own must have a text alternative a screen reader can read.</li>
+  <li>Never use colour alone to give an icon meaning — a red X and a green check must also differ in shape and be backed by text.</li>
+  <li>Ensure icons meet contrast against their background when they carry meaning.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare icons side by side</h3>
+
+  <details open>
+    <summary>Good use of icons</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A "What's included" list uses green checks and red X marks beside the words "Included" and "Not included", with the icons hidden from screen readers.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A phone icon sits beside the contact number as a scanning aid, with the number itself as plain text.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Icons to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A row of icons with no labels used as the main navigation.
+        <br><em class="text-muted">Why it is wrong: readers must guess each icon's meaning. Add text labels.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A green check and red X with no accompanying words, distinguished only by colour.
+        <br><em class="text-muted">Why it is wrong: colour-blind and screen-reader users can't tell them apart. Back them with text.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Large decorative icons added to every doormat for visual interest.
+        <br><em class="text-muted">Why it is wrong: they compete with the link titles and add no meaning. Doormats shouldn't use icons for emphasis.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="labels.html" rel="prev"><span class="wb-inv">Previous: </span>Labels</a></li>
+    <li class="next"><a href="images.html" rel="next"><span class="wb-inv">Next: </span>Images</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Keyboard keys - Content elements - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Keyboard keys">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Content elements", href: "content-elements.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Content elements</h1>
+  <ul>
+    <li><a href="content-elements.html">Family overview</a></li>
+    <li><a href="typography.html">Typography</a></li>
+    <li><a href="text-formatting.html">Text formatting</a></li>
+    <li><a href="text-editing-effects.html">Text editing effects</a></li>
+    <li><a href="links.html">Links</a></li>
+    <li><a href="lists.html">Lists</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a class="active" aria-current="page">Keyboard keys</a></li>
+    <li><a href="quotations.html">Quotations</a></li>
+    <li><a href="footnotes.html">Footnotes</a></li>
+    <li><a href="badges.html">Badges</a></li>
+    <li><a href="labels.html">Labels</a></li>
+    <li><a href="icons.html">Icons</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="charts-graphs.html">Charts and graphs</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Keyboard keys</h1>
+
+<p>The keyboard key effect styles text to look like a physical key on a keyboard — <kbd>Ctrl</kbd>, <kbd>Enter</kbd>, <kbd>Tab</kbd>. Use it only when you are telling the reader which key to press, so the instruction reads as a key and not as ordinary text.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#include">When to use it</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="include">When to use it</h2>
+<ul>
+  <li>Use it only for a real keyboard key the reader is meant to press — <kbd>Esc</kbd>, <kbd>Alt</kbd>, a letter, an arrow key.</li>
+  <li>Show a key combination as separate keys joined by "+": <kbd>Ctrl</kbd> + <kbd>S</kbd>.</li>
+  <li>Match the label to what is printed on the key.</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Do not use the key effect for emphasis, buttons, or on-screen controls — it means "press this physical key" and nothing else.</li>
+  <li>Keep keyboard instructions rare. Most CRA tasks are done with a mouse or touch; only mention keys when they genuinely help.</li>
+  <li>Name on-screen buttons by their label in plain text (for example, "select <strong>Submit</strong>"), not with the key effect.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Use the semantic <code>&lt;kbd&gt;</code> element so assistive technology can recognise the text as keyboard input.</li>
+  <li>Don't rely on the visual "key" look alone — the key name must be readable text, not an image.</li>
+  <li>Spell out the key name a screen reader can announce clearly (for example, "Control" is conveyed by the visible <kbd>Ctrl</kbd> label in context).</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare keyboard keys side by side</h3>
+
+  <details open>
+    <summary>Good use of keyboard keys</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        "To save your progress, press <kbd>Ctrl</kbd> + <kbd>S</kbd>." — a genuine key instruction, styled as keys.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        "Use the <kbd>Tab</kbd> key to move between fields." — helps keyboard users navigate a form.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Keyboard keys to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Styling the word <kbd>important</kbd> as a key for emphasis.
+        <br><em class="text-muted">Why it is wrong: the key effect means "press this key". Use bold for emphasis.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Showing the on-screen <kbd>Submit</kbd> button with the key effect.
+        <br><em class="text-muted">Why it is wrong: Submit is a button, not a keyboard key. Name it in plain text.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="tables.html" rel="prev"><span class="wb-inv">Previous: </span>Tables</a></li>
+    <li class="next"><a href="quotations.html" rel="next"><span class="wb-inv">Next: </span>Quotations</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

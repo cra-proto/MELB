@@ -45,43 +45,53 @@ defTop.outerHTML = wet.builder.top({
     <li><a href="links.html">Links</a></li>
     <li><a href="lists.html">Lists</a></li>
     <li><a href="tables.html">Tables</a></li>
+    <li><a href="keyboard-keys.html">Keyboard keys</a></li>
+    <li><a href="quotations.html">Quotations</a></li>
+    <li><a href="footnotes.html">Footnotes</a></li>
+    <li><a href="badges.html">Badges</a></li>
+    <li><a href="labels.html">Labels</a></li>
+    <li><a href="icons.html">Icons</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="charts-graphs.html">Charts and graphs</a></li>
   </ul>
 </nav>
 
 <h1 property="name" id="wb-cont" class="gc-thickline">Text editing effects</h1>
 
-<p>A text editing effect hides secondary text behind a control the reader can expand — an accordion or a "show more" toggle. It is useful when a page has genuinely optional detail that most readers can skip. It is harmful when it hides something the reader actually needs. Reach for it rarely.</p>
+<p>Text editing effects show that text has been changed or is being called out as an edit — highlighted, deleted, struck through, inserted, or redacted. They carry a specific editorial meaning, so use them for that meaning, not for plain emphasis. Most of them make a page harder to read, so use them sparingly and temporarily.</p>
 
 <h2 class="h3">On this page</h2>
 <ul>
-  <li><a href="#include">When to use it</a></li>
+  <li><a href="#include">The five effects</a></li>
   <li><a href="#guidance">Guidance</a></li>
   <li><a href="#a11y">Accessibility</a></li>
   <li><a href="#examples">Examples</a></li>
 </ul>
 
-<h2 id="include">When to use it</h2>
+<h2 id="include">The five effects</h2>
 <ul>
-  <li>Use it only for content that is genuinely <strong>secondary</strong> — extra detail, an edge case, a long example — that most readers do not need to complete their task.</li>
-  <li>Give every collapsed section a clear label that says exactly what is inside, so a reader can decide whether to open it.</li>
-  <li>Keep the default state closed only when closed is the right starting point for most readers.</li>
+  <li><strong>Marked</strong> (<code>&lt;mark&gt;</code>) — highlights text for reference, such as matching search terms or text shown in relation to something else.</li>
+  <li><strong>Deleted</strong> (<code>&lt;del&gt;</code>) — shows text that was recently removed, such as a change to an official document.</li>
+  <li><strong>Strikethrough</strong> (<code>&lt;s&gt;</code>) — indicates text that is no longer accurate or relevant, such as an old price shown next to a new one.</li>
+  <li><strong>Inserted</strong> (<code>&lt;ins&gt;</code>) — shows text that was recently added. Use with caution (see Guidance).</li>
+  <li><strong>Redacted</strong> — indicates content that is protected or unavailable to view; inline for a few words, full-width for a whole line, paragraph, list, or table.</li>
 </ul>
 
 <h2 id="guidance">Guidance</h2>
 <ul>
-  <li>Never hide content the reader needs to finish their task — fees, deadlines, eligibility, or required steps must always be visible.</li>
-  <li>Do not nest an effect inside another effect. One level of "expand" is the most a reader will tolerate.</li>
-  <li>Do not hide an <a href="alerts.html">alert</a> inside a collapsed section — an alert must be visible on page load.</li>
-  <li>Write the toggle label as a description of the content, not "Click here" or "More".</li>
-  <li>If most readers will open it anyway, don't collapse it — just show the content.</li>
+  <li>Use <strong>marked</strong> text only to call out text for reference — never as a substitute for bold. It is not a highlighter for key words or amounts.</li>
+  <li>Use <strong>deleted</strong> and <strong>strikethrough</strong> sparingly; both make a page harder to read. Reserve them for showing changes to an official document (meeting minutes, a law) or as a temporary effect.</li>
+  <li>Use <strong>strikethrough</strong> for corrections where both versions must be seen — for example, an old and a new price.</li>
+  <li>Do <strong>not</strong> use <strong>inserted</strong> text — its underline mimics a link and readers will try to click it. Non-links must not look like links.</li>
+  <li>Use <strong>redacted</strong> for protected content only. Do not use strikethrough to fake a redaction — redaction has its own treatment.</li>
 </ul>
 
 <h2 id="a11y">Accessibility</h2>
 <ul>
-  <li>The toggle must be a real button, reachable and operable by keyboard, with its expanded/collapsed state exposed to assistive technology (for example, <code>aria-expanded</code>).</li>
-  <li>Collapsed content must still be found by in-page search and by screen readers when expanded — do not remove it from the accessibility tree entirely.</li>
-  <li>Do not rely on a chevron or colour alone to signal state; the state must be programmatically available.</li>
-  <li>Make sure the content reads sensibly if JavaScript is off — ideally the sections are simply expanded.</li>
+  <li>The visual effect is not enough on its own. For strikethrough replacements, include hidden text (<code>class="wb-inv"</code>) describing the original and replacement so screen-reader users understand the change.</li>
+  <li>Never rely on colour or a line alone to convey that text was deleted, inserted, or redacted — the meaning must be available to assistive technology.</li>
+  <li>Do not use inserted text — its link-like underline is a usability failure for everyone, and especially confusing with a screen reader.</li>
+  <li>For a full-width redaction, make sure the redacted region is announced as protected or unavailable, not read aloud as blank.</li>
 </ul>
 
 <h2 id="examples">Examples</h2>
@@ -90,31 +100,34 @@ defTop.outerHTML = wet.builder.top({
   <h3 class="h4 mrgn-tp-0">Compare text editing effects side by side</h3>
 
   <details open>
-    <summary>Good use of a reveal effect</summary>
+    <summary>Good use of editing effects</summary>
     <ul class="fa-ul lst-spcd mrgn-tp-md">
       <li><span class="fa-li fas fa-check text-success"></span>
-        A "How to apply" page keeps the steps visible and puts a rarely needed edge case — "If you applied before 2023" — behind a labelled expandable section.
+        Search results highlight the matching term with <mark>marked text</mark> so the reader sees why each result matched.
       </li>
       <li><span class="fa-li fas fa-check text-success"></span>
-        A long list of accepted document types is collapsed under "See the full list of accepted documents", so the common path stays short.
+        A price correction shows both values: <s>$50</s> $45, with hidden text naming the old and new amounts for screen readers.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A protected field on an account summary is shown as an inline <span class="bg-dark text-white">[redacted]</span> region.
       </li>
     </ul>
   </details>
 
   <details>
-    <summary>Reveal effects to avoid</summary>
+    <summary>Editing effects to avoid</summary>
     <ul class="fa-ul lst-spcd mrgn-tp-md">
       <li><span class="fa-li fas fa-times text-danger"></span>
-        The filing deadline is hidden inside a collapsed "Details" accordion.
-        <br><em class="text-muted">Why it is wrong: the deadline is essential. Never hide content the reader needs to act.</em>
+        Using <mark>marked text</mark> to highlight an important amount for emphasis.
+        <br><em class="text-muted">Why it is wrong: marked text means "called out for reference", not emphasis. Use bold for a key word.</em>
       </li>
       <li><span class="fa-li fas fa-times text-danger"></span>
-        A toggle labelled "Click here for more".
-        <br><em class="text-muted">Why it is wrong: the label doesn't say what's inside, so the reader can't decide whether to open it.</em>
+        Using inserted text (<ins>underlined</ins>) to show a new clause.
+        <br><em class="text-muted">Why it is wrong: it looks like a link and readers will try to click it. Don't use inserted text.</em>
       </li>
       <li><span class="fa-li fas fa-times text-danger"></span>
-        An accordion nested three levels deep to fit a complex scenario.
-        <br><em class="text-muted">Why it is wrong: nested reveals bury content. If it needs that much structure, it belongs on its own page.</em>
+        Striking through a name to "redact" it.
+        <br><em class="text-muted">Why it is wrong: strikethrough still shows the text. Use the redacted treatment for protected content.</em>
       </li>
     </ul>
   </details>
