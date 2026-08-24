@@ -14,6 +14,7 @@
 <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<link rel="stylesheet" href="ucdg-and-or.css">
 <script type="text/javascript">document.write(wet.builder.refTop({}));</script>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -55,10 +56,12 @@ defTop.outerHTML = wet.builder.top({
 <h2 class="h3">On this page</h2>
 <ul>
   <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#types">Use the correct alert</a></li>
   <li><a href="#include">What to include</a></li>
   <li><a href="#guidance">Guidance</a></li>
   <li><a href="#headings">Recommended titles</a></li>
   <li><a href="#placement">Placement</a></li>
+  <li><a href="#design">Design options</a></li>
   <li><a href="#a11y">Accessibility</a></li>
   <li><a href="#examples">Examples</a></li>
 </ul>
@@ -67,22 +70,22 @@ defTop.outerHTML = wet.builder.top({
 
 <p>Before you write an alert, decide whether an alert is what the user actually needs.</p>
 
-<div class="wb-eqht row mrgn-tp-lg">
-  <div class="col-md-6">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
+<ul class="list-unstyled cnjnctn-type-or cnjnctn-sm mrgn-tp-lg">
+  <li class="cnjnctn-col">
+    <section class="well well-sm brdr-rds-0">
       <h3 class="h4 mrgn-tp-0">Use an alert</h3>
       <p>Use when the situation is <strong>short, urgent, and page-specific</strong>.</p>
       <p class="mrgn-bttm-0"><strong>Best for:</strong> service outages, submission errors, confirmation of a completed action, time-sensitive deadlines, a single change the user needs to see once.</p>
     </section>
-  </div>
-  <div class="col-md-6">
-    <section class="well well-sm brdr-rds-0 eqht-trgt">
+  </li>
+  <li class="cnjnctn-col">
+    <section class="well well-sm brdr-rds-0">
       <h3 class="h4 mrgn-tp-0">Use a central information page</h3>
       <p>Use when the change is <strong>large, ongoing, or affects many pages</strong>.</p>
       <p class="mrgn-bttm-0"><strong>Best for:</strong> a theme-wide disruption, a multi-week rollout, a change with rules and dates that keep evolving. Link to the central page from the affected topic pages.</p>
     </section>
-  </div>
-</div>
+  </li>
+</ul>
 
 <h3>Quick decision guide</h3>
 <ul>
@@ -91,6 +94,28 @@ defTop.outerHTML = wet.builder.top({
   <li>Does it apply to only one page or task flow? → <strong>Alert</strong></li>
   <li>Is the user's current task blocked or affected right now? → <strong>Alert</strong></li>
 </ul>
+
+<h2 id="types">Use the correct alert</h2>
+<p>Once you have decided an alert is right, choose the type that matches the situation. The four types are colour-coded and carry different meanings.</p>
+<dl class="dl-horizontal">
+  <dt>Info alert (blue)</dt>
+  <dd>
+    <p>Use the info alert to draw attention to a clarification of surrounding content or helpful advice, such as the number of weeks it will take to receive a refund when an application is sent by mail vs by phone.</p>
+    <p>You can also use it for the length of time an application method takes, changes in wait times on a phone line, messages that there is no service disruption for a particular service if that is generating inquiries.</p>
+  </dd>
+  <dt>Success alert (green)</dt>
+  <dd>Use success alert to draw attention to a successful action, such as to confirm a submission, the completion of a task, or when a service disruption is resolved.</dd>
+  <dt>Warning alert (yellow)</dt>
+  <dd>
+    <p>Use the warning alert to draw attention to a possible consequence of an action or inaction, such as legal penalty that could apply.</p>
+    <p>You can also use it to warn the user about delays, closures at certain locations, and other types of service disruptions.</p>
+  </dd>
+  <dt>Danger alert (red)</dt>
+  <dd>
+    <p>Use the danger alert to draw attention to a situation that could place someone in danger, such as a do not travel warning, or if there's a risk to health or safety in completing an activity.</p>
+    <p>You can also use it to alert a person of a technical issue that could cause them to be unable to complete their task, such as an invalid submission of data in a form, when systems are down or a service is cancelled.</p>
+  </dd>
+</dl>
 
 <h2 id="include">What to include</h2>
 <ul>
@@ -127,6 +152,73 @@ defTop.outerHTML = wet.builder.top({
   <li><strong>Whole page:</strong> immediately below the H1, above the intro paragraph.</li>
   <li><strong>Section-specific:</strong> directly above the section it applies to, not somewhere else on the page.</li>
 </ul>
+
+<h2 id="design">Design options</h2>
+<div class="row">
+  <!-- Field flow options -->
+  <div class="col-md-4 ds-modifier">
+    <form>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="radioselected">
+            <div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "isoptional": true, "noForm": true, "reset": [{ "action": "removeClass", "source":"#alert1", "class": "alert alert-info alert-success alert-warning alert-danger" }, { "action": "addClass", "source":"#infohidden, .infohidden", "class": "hidden" } ]}'>
+              <p><span class="h4 mrgn-tp-0">Type</span></p>
+              <ul>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-info", "live": true}, {"action": "toggle", "toggle": ".cl-alert-info, .cl-info", "live": true}]'>Info</li>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-success", "live": true}, {"action": "toggle", "toggle": ".cl-alert-success, .cl-success", "live": true}]'>Success</li>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-warning", "live": true}, {"action": "toggle", "toggle": ".cl-alert-warning, .cl-warning", "live": true}]'>Warning</li>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-danger", "live": true}, {"action": "toggle", "toggle": ".cl-alert-danger, .cl-danger", "live": true}]'>Danger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="radioselected">
+            <div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "isoptional": true, "noForm": true, "reset": [{"action": "addClass", "source":"#h2, #notitle", "class": "hidden"} ]}'>
+              <p><span class="h4 mrgn-tp-0">Title</span></p>
+              <ul>
+                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#title", "class": "hidden", "live": true}, {"action": "toggle", "toggle": ".cl-h2", "live": true}]'>With title</li>
+                <li data-wb-fieldflow='[{"action": "addClass", "source": "#title, #titlehidden", "class": "hidden", "live": true}, {"action": "toggle", "toggle": ".cl-notitle, #notitle", "live": true}]'>No title</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- Field flow appearance -->
+  <div class="col-md-8">
+    <div class="ds-example">
+      <div class="wb-tabs">
+        <div class="tabpanels">
+          <details id="app1">
+            <summary>Appearance</summary>
+            <div class="panel panel-body brdr-0 brdr-rds-0">
+              <section id="alert1" class="alert alert-info">
+                <p id="title" class="mrgn-tp-0 h3">Descriptive title</p>
+                <p>Content of your alert <a href="" id="link1">link text</a>.</p>
+              </section>
+            </div>
+          </details>
+          <!-- Field flow code -->
+          <details id="app2">
+            <summary>HTML code</summary>
+            <pre><code>&lt;section class="<strong><span class="cl-alert-info" id="infohidden">alert alert-info</span><span class="hidden cl-alert-success">alert alert-success</span><span class="hidden cl-alert-warning">alert alert-warning</span><span class="hidden cl-alert-danger">alert alert-danger</span></strong>"&gt;
+<span id="titlehidden" class="cl-h2">&lt;p class="<strong>h3</strong> mrgn-tp-0"&gt;Descriptive title&lt;/p&gt;</span><span class="cl-notitle hidden"><strong>&lt;span class="wb-inv"&gt;</strong>Alert: <strong><span class="infohidden cl-info">Info</span><span class="hidden cl-success">Success</span><span class="hidden cl-warning">Warning</span><span class="hidden cl-danger">Danger</span></strong>&lt;/span&gt;</strong></span>
+&lt;p&gt;Content of your alert &lt;a href="#"&gt;link text&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+            <p><strong>Coding considerations:</strong></p>
+            <div id="notitle" class="hidden panel panel-default panel-body"><section class="alert alert-warning"><span class="fas fa-check fa-li text-success"></span>If the alert doesn't have a title, add invisible text inside a <code>&lt;span class="wb-inv"&gt;</code> to provide the same experience to screen reader users</section></div>
+            <ul class="fa-ul">
+              <li><span class="fas fa-check fa-li text-success"></span>Begin <code>&lt;section&gt;</code> with a heading that is specific to the featured content</li>
+              <li><span class="fas fa-times fa-li text-danger"></span>Do not use <code>&lt;section&gt;</code> within another section, or validation issues occur</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <h2 id="a11y">Accessibility</h2>
 <ul>
