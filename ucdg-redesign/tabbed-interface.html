@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Tabbed interface - Page structure - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Tabbed interface">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Page structure", href: "page-structure.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Page structure</h1>
+  <ul>
+    <li><a href="page-structure.html">Family overview</a></li>
+    <li><a href="layout.html">Layout</a></li>
+    <li><a href="toc.html">Table of contents</a></li>
+    <li><a href="headings-titles.html">Headings and titles</a></li>
+    <li><a href="subway.html">Subway pattern</a></li>
+    <li><a href="carousel.html">Carousel</a></li>
+    <li><a class="active" aria-current="page">Tabbed interface</a></li>
+    <li><a href="pagination.html">Pagination</a></li>
+    <li><a href="wells.html">Wells</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Tabbed interface</h1>
+
+<p>A tabbed interface separates related content into panes, showing one at a time. It suits content the reader chooses between — different variants of the same thing — where they rarely need to compare across panes. If the reader must read everything, or compare, tabs hide content and get in the way; stack it instead.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Tabs trade visibility for tidiness. Only make that trade when the reader picks one pane and ignores the rest.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Tabbed interface</h3>
+      <p class="mrgn-bttm-0">Use for parallel variants the reader chooses between — "Online" vs "By mail" — and rarely compares side by side.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Stacked sections</h3>
+      <p class="mrgn-bttm-0">Use when the reader needs to read or compare everything — put each part in the flow with headings.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0"><a href="interactive-questions.html">Interactive question</a></h3>
+      <p class="mrgn-bttm-0">Use when a single answer should collapse the page to just the relevant branch.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>Does the reader pick one variant and ignore the rest? → <strong>Tabbed interface</strong></li>
+  <li>Do they need to read or compare all of it? → <strong>Stacked sections</strong></li>
+  <li>Should one answer reveal just the relevant content? → <a href="interactive-questions.html"><strong>Interactive question</strong></a></li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>Clear tab labels that name each pane's content, not "Tab 1"</li>
+  <li>A small number of tabs — a long row of tabs is a menu in disguise</li>
+  <li>Panes that each make sense on their own</li>
+  <li>A sensible default tab selected on load</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Only use tabs when the reader chooses one pane. If they need everything, stacking is clearer.</li>
+  <li>Don't hide content the reader must compare across tabs — comparison across hidden panes is exactly what tabs prevent.</li>
+  <li>Keep the number of tabs small and the labels short and distinct.</li>
+  <li>On a phone, make sure the tabs reflow or collapse gracefully rather than overflowing.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Use the proper tab pattern (<code>role="tab"</code>/<code>role="tabpanel"</code>) so assistive technology announces the tabs and which is selected.</li>
+  <li>Tabs must be operable by keyboard, with a visible focus state and arrow-key navigation between them.</li>
+  <li>Content in hidden panes must still be reachable when its tab is selected; don't remove it from the accessibility tree.</li>
+  <li>Don't signal the selected tab by colour alone.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare tabbed interfaces side by side</h3>
+
+  <details open>
+    <summary>Good use of tabs</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        "How to pay" with tabs for "Online", "By mail", and "In person" — the reader picks their channel and reads only that.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        Rate tables for "2024" and "2023" as two tabs, where a reader wants one year at a time.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Tabs to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Application steps split across tabs the reader must visit in order.
+        <br><em class="text-muted">Why it is wrong: sequential steps shouldn't be hidden in tabs. Stack them, or use the subway pattern.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Eligibility criteria the reader must compare, split across two tabs.
+        <br><em class="text-muted">Why it is wrong: tabs prevent side-by-side comparison. Stack the content.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A row of ten tabs used as page navigation.
+        <br><em class="text-muted">Why it is wrong: that's a menu, not a tab set. Use a list of links or a hub page.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="carousel.html" rel="prev"><span class="wb-inv">Previous: </span>Carousel</a></li>
+    <li class="next"><a href="pagination.html" rel="next"><span class="wb-inv">Next: </span>Pagination</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

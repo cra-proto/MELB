@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Expand/hide - Interaction & feedback - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Expand/hide">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Interaction & feedback", href: "interaction-feedback.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Interaction &amp; feedback</h1>
+  <ul>
+    <li><a href="interaction-feedback.html">Family overview</a></li>
+    <li><a href="alerts.html">Alerts</a></li>
+    <li><a href="interactive-questions.html">Interactive questions</a></li>
+    <li><a href="and-or.html">And / Or</a></li>
+    <li><a class="active" aria-current="page">Expand/hide</a></li>
+    <li><a href="checkboxes-radio-buttons.html">Large checkboxes and radio buttons</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Expand/hide</h1>
+
+<p>Expand/hide — the accordion — puts secondary content behind a control the reader can open. It is useful when a page has genuinely optional detail that most readers can skip. It is harmful when it hides something the reader actually needs. Reach for it rarely, and never bury essential content behind a click.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Hiding content has a cost: the reader has to decide to open it, and many won't. Only accept that cost when the content is truly optional.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Expand/hide</h3>
+      <p class="mrgn-bttm-0">Use for <strong>genuinely secondary</strong> detail most readers skip — an edge case, a long example, an optional reference.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Always visible</h3>
+      <p class="mrgn-bttm-0">The default. If most readers need it — fees, deadlines, steps, eligibility — show it. Never hide it.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Separate page</h3>
+      <p class="mrgn-bttm-0">If the hidden content is long enough to be its own page, give it one instead of an accordion.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>Does the reader need it to finish the task? → <strong>Always visible</strong></li>
+  <li>Is it optional detail most readers skip? → <strong>Expand/hide</strong></li>
+  <li>Is it a page-worth of content? → <strong>Separate page</strong></li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>A clear label on each collapsed section that says exactly what is inside</li>
+  <li>Content that is genuinely secondary — extra detail, an edge case, a long example</li>
+  <li>A sensible default state — closed only when closed is right for most readers</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Never hide content the reader needs to finish their task — fees, deadlines, eligibility, and required steps must always be visible.</li>
+  <li>Do not nest an accordion inside another. One level of expand is the most a reader will tolerate.</li>
+  <li>Do not hide an <a href="alerts.html">alert</a> inside a collapsed section — an alert must be visible on page load.</li>
+  <li>Write the toggle as a description of the content, not "Click here" or "More".</li>
+  <li>If most readers will open it anyway, don't collapse it — just show the content.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>The toggle must be a real button, reachable and operable by keyboard, with its state exposed via <code>aria-expanded</code>.</li>
+  <li>Collapsed content must still be found by in-page search and read by screen readers when expanded.</li>
+  <li>Don't rely on a chevron or colour alone to signal open/closed state.</li>
+  <li>Make sure the content reads sensibly with JavaScript off — ideally the sections are simply expanded.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare expand/hide side by side</h3>
+
+  <details open>
+    <summary>Good use of expand/hide</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A "How to apply" page keeps the steps visible and puts a rarely needed edge case — "If you applied before 2023" — behind a labelled expand/hide.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A long list of accepted document types is collapsed under "See the full list of accepted documents", so the common path stays short.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Expand/hide to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        The filing deadline hidden inside a collapsed "Details" accordion.
+        <br><em class="text-muted">Why it is wrong: the deadline is essential. Never hide content the reader needs to act.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A toggle labelled "Click here for more".
+        <br><em class="text-muted">Why it is wrong: the label doesn't say what's inside, so the reader can't decide whether to open it.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        An accordion nested three levels deep to fit a complex scenario.
+        <br><em class="text-muted">Why it is wrong: nested reveals bury content. If it needs that much structure, it belongs on its own page.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="and-or.html" rel="prev"><span class="wb-inv">Previous: </span>And / Or</a></li>
+    <li class="next"><a href="checkboxes-radio-buttons.html" rel="next"><span class="wb-inv">Next: </span>Large checkboxes and radio buttons</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

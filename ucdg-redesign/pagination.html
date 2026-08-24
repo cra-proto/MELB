@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Pagination - Page structure - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Pagination">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Page structure", href: "page-structure.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Page structure</h1>
+  <ul>
+    <li><a href="page-structure.html">Family overview</a></li>
+    <li><a href="layout.html">Layout</a></li>
+    <li><a href="toc.html">Table of contents</a></li>
+    <li><a href="headings-titles.html">Headings and titles</a></li>
+    <li><a href="subway.html">Subway pattern</a></li>
+    <li><a href="carousel.html">Carousel</a></li>
+    <li><a href="tabbed-interface.html">Tabbed interface</a></li>
+    <li><a class="active" aria-current="page">Pagination</a></li>
+    <li><a href="wells.html">Wells</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Pagination</h1>
+
+<p>Pagination breaks a long set of items — search results, a directory, a report — into numbered pages the reader moves through. Use it when a single page would be too long to load or scan, and give the reader clear controls to move and to know where they are. Do not confuse it with splitting a single document across pages, which usually reads better as one page with an <a href="toc.html">"On this page" list</a>.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Decide by what you're breaking up: a long list of results, or a single piece of content.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Pagination</h3>
+      <p class="mrgn-bttm-0">Use for a long <strong>list of items</strong> — results, a directory — where loading or scanning all of it at once is impractical.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Single page + <a href="toc.html">TOC</a></h3>
+      <p class="mrgn-bttm-0">Use for one long document — keep it on one page with an "On this page" list to jump within it.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Filter or search</h3>
+      <p class="mrgn-bttm-0">Often better than paging — let the reader narrow a long list to what they want rather than flipping pages.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>A long list of results or entries? → <strong>Pagination</strong> (ideally with a filter too)</li>
+  <li>One long document? → <a href="toc.html"><strong>Single page with a TOC</strong></a></li>
+  <li>A task done in steps? → the <a href="subway.html"><strong>subway pattern</strong></a>, not pagination</li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>Previous and next controls, plus numbered page links for longer sets</li>
+  <li>A clear indication of the current page and the total (for example, "Page 2 of 8")</li>
+  <li>Large, tappable targets for each control</li>
+  <li>Sensible page sizes, so the reader isn't flipping every few items</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Show where the reader is and how much is left. "Page 2 of 8" reassures; a bare "Next" doesn't.</li>
+  <li>Pair pagination with a filter or search for long lists — flipping through dozens of pages is nobody's idea of finding something.</li>
+  <li>Don't paginate a single short document just to add page views.</li>
+  <li>Keep controls in the same place on every page so they're predictable.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Mark up pagination as a navigation region with an accessible name, and the current page with <code>aria-current="page"</code>.</li>
+  <li>Controls must be real links or buttons, reachable and operable by keyboard.</li>
+  <li>Give "Previous" and "Next" accessible text that says what they page through, not just an arrow.</li>
+  <li>Don't rely on colour alone to show the current page.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare pagination side by side</h3>
+
+  <details open>
+    <summary>Good use of pagination</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A forms-and-publications directory shows 20 per page with numbered pages, a filter box, and "Page 3 of 12" clearly shown.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        Search results with Previous/Next and page numbers, the current page marked for screen readers.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Pagination to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A single guide chopped into eight numbered pages with Next buttons.
+        <br><em class="text-muted">Why it is wrong: one document reads better as one page. Use a table of contents.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Pagination with only a "Next" arrow and no sense of how many pages remain.
+        <br><em class="text-muted">Why it is wrong: the reader can't tell where they are or when they'll finish. Show "Page X of Y".</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A 60-page result set with no filter or search.
+        <br><em class="text-muted">Why it is wrong: flipping 60 pages is not finding. Add a filter.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="tabbed-interface.html" rel="prev"><span class="wb-inv">Previous: </span>Tabbed interface</a></li>
+    <li class="next"><a href="wells.html" rel="next"><span class="wb-inv">Next: </span>Wells</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

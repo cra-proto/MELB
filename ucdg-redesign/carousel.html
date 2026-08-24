@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Carousel - Page structure - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Carousel">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Page structure", href: "page-structure.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Page structure</h1>
+  <ul>
+    <li><a href="page-structure.html">Family overview</a></li>
+    <li><a href="layout.html">Layout</a></li>
+    <li><a href="toc.html">Table of contents</a></li>
+    <li><a href="headings-titles.html">Headings and titles</a></li>
+    <li><a href="subway.html">Subway pattern</a></li>
+    <li><a class="active" aria-current="page">Carousel</a></li>
+    <li><a href="tabbed-interface.html">Tabbed interface</a></li>
+    <li><a href="pagination.html">Pagination</a></li>
+    <li><a href="wells.html">Wells</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Carousel</h1>
+
+<p>A carousel cycles through slides of content in one spot. It looks efficient, but research is consistent: readers miss everything past the first slide, and moving content is hard to use with a keyboard or screen reader. On task-focused CRA pages, the honest default is <strong>don't</strong>. Stack the content instead, so every reader can see it.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">If you must use one</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Almost always, the content in a carousel reads better stacked down the page. Reach for a carousel only in the rare case where the items are equal, optional, and genuinely benefit from one frame.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Stacked content</h3>
+      <p class="mrgn-bttm-0">The default. Put each item in the flow of the page so every reader sees all of it. Almost always the right answer.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">One prominent item</h3>
+      <p class="mrgn-bttm-0">If only one thing matters most, feature it — don't rotate it out of view behind others.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Carousel</h3>
+      <p class="mrgn-bttm-0">A last resort, for a few equal, optional items. Expect most readers to see only the first.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>Does the reader need to see all the items? → <strong>Stack them</strong></li>
+  <li>Is one item the priority? → <strong>Feature that one</strong></li>
+  <li>Are the items equal, optional, and few? → a <strong>carousel</strong> may be acceptable, reluctantly</li>
+</ul>
+
+<h2 id="include">If you must use one</h2>
+<ul>
+  <li>Visible, large previous/next controls and slide indicators — never rely on swipe alone</li>
+  <li>No auto-advance, or an obvious pause control, so content doesn't move out from under the reader</li>
+  <li>A small number of slides, each understandable on its own</li>
+  <li>The most important message never hidden inside the carousel</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Prefer stacking. If the content matters, don't hide it on a slide the reader may never reach.</li>
+  <li>Never auto-rotate without a pause control — moving content is a barrier and a distraction.</li>
+  <li>Don't put essential information (deadlines, eligibility, the main task) in a carousel.</li>
+  <li>Keep slides few and equal; a carousel is not a place to bury a long list.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Controls must be real buttons, reachable and operable by keyboard, with clear labels.</li>
+  <li>Auto-advancing content must be pausable, and must not move faster than a reader can follow (a WCAG requirement).</li>
+  <li>The current slide and total count must be announced to assistive technology.</li>
+  <li>Don't trap keyboard focus inside the carousel.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare approaches side by side</h3>
+
+  <details open>
+    <summary>Good approach</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        Three benefit highlights stacked down a landing page, each a short section with a link, so every reader sees all three.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A single, prominent "Sign in to My Account" feature instead of a rotating banner.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>To avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        An auto-rotating banner carousel with the filing deadline on slide three.
+        <br><em class="text-muted">Why it is wrong: most readers never reach slide three, and auto-rotation is a barrier. Put the deadline in the page.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A carousel navigable only by swiping, with no visible buttons.
+        <br><em class="text-muted">Why it is wrong: keyboard and many touch users can't operate it. Provide real controls.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="subway.html" rel="prev"><span class="wb-inv">Previous: </span>Subway pattern</a></li>
+    <li class="next"><a href="tabbed-interface.html" rel="next"><span class="wb-inv">Next: </span>Tabbed interface</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>

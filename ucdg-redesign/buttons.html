@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Buttons - Interaction & feedback - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+<meta name="dcterms.title" content="Buttons">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.css">
+<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"></noscript>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/css/theme.min.css">
+<script type="text/javascript">document.write(wet.builder.refTop({}));</script>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<div id="def-top"></div>
+<script type="text/javascript">
+var defTop = document.getElementById("def-top");
+defTop.outerHTML = wet.builder.top({
+  lngLinks: [{lang: "fr", href: "#", text: "Français"}],
+  breadcrumbs: [
+    {title: "Canada.ca", href: "https://www.canada.ca/en.html"},
+    {title: "CRA design system", href: "#"},
+    {title: "GCWeb design system", href: "gcweb-overview.html"},
+    {title: "Interaction & feedback", href: "interaction-feedback.html"}
+  ],
+  search: true,
+  siteMenu: true,
+  showPreContent: true
+});
+</script>
+<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+
+<nav class="gc-subway provisional">
+  <h1 id="gc-document-nav">Interaction &amp; feedback</h1>
+  <ul>
+    <li><a href="interaction-feedback.html">Family overview</a></li>
+    <li><a href="alerts.html">Alerts</a></li>
+    <li><a href="interactive-questions.html">Interactive questions</a></li>
+    <li><a href="and-or.html">And / Or</a></li>
+    <li><a href="expand-hide.html">Expand/hide</a></li>
+    <li><a href="checkboxes-radio-buttons.html">Large checkboxes and radio buttons</a></li>
+    <li><a class="active" aria-current="page">Buttons</a></li>
+  </ul>
+</nav>
+
+<h1 property="name" id="wb-cont" class="gc-thickline">Buttons</h1>
+
+<p>A button is a call to action — it invites the reader to do the one main thing on the page: apply, sign in, submit, continue. Because a button shouts, a page should have only one that shouts loudest. Every extra button competes with the real action and weakens it.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+  <li><a href="#choose">Choose the right pattern</a></li>
+  <li><a href="#include">What to include</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#a11y">Accessibility</a></li>
+  <li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="choose">Choose the right pattern</h2>
+
+<p>Not everything clickable is a button. Decide by what the control does and how important it is.</p>
+
+<div class="wb-eqht row mrgn-tp-lg">
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Primary button</h3>
+      <p class="mrgn-bttm-0">The one main action of the page — "Apply now", "Sign in". Use exactly one, and make it stand out.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0">Secondary button</h3>
+      <p class="mrgn-bttm-0">A lesser action beside the primary one — "Back", "Cancel". Styled quieter so the primary action wins.</p>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section class="well well-sm brdr-rds-0 eqht-trgt">
+      <h3 class="h4 mrgn-tp-0"><a href="links.html">Text link</a></h3>
+      <p class="mrgn-bttm-0">Use for navigation — sending the reader to another page. Navigation is a link, not a button.</p>
+    </section>
+  </div>
+</div>
+
+<h3>Quick decision guide</h3>
+<ul>
+  <li>The single main action of the page? → one <strong>primary button</strong></li>
+  <li>A lesser action next to it? → <strong>secondary button</strong></li>
+  <li>Going to another page? → <a href="links.html"><strong>text link</strong></a>, not a button</li>
+  <li>Several equal actions competing? → rethink; a page usually has one primary action</li>
+</ul>
+
+<h2 id="include">What to include</h2>
+<ul>
+  <li>A label that names the action in verb-first, plain language — "Submit your return", not "OK"</li>
+  <li>One clear primary button per page or per step</li>
+  <li>A large, tappable target that works on a phone</li>
+  <li>A visible focus and pressed state</li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+<ul>
+  <li>Use one primary button per page. When several buttons compete, none reads as the main action.</li>
+  <li>Label the action, not the mechanism — "Sign in to My Account", not "Click here".</li>
+  <li>Use buttons for actions and links for navigation. Don't style a link as a button just to make it bigger, and don't make a button that only navigates.</li>
+  <li>Don't disable the primary button in a way that leaves the reader stuck with no explanation of what's missing.</li>
+</ul>
+
+<h2 id="a11y">Accessibility</h2>
+<ul>
+  <li>Use a real <code>&lt;button&gt;</code> for actions and a real link for navigation, so assistive technology announces the correct role.</li>
+  <li>The button must be reachable and operable by keyboard, with a visible focus state.</li>
+  <li>The label must make sense on its own — a screen-reader user may hear it out of context.</li>
+  <li>Don't rely on colour alone to distinguish primary from secondary; use size, weight, and position too.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<div class="well mrgn-tp-lg">
+  <h3 class="h4 mrgn-tp-0">Compare buttons side by side</h3>
+
+  <details open>
+    <summary>Good use of buttons</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A service page with one primary button, "Sign in to My Account", and everything else as text links.
+      </li>
+      <li><span class="fa-li fas fa-check text-success"></span>
+        A form step with a primary "Continue" button and a quieter secondary "Back" button beside it.
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Buttons to avoid</summary>
+    <ul class="fa-ul lst-spcd mrgn-tp-md">
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        Five equally styled buttons in a row: Apply, Learn more, Contact, FAQ, Home.
+        <br><em class="text-muted">Why it is wrong: no single primary action. Use one button and make the rest text links.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A button labelled "OK" with no indication of what it does.
+        <br><em class="text-muted">Why it is wrong: the label must name the action. Use "Submit your return" or similar.</em>
+      </li>
+      <li><span class="fa-li fas fa-times text-danger"></span>
+        A "Next page" navigation styled as a big button.
+        <br><em class="text-muted">Why it is wrong: navigation is a link, not an action button. Use a text link.</em>
+      </li>
+    </ul>
+  </details>
+</div>
+
+<nav class="gc-subway-pagination">
+  <h2 class="wb-inv">Document navigation</h2>
+  <ul class="pager">
+    <li class="previous"><a href="checkboxes-radio-buttons.html" rel="prev"><span class="wb-inv">Previous: </span>Large checkboxes and radio buttons</a></li>
+  </ul>
+</nav>
+
+<div id="def-preFooter"></div>
+<script type="text/javascript">
+var defPreFooter = document.getElementById("def-preFooter");
+defPreFooter.outerHTML = wet.builder.preFooter({
+  dateModified: "2026-08-23",
+  showPostContent: true,
+  showFeedback: false,
+  showShare: false
+});
+</script>
+</main>
+<div id="def-footer"></div>
+<script type="text/javascript">
+var defFooter = document.getElementById("def-footer");
+defFooter.outerHTML = wet.builder.footer({showFooter: true, showFeatures: false});
+</script>
+<script type="text/javascript">document.write(wet.builder.refFooter({}));</script>
+<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/meli-melo/2024-09-kejimkujik.js"></script>
+</body>
+</html>
